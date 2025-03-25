@@ -1,0 +1,17 @@
+---
+import cp from "node:child_process";
+
+const hash = cp.execSync("git rev-parse --short HEAD").toString().trim();
+
+const branch = cp
+    .execSync("git rev-parse --symbolic-full-name HEAD")
+    .toString()
+    .split("/")
+    .pop()!
+    .trim();
+---
+
+<div class="font-jbm text-sm text-gray fixed bottom-0 p-4 w-full bg-dark-4">
+    Built from branch <span class="text-light underline">{branch}</span>
+    at commit <span class="text-light underline">{hash}</span>
+</div>
