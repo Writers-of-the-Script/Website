@@ -41,7 +41,7 @@ const { versions } = Astro.props;
                 <div class="flex flex-row items-center justify-between w-full">
                     {ver.isUnsafe ? (
                         <a
-                            href={`javascript:showUnsafe("${btoa(ver.download)}");`}
+                            href={`!!unsafe:${ver.download}`}
                             class="text-green flex flex-row items-center justify-start b-b-1 b-b-transparent hover:b-b-green transition-all mt-4"
                         >
                             Download
@@ -83,3 +83,21 @@ const { versions } = Astro.props;
         ))
     }
 </div>
+
+<script>
+    window.addEventListener("load", () => {
+        const as = document.querySelectorAll("a");
+        const repo = (document.getElementById("__repo") as HTMLMetaElement).content;
+        const branch = (document.getElementById("__branch") as HTMLMetaElement).content;
+
+        for (const a of as) {            
+            if (a.href.includes("!!unsafe:/files/")) {
+                const url = `${repo}/raw/${branch}/files/${a.href.split("/files/")[1]}`;
+
+                a.href = `javascript:showUnsafe("${btoa(url)}");`;
+            } else if (a.href.includes("/files/")) {
+                a.href = `${repo}/raw/${branch}/files/${a.href.split("/files/")[1]}`;
+            }
+        }
+    });
+</script>
