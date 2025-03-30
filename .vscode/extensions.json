@@ -2,7 +2,8 @@
     "recommendations": [
         "astro-build.astro-vscode",
         "denoland.vscode-deno",
-        "antfu.unocss"
+        "antfu.unocss",
+        "jock.svg"
     ],
     "unwantedRecommendations": []
 }

@@ -16,4 +16,10 @@ export default defineConfig({
             }),
         }),
     ],
+
+    theme: {
+        colors: {
+            modrinth: "#1bd96a",
+        },
+    },
 });

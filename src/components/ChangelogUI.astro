@@ -1,0 +1,52 @@
+<div
+    class="fixed z-10 w-full h-full bg-[rgba(0,0,0,0.5)] hidden items-center justify-center flex-col"
+    id="changelog-outer"
+>
+    <div
+        class="w-[90%] md:w-3xl h-md bg-dark-4 font-jbm p-4 overflow-scroll"
+        id="changelog-container"
+    >
+        <p class="text-white text-lg font-bold">Changelog</p>
+        <div id="changelog" class="mt-4 markdown overflow-scroll w-full">
+            Loading...
+        </div>
+    </div>
+</div>
+
+<script>
+    import { marked } from "marked";
+
+    const outer = document.getElementById("changelog-outer");
+    const container = document.getElementById("changelog-container");
+    const holder = document.getElementById("changelog");
+
+    const showChangelog = async (changelog: string) => {
+        if (!outer || !holder) return;
+
+        outer.style.display = "flex";
+        holder.innerHTML = await marked(atob(changelog));
+    };
+
+    const hideChangelog = async () => {
+        if (!outer || !holder) return;
+
+        outer.style.display = "none";
+        holder.innerHTML = "Loading...";
+    };
+
+    outer?.addEventListener("click", () => {
+        hideChangelog();
+    });
+
+    container?.addEventListener("click", (ev) => {
+        ev.preventDefault();
+        ev.stopPropagation();
+    });
+
+    (window as any).showChangelog = showChangelog;
+    (window as any).hideChangelog = hideChangelog;
+
+    window.addEventListener("keydown", (ev) => {
+        if (ev.code == "Escape") hideChangelog();
+    });
+</script>

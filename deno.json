@@ -1,5 +1,13 @@
 {
     "fmt": {
         "indentWidth": 4
-    }
+    },
+    "compilerOptions": {
+      "types": [
+        "@types/node"
+      ]
+    },
+    "unstable": [
+      "sloppy-imports"
+    ]
 }

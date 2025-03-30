@@ -1,113 +1,67 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import logo from "../assets/logo.png";
 import BuildInfo from "../components/BuildInfo.astro";
+import Header from "../components/Header.astro";
+import ChangelogUI from "../components/ChangelogUI.astro";
 import { modrinth } from "../lib/rinth";
-import { format as formatDate } from "date-fns";
-import { Icon } from "astro-icon/components";
+import modrinthIcon from "../assets/modrinth.svg";
+import type { VersionItem } from "../lib/versions";
+import VersionList from "../components/VersionList.astro";
+import UnsafeUI from "../components/UnsafeUI.astro";
 
-const versions = await modrinth.getProjectVersions("the-broken-script");
+const modrinthVersions = (
+	await modrinth.getProjectVersions("the-broken-script")
+).map(
+	(ver) =>
+		({
+			name: ver.name,
+			file: ver.files[0].filename,
+			download: ver.files[0].url,
+			changelog: ver.changelog ?? undefined, // It's null, not undefined (*angy noises*)
+			isUnsafe: false,
+			published: ver.date_published,
+		}) satisfies VersionItem,
+);
 ---
 
 <Layout>
-	<div class="fixed z-10 w-full h-full bg-[rgba(0,0,0,0.5)] hidden items-center justify-center flex-col" id="changelog-outer">
-		<div class="w-[90%] md:w-3xl h-md bg-dark-4 font-jbm p-4" id="changelog-container">
-			<p class="text-white text-lg font-bold">Changelog</p>
-			<div id="changelog" class="mt-4 markdown">Loading...</div>
-		</div>
+	<UnsafeUI />
+	<ChangelogUI />
+	<Header />
+
+	<div class="p-4">
+		<p
+			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
+		>
+			<img src={modrinthIcon.src} class="h-[20px] md:h-[28px] mr-2" />
+			<span class="color-modrinth mr-2">Modrinth</span>
+			<span class="mr-2">Versions</span>
+			<span class="color-green">[SAFE]</span>
+		</p>
 	</div>
 
-	<script>
-		import { marked } from "marked";
+	<VersionList versions={modrinthVersions} />
 
-		const outer = document.getElementById("changelog-outer");
-		const container = document.getElementById("changelog-container");
-		const holder = document.getElementById("changelog");
-
-		const showChangelog = async (changelog: string) => {
-			if (!outer || !holder) return;
-
-			outer.style.display = "flex";
-			holder.innerHTML = await marked(atob(changelog));
-		};
-
-		const hideChangelog = async () => {
-			if (!outer || !holder) return;
-
-			outer.style.display = "none";
-			holder.innerHTML = "Loading...";
-		};
-
-		outer?.addEventListener("click", () => {
-			hideChangelog();
-		});
-
-		container?.addEventListener("click", (ev) => {
-			ev.preventDefault();
-			ev.stopPropagation();
-		});
-
-		(window as any).showChangelog = showChangelog;
-	</script>
-
-	<div class="h-20 w-full p-4 flex flex-row items-center justify-start">
-		<img src={logo.src} class="h-full object-cover" />
-		<p class="text-2xl ml-4 font-jbm">The Broken Script</p>
+	<div class="p-4">
+		<p
+			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
+		>
+			<span class="color-green mr-2">Community</span>
+			<span class="mr-2">Versions</span>
+			<span class="color-yellow">[SOME UNSAFE]</span>
+		</p>
 	</div>
 
-	<div
-		class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full gap-4 p-4 pb-24"
-	>
-		{
-			versions.map((ver) => (
-				<div class="bg-dark-7 p-4 hover:scale-110 cursor-pointer hover:bg-dark-4 transition-all font-jbm flex flex-col items-start justify-start">
-					<p class="font-bold">{ver.name}</p>
-
-					<p class="text-sm text-gray">
-						Released on
-						<span class="text-light">
-							{formatDate(
-								new Date(ver.date_published),
-								"MMMM do, yyyy",
-							)}
-						</span>
-					</p>
-
-					<div class="flex flex-row items-center justify-between w-full">
-						<a
-							href={ver.files[0].url}
-							class="text-green flex flex-row items-center justify-start b-b-1 b-b-transparent hover:b-b-green transition-all mt-4"
-						>
-							Download
-							<Icon
-								name="tabler:download"
-								class="ml-2"
-								size="20"
-							/>
-						</a>
-
-						<a
-							href={`javascript:showChangelog("${btoa(ver.changelog)}");`}
-							class="text-blue flex flex-row items-center justify-start b-b-1 b-b-transparent hover:b-b-blue transition-all mt-4"
-						>
-							Changelog
-							<Icon
-								name="tabler:info-circle"
-								class="ml-2"
-								size="20"
-							/>
-						</a>
-					</div>
-				</div>
-			))
-		}
-	</div>
+	<!-- Helps make sure the build info is at the bottom -->
+	<div class="pb-24"></div>
 
 	<BuildInfo />
 </Layout>
 
 <style is:global>
-	.markdown > ol, .markdown > ul, .markdown > li {
+	.markdown > ol,
+	.markdown > ul,
+	.markdown > li {
 		list-style-type: square;
 		margin-left: 2rem;
 	}
