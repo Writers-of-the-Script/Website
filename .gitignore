@@ -24,4 +24,4 @@ pnpm-debug.log*
 .idea/
 
 # Fonts
-public/assets/fonts
+# public/assets/fonts
