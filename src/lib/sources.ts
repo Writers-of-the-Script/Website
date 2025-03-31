@@ -84,18 +84,22 @@ const setup = () => {
                 const loader = el.dataset.loader!;
                 const version = el.dataset.minecraft!;
                 const elementTags = el.dataset.tags!.split(";");
-                const tagsCheck = enabledTags.length <= 0 ||
+                const tagsCheck =
+                    enabledTags.length <= 0 ||
                     enabledTags.every((tag) => elementTags.includes(tag));
 
-                el.style.display = enabledLoaders.includes(loader) &&
-                        enabledVersions.includes(version) && tagsCheck
-                    ? display
-                    : "none";
+                el.style.display =
+                    enabledLoaders.includes(loader) &&
+                    enabledVersions.includes(version) &&
+                    tagsCheck
+                        ? display
+                        : "none";
             });
         }
 
         if (
-            enabledSources.length <= 0 || enabledLoaders.length <= 0 ||
+            enabledSources.length <= 0 ||
+            enabledLoaders.length <= 0 ||
             enabledVersions.length <= 0
         ) {
             items.style.display = "none";

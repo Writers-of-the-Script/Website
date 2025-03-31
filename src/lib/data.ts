@@ -13,9 +13,7 @@ import {
 } from "./versions.ts";
 
 export const allVersions = {
-    modrinth: (
-        await modrinth.getProjectVersions("the-broken-script")
-    ).map(
+    modrinth: (await modrinth.getProjectVersions("the-broken-script")).map(
         (ver) =>
             ({
                 name: ver.name,
@@ -41,8 +39,10 @@ export const allVersions = {
     ],
 };
 
-export const allVersionsList = Object.values(allVersions)
-    .flat() as VersionItem[];
+export const allVersionsList = Object.values(
+    allVersions,
+).flat() as VersionItem[];
+
 export const loaders = [...new Set(allVersionsList.map((v) => v.loader))];
 export const minecraft = [...new Set(allVersionsList.map((v) => v.minecraft))];
 export const tags = [...new Set(allVersionsList.flatMap((v) => v.tags ?? []))];

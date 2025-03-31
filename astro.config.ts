@@ -4,7 +4,7 @@ import icon from "astro-icon";
 
 export default defineConfig({
     prefetch: true,
-    
+
     integrations: [
         UnoCSS({
             injectReset: true,

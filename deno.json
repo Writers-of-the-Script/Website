@@ -3,11 +3,7 @@
         "indentWidth": 4
     },
     "compilerOptions": {
-        "types": [
-            "@types/node"
-        ]
+        "types": ["@types/node"]
     },
-    "unstable": [
-        "sloppy-imports"
-    ]
+    "unstable": ["sloppy-imports"]
 }

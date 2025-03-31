@@ -24,13 +24,15 @@ import Sidebar from "../components/Sidebar.astro";
     </head>
     <body>
         <UnsafeUI transition:persist />
-	    <ChangelogUI transition:persist />
-	    <Header transition:persist />
+        <ChangelogUI transition:persist />
+        <Header transition:persist />
 
         <div class="w-full h-full flex flex-col items-start justify-start">
-            <div class="flex flex-col md:flex-row items-start justify-start w-full h-full p-4 space-y-4 md:space-y-0 md:space-x-4">
+            <div
+                class="flex flex-col md:flex-row items-start justify-start w-full h-full p-4 space-y-4 md:space-y-0 md:space-x-4"
+            >
                 <Sidebar transition:persist />
-                
+
                 <div class="w-full h-full">
                     <slot />
                     <div class="w-full h-24"></div>

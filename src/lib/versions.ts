@@ -29,6 +29,12 @@ export const version = (
     changelog,
 });
 
+const trim = (content: string) =>
+    content
+        .split("\n")
+        .map((v) => v.trim())
+        .join("\n");
+
 export const zeroPointX: VersionItem[] = [
     version("0.x/The Broken Script V0.71.jar", "v0.7.1", true),
     version("0.x/The Broken Script V0.8.jar", "v0.8", true),
@@ -86,6 +92,7 @@ export const rdfPatch: VersionItem[] = [
         "1.9.3-rdf",
         true,
         ["Render Distance Fix"],
+        "- removes the render distance changes from the Moon Glitch event",
     ),
 
     version(
@@ -93,6 +100,10 @@ export const rdfPatch: VersionItem[] = [
         "1.9.3-rdf+atkCDfix",
         true,
         ["Render Distance Fix", "Attack Cooldown Fix"],
+        trim(`
+            - removes the render distance changes from the Moon Glitch event
+            - restores the attack cooldowns for weapons (no more overpowered axes)
+        `),
     ),
 
     version(
@@ -100,6 +111,10 @@ export const rdfPatch: VersionItem[] = [
         "1.9.3-rdf+modern",
         true,
         ["Render Distance Fix", "Modernized"],
+        trim(`
+            - removes the render distance changes from the Moon Glitch event
+            - restores modern Minecraft mobs (bees, etc.)
+        `),
     ),
 
     version(
@@ -107,6 +122,11 @@ export const rdfPatch: VersionItem[] = [
         "1.9.3-rdf+modern+atkCDfix",
         true,
         ["Render Distance Fix", "Modernized", "Attack Cooldown Fix"],
+        trim(`
+            - removes the render distance changes from the Moon Glitch event
+            - restores modern Minecraft mobs (bees, etc.)
+            - restores the attack cooldowns for weapons (no more overpowered axes)
+        `),
     ),
 ];
 
@@ -116,6 +136,7 @@ export const modernizedVersions: VersionItem[] = [
         "1.9.3-modernized",
         true,
         ["Modernized"],
+        "- restores modern Minecraft mobs (bees, etc.)",
     ),
 ];
 
@@ -125,6 +146,7 @@ export const addons: VersionItem[] = [
         "1.9.2-moonfix+deepslate",
         true,
         ["Addons", "Moon Fix", "Deepslate Fix"],
+        "In the original mod this class checks every tick whether the player is at a height of less than -10 blocks, and whether there is a deep slate nearby to replace it with a stone. The deepslate replacer class has been removed in this mod.",
     ),
 
     version(
@@ -132,12 +154,23 @@ export const addons: VersionItem[] = [
         "quieter-sounds",
         false,
         ["Addons", "Quieter Sounds"],
+        trim(`
+            Made the following sounds quieter:
+            - moonglitch.ogg
+            - revuxorchase.ogg
+            - circuitjumpscare.ogg
+            - integritydefeated.ogg
+            - Thenothingiswatching.ogg
+        `),
     ),
 
-    version("community/addons/TheNormalMusic.zip", "normal-music", false, [
-        "Addons",
-        "Music Revertion",
-    ]),
+    version(
+        "community/addons/TheNormalMusic.zip",
+        "normal-music",
+        false,
+        ["Addons", "Music Revertion"],
+        "Reverted all music back to the original soundtrack, instead of the corrupted soundtrack.",
+    ),
 ];
 
 export const moonFixVersions: VersionItem[] = [
@@ -183,6 +216,29 @@ export const rusPatch: VersionItem[] = [
         "1.2-rus+old-datapack",
         true,
         ["Patch by RUS", "Old Datapack"],
+        trim(`
+            this patch introduces some improvements and fixes combined with other fan-made patches to enhance your gameplay experience:
+            code updates:
+
+            1. the moon event no longer makes the moon pink (credits to moonfix patch)
+            2. moonglitch no longer makes your render distance low
+            3. the moon event's phase is capped at a maximum of 2, preventing it from exceeding that limit. Previously, if it did that, it prevented the broken end from spawning.
+            4. agressive mobs despawn event now only works when the moon event is active. Previously, they would disappear during moon phases 5 through 8 regardless, often resulting in event/entities overload
+            5. questions in chat has been updated to be case-insensitive.
+            6. error in the code where two events shared the same ID has been fixed, effectively adding a new event.
+            7. the moon event now occurs more frequently. Earlier, triggering it required first encountering a rare random event (with odds of 1 in 55) and also having a specific moon phase. The latter condition has been removed.
+            8. days no longer reset
+            9. the broken end spawn conditions now only require the second phase of the moon event, making him more often. Previously, it also requires a specific texture of the moon from the atlas to be visible.
+            10. sub anomalies now despawn more frequently
+            11. random entity (missing texture dude) is now back. Previously in 1.9.3, if he tried to spawn in his true form, he just despawned instantly.
+            12. flipped the broken moon's texture to hopefully make letters more readable
+            13. fixed a bug that is left unpatched since 1.9 where glitchy/noisy siluet could not spawn because it tried to play a sound that is not present in the build
+            14. null's username is now the same everywhere. Previously, in the chat it was written with a capital letter, but in tab menu it was written with a lowercase one for some reason
+            15. err.themoon does not appear for no reason now
+            16. nerfed a certain event that could basically //set 0 your entire buildings
+            17. there were two structures that are fully complete but for some reason are left unused. There's also multiple copies of "carcas" structure in the code for whatever reason. This patch replaces these copies with the unused structures.
+            18. probably something else. If you have any coding knowledge, you may compare the hashes with the original build to see the full list of changes I've made.
+        `),
     ),
 
     version(
@@ -190,6 +246,28 @@ export const rusPatch: VersionItem[] = [
         "1.2-rus+revert-despawning+old-datapack",
         true,
         ["Patch by RUS", "Revert Despawning", "Old Datapack"],
+        trim(`
+            this patch introduces some improvements and fixes combined with other fan-made patches to enhance your gameplay experience:
+            code updates:
+
+            1. the moon event no longer makes the moon pink (credits to moonfix patch)
+            2. moonglitch no longer makes your render distance low
+            3. the moon event's phase is capped at a maximum of 2, preventing it from exceeding that limit. Previously, if it did that, it prevented the broken end from spawning.
+            4. questions in chat has been updated to be case-insensitive.
+            5. error in the code where two events shared the same ID has been fixed, effectively adding a new event.
+            6. the moon event now occurs more frequently. Earlier, triggering it required first encountering a rare random event (with odds of 1 in 55) and also having a specific moon phase. The latter condition has been removed.
+            7. days no longer reset
+            8. the broken end spawn conditions now only require the second phase of the moon event, making him more often. Previously, it also requires a specific texture of the moon from the atlas to be visible.
+            9. sub anomalies now despawn more frequently
+            10. random entity (missing texture dude) is now back. Previously in 1.9.3, if he tried to spawn in his true form, he just despawned instantly.
+            11. flipped the broken moon's texture to hopefully make letters more readable
+            12. fixed a bug that is left unpatched since 1.9 where glitchy/noisy siluet could not spawn because it tried to play a sound that is not present in the build
+            13. null's username is now the same everywhere. Previously, in the chat it was written with a capital letter, but in tab menu it was written with a lowercase one for some reason
+            14. err.themoon does not appear for no reason now
+            15. nerfed a certain event that could basically //set 0 your entire buildings
+            16. there were two structures that are fully complete but for some reason are left unused. There's also multiple copies of "carcas" structure in the code for whatever reason. This patch replaces these copies with the unused structures.
+            17. probably something else. If you have any coding knowledge, you may compare the hashes with the original build to see the full list of changes I've made.
+        `),
     ),
 
     version(
@@ -197,9 +275,73 @@ export const rusPatch: VersionItem[] = [
         "1.2-rus+revert-despawning",
         true,
         ["Patch by RUS", "Revert Despawning"],
+        trim(`
+            this patch introduces some improvements and fixes combined with other fan-made patches to enhance your gameplay experience:
+            code updates:
+
+            1. the moon event no longer makes the moon pink (credits to moonfix patch)
+            2. moonglitch no longer makes your render distance low
+            3. the moon event's phase is capped at a maximum of 2, preventing it from exceeding that limit. Previously, if it did that, it prevented the broken end from spawning.
+            4. questions in chat has been updated to be case-insensitive.
+            5. error in the code where two events shared the same ID has been fixed, effectively adding a new event.
+            6. the moon event now occurs more frequently. Earlier, triggering it required first encountering a rare random event (with odds of 1 in 55) and also having a specific moon phase. The latter condition has been removed.
+            7. days no longer reset
+            8. the broken end spawn conditions now only require the second phase of the moon event, making him more often. Previously, it also requires a specific texture of the moon from the atlas to be visible.
+            9. sub anomalies now despawn more frequently
+            10. random entity (missing texture dude) is now back. Previously in 1.9.3, if he tried to spawn in his true form, he just despawned instantly.
+            11. flipped the broken moon's texture to hopefully make letters more readable
+            12. fixed a bug that is left unpatched since 1.9 where glitchy/noisy siluet could not spawn because it tried to play a sound that is not present in the build
+            13. null's username is now the same everywhere. Previously, in the chat it was written with a capital letter, but in tab menu it was written with a lowercase one for some reason
+            14. err.themoon does not appear for no reason now
+            15. nerfed a certain event that could basically //set 0 your entire buildings
+            16. there were two structures that are fully complete but for some reason are left unused. There's also multiple copies of "carcas" structure in the code for whatever reason. This patch replaces these copies with the unused structures.
+            17. probably something else. If you have any coding knowledge, you may compare the hashes with the original build to see the full list of changes I've made.
+
+            datapack updates:
+
+            1) ores now should drop their proper blocks instead of a weird 2d thing
+            2) deepslate does not generate (but deepslate ores still do)
+            3) entities should be able to break more blocks than they previously could
+            4) now you shouldn't be able to edit signs in mod's structures
+            5) villager's profession textures are changed according to their old versions
+        `),
     ),
-    
-    version("community/patch-by-rus/tbs-patch-1.2.jar", "1.2-rus", true, [
-        "Patch by RUS",
-    ]),
+
+    version(
+        "community/patch-by-rus/tbs-patch-1.2.jar",
+        "1.2-rus",
+        true,
+        ["Patch by RUS"],
+        trim(`
+            this patch introduces some improvements and fixes combined with other fan-made patches to enhance your gameplay experience:
+            code updates:
+
+            1. the moon event no longer makes the moon pink (credits to moonfix patch)
+            2. moonglitch no longer makes your render distance low
+            3. the moon event's phase is capped at a maximum of 2, preventing it from exceeding that limit. Previously, if it did that, it prevented the broken end from spawning.
+            4. agressive mobs despawn event now only works when the moon event is active. Previously, they would disappear during moon phases 5 through 8 regardless, often resulting in event/entities overload
+            5. questions in chat has been updated to be case-insensitive.
+            6. error in the code where two events shared the same ID has been fixed, effectively adding a new event.
+            7. the moon event now occurs more frequently. Earlier, triggering it required first encountering a rare random event (with odds of 1 in 55) and also having a specific moon phase. The latter condition has been removed.
+            8. days no longer reset
+            9. the broken end spawn conditions now only require the second phase of the moon event, making him more often. Previously, it also requires a specific texture of the moon from the atlas to be visible.
+            10. sub anomalies now despawn more frequently
+            11. random entity (missing texture dude) is now back. Previously in 1.9.3, if he tried to spawn in his true form, he just despawned instantly.
+            12. flipped the broken moon's texture to hopefully make letters more readable
+            13. fixed a bug that is left unpatched since 1.9 where glitchy/noisy siluet could not spawn because it tried to play a sound that is not present in the build
+            14. null's username is now the same everywhere. Previously, in the chat it was written with a capital letter, but in tab menu it was written with a lowercase one for some reason
+            15. err.themoon does not appear for no reason now
+            16. nerfed a certain event that could basically //set 0 your entire buildings
+            17. there were two structures that are fully complete but for some reason are left unused. There's also multiple copies of "carcas" structure in the code for whatever reason. This patch replaces these copies with the unused structures.
+            18. probably something else. If you have any coding knowledge, you may compare the hashes with the original build to see the full list of changes I've made.
+
+            datapack updates:
+
+            1) ores now should drop their proper blocks instead of a weird 2d thing
+            2) deepslate does not generate (but deepslate ores still do)
+            3) entities should be able to break more blocks than they previously could
+            4) now you shouldn't be able to edit signs in mod's structures
+            5) villager's profession textures are changed according to their old versions
+        `),
+    ),
 ];
