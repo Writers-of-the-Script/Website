@@ -1,13 +1,9 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BuildInfo from "../components/BuildInfo.astro";
-import Header from "../components/Header.astro";
-import ChangelogUI from "../components/ChangelogUI.astro";
 import { modrinth } from "../lib/rinth";
 import modrinthIcon from "../assets/modrinth.svg";
 import type { VersionItem } from "../lib/versions";
 import VersionList from "../components/VersionList.astro";
-import UnsafeUI from "../components/UnsafeUI.astro";
 
 const modrinthVersions = (
 	await modrinth.getProjectVersions("the-broken-script")
@@ -25,10 +21,6 @@ const modrinthVersions = (
 ---
 
 <Layout>
-	<UnsafeUI />
-	<ChangelogUI />
-	<Header />
-
 	<div class="p-4">
 		<p
 			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
@@ -51,11 +43,6 @@ const modrinthVersions = (
 			<span class="color-yellow">[SOME UNSAFE]</span>
 		</p>
 	</div>
-
-	<!-- Helps make sure the build info is at the bottom -->
-	<div class="pb-24"></div>
-
-	<BuildInfo />
 </Layout>
 
 <style is:global>

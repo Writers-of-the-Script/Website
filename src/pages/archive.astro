@@ -1,18 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BuildInfo from "../components/BuildInfo.astro";
-import Header from "../components/Header.astro";
-import ChangelogUI from "../components/ChangelogUI.astro";
-import { zeroPointX } from "../lib/versions";
+import { onePointX, zeroPointX, spectrum11 } from "../lib/versions";
 import VersionList from "../components/VersionList.astro";
-import UnsafeUI from "../components/UnsafeUI.astro";
 ---
 
 <Layout>
-	<UnsafeUI />
-	<ChangelogUI />
-	<Header />
-
 	<div class="p-4">
 		<p
 			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
@@ -35,6 +27,8 @@ import UnsafeUI from "../components/UnsafeUI.astro";
 		</p>
 	</div>
 
+	<VersionList versions={onePointX} />
+
 	<div class="p-4">
 		<p
 			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
@@ -45,10 +39,7 @@ import UnsafeUI from "../components/UnsafeUI.astro";
 		</p>
 	</div>
 
-	<!-- Helps make sure the build info is at the bottom -->
-	<div class="pb-24"></div>
-
-	<BuildInfo />
+	<VersionList versions={spectrum11} />
 </Layout>
 
 <style is:global>

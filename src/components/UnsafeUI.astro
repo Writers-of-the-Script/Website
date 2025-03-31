@@ -6,9 +6,14 @@
         class="w-[90%] md:w-3xl h-md bg-dark-4 font-jbm p-4 overflow-scroll lg:overflow-unset"
         id="unsafe-container"
     >
-        <p class="text-yellow text-lg font-bold">WARNING: Potentially Unsafe Version</p>
+        <p class="text-yellow text-lg font-bold">
+            WARNING: Potentially Unsafe Version
+        </p>
 
-        <div id="unsafe" class="mt-4 markdown overflow-scroll lg:overflow-unset w-full">
+        <div
+            id="unsafe"
+            class="mt-4 markdown overflow-scroll lg:overflow-unset w-full"
+        >
             The file you are about to download is
             <span class="color-red font-bold">potentially unsafe</span>.
             <br /><br />
@@ -26,20 +31,25 @@
         </div>
 
         <div class="mt-6 space-x-2 flex flex-row items-center justify-start">
-            <button id="unsafe-no" class="p-2 px-3 bg-red-8 text-lg hover:bg-red-6 transition-all">No</button>
-            <button id="unsafe-yes" class="p-2 px-3 bg-green-8 text-lg hover:bg-green-6 transition-all">Yes</button>
+            <button
+                id="unsafe-no"
+                class="p-2 px-3 bg-red-8 text-lg hover:bg-red-6 transition-all"
+                >No</button
+            >
+            <button
+                id="unsafe-yes"
+                class="p-2 px-3 bg-green-8 text-lg hover:bg-green-6 transition-all"
+                >Yes</button
+            >
         </div>
     </div>
 </div>
 
-<script is:inline src="https://cdn.jsdelivr.net/npm/eruda"></script>
-<script is:inline>eruda.init();</script>
-
 <script>
-    const unsafeOuter = document.getElementById("unsafe-outer");
-    const unsafeContainer = document.getElementById("unsafe-container");
-    const unsafeNo = document.getElementById("unsafe-no");
-    const unsafeYes = document.getElementById("unsafe-yes");
+    let unsafeOuter = document.getElementById("unsafe-outer");
+    let unsafeContainer = document.getElementById("unsafe-container");
+    let unsafeNo = document.getElementById("unsafe-no");
+    let unsafeYes = document.getElementById("unsafe-yes");
 
     let download = "#";
 
@@ -56,32 +66,66 @@
         unsafeOuter.style.display = "none";
     };
 
-    unsafeNo?.addEventListener("click", hideUnsafe);
-
-    unsafeYes?.addEventListener("click", () => {
-        hideUnsafe();
-
-        if (download == "" || download == "#") return;
-        
-        const a = document.createElement("a");
-
-        a.href = download;
-        a.download = download.split("/").pop()!;
-
-        a.click();
-    });
-
-    unsafeOuter?.addEventListener("click", hideUnsafe);
-
-    unsafeContainer?.addEventListener("click", (ev) => {
-        ev.preventDefault();
-        ev.stopPropagation();
-    });
-
-    (window as any).showUnsafe = showUnsafe;
-    (window as any).hideUnsafe = hideUnsafe;
-
     window.addEventListener("keydown", (ev) => {
         if (ev.code == "Escape") hideUnsafe();
     });
+
+    const updateLinks = () => {
+        unsafeOuter = document.getElementById("unsafe-outer");
+        unsafeContainer = document.getElementById("unsafe-container");
+        unsafeNo = document.getElementById("unsafe-no");
+        unsafeYes = document.getElementById("unsafe-yes");
+
+        unsafeNo?.addEventListener("click", hideUnsafe);
+
+        unsafeYes?.addEventListener("click", () => {
+            hideUnsafe();
+
+            if (download == "" || download == "#") return;
+
+            const a = document.createElement("a");
+
+            a.href = download;
+            a.download = download.split("/").pop()!;
+
+            a.click();
+        });
+
+        unsafeOuter?.addEventListener("click", hideUnsafe);
+
+        unsafeContainer?.addEventListener("click", (ev) => {
+            ev.preventDefault();
+            ev.stopPropagation();
+        });
+
+        const as = document.querySelectorAll("a");
+
+        const repo = (document.getElementById("__repo") as HTMLMetaElement)
+            .content;
+
+        const branch = (document.getElementById("__branch") as HTMLMetaElement)
+            .content;
+
+        for (const a of as) {
+            if (a.href.includes("!!unsafe:/files/")) {
+                const url = `${repo}/raw/${branch}/files/${a.href.split("!!unsafe:/files/").pop()}`;
+                const clone = a.cloneNode(true);
+
+                a.parentNode!.replaceChild(clone, a);
+
+                clone.addEventListener("click", (ev) => {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+
+                    showUnsafe(btoa(url));
+                });
+            } else if (a.href.includes("/files/")) {
+                a.href = `${repo}/raw/${branch}/files/${a.href.split("/files/")[1]}`;
+            }
+        }
+    };
+
+    updateLinks();
+    window.addEventListener("load", updateLinks);
+    document.addEventListener("astro:page-load", updateLinks);
 </script>

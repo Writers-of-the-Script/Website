@@ -7,7 +7,10 @@
         id="changelog-container"
     >
         <p class="text-white text-lg font-bold">Changelog</p>
-        <div id="changelog" class="mt-4 markdown overflow-scroll lg:overflow-unset w-full">
+        <div
+            id="changelog"
+            class="mt-4 markdown overflow-scroll lg:overflow-unset w-full"
+        >
             Loading...
         </div>
     </div>
@@ -16,9 +19,9 @@
 <script>
     import { marked } from "marked";
 
-    const outer = document.getElementById("changelog-outer");
-    const container = document.getElementById("changelog-container");
-    const holder = document.getElementById("changelog");
+    let outer = document.getElementById("changelog-outer");
+    let container = document.getElementById("changelog-container");
+    let holder = document.getElementById("changelog");
 
     const showChangelog = async (changelog: string) => {
         if (!outer || !holder) return;
@@ -34,19 +37,43 @@
         holder.innerHTML = "Loading...";
     };
 
-    outer?.addEventListener("click", () => {
-        hideChangelog();
-    });
-
-    container?.addEventListener("click", (ev) => {
-        ev.preventDefault();
-        ev.stopPropagation();
-    });
-
-    (window as any).showChangelog = showChangelog;
-    (window as any).hideChangelog = hideChangelog;
-
     window.addEventListener("keydown", (ev) => {
         if (ev.code == "Escape") hideChangelog();
     });
+
+    const updateLinks = () => {
+        outer = document.getElementById("changelog-outer");
+        container = document.getElementById("changelog-container");
+        holder = document.getElementById("changelog");
+
+        outer?.addEventListener("click", () => {
+            hideChangelog();
+        });
+
+        container?.addEventListener("click", (ev) => {
+            ev.preventDefault();
+            ev.stopPropagation();
+        });
+
+        const as = document.querySelectorAll("a");
+
+        for (const a of as) {
+            if (a.href.includes("!!changelog:")) {
+                const data = a.href.split("!!changelog:").pop();
+                const clone = a.cloneNode(true);
+
+                a.parentNode!.replaceChild(clone, a);
+
+                clone.addEventListener("click", (ev) => {
+                    ev.preventDefault();
+                    ev.stopPropagation();
+
+                    showChangelog(data!);
+                });
+            }
+        }
+    };
+
+    window.addEventListener("load", updateLinks);
+    document.addEventListener("astro:page-load", updateLinks);
 </script>

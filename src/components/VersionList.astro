@@ -67,7 +67,7 @@ const { versions } = Astro.props;
 
                     {ver.changelog && (
                         <a
-                            href={`javascript:showChangelog("${btoa(ver.changelog ?? "// None //")}");`}
+                            href={`!!changelog:${btoa(ver.changelog ?? "// None //")}`}
                             class="text-blue flex flex-row items-center justify-start b-b-1 b-b-transparent hover:b-b-blue transition-all mt-4"
                         >
                             Changelog
@@ -83,21 +83,3 @@ const { versions } = Astro.props;
         ))
     }
 </div>
-
-<script>
-    window.addEventListener("load", () => {
-        const as = document.querySelectorAll("a");
-        const repo = (document.getElementById("__repo") as HTMLMetaElement).content;
-        const branch = (document.getElementById("__branch") as HTMLMetaElement).content;
-
-        for (const a of as) {            
-            if (a.href.includes("!!unsafe:/files/")) {
-                const url = `${repo}/raw/${branch}/files/${a.href.split("/files/")[1]}`;
-
-                a.href = `javascript:showUnsafe("${btoa(url)}");`;
-            } else if (a.href.includes("/files/")) {
-                a.href = `${repo}/raw/${branch}/files/${a.href.split("/files/")[1]}`;
-            }
-        }
-    });
-</script>

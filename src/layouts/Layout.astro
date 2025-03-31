@@ -1,5 +1,10 @@
 ---
+import { ClientRouter } from "astro:transitions";
 import logo from "../assets/logo.png";
+import BuildInfo from "../components/BuildInfo.astro";
+import ChangelogUI from "../components/ChangelogUI.astro";
+import Header from "../components/Header.astro";
+import UnsafeUI from "../components/UnsafeUI.astro";
 ---
 
 <!doctype html>
@@ -10,9 +15,18 @@ import logo from "../assets/logo.png";
         <link rel="icon" type="image/png" href={logo.src} />
         <meta name="generator" content={Astro.generator} />
         <title>The Broken Script</title>
+        <ClientRouter />
     </head>
     <body>
+        <UnsafeUI transition:persist />
+	    <ChangelogUI transition:persist />
+	    <Header transition:persist />
+
         <slot />
+
+        <!-- Helps make sure the build info is at the bottom -->
+	    <div class="pb-24" transition:persist></div>
+	    <BuildInfo transition:persist />
     </body>
 </html>
 
