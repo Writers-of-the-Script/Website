@@ -1,48 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { modrinth } from "../lib/rinth";
-import modrinthIcon from "../assets/modrinth.svg";
-import type { VersionItem } from "../lib/versions";
-import VersionList from "../components/VersionList.astro";
-
-const modrinthVersions = (
-	await modrinth.getProjectVersions("the-broken-script")
-).map(
-	(ver) =>
-		({
-			name: ver.name,
-			file: ver.files[0].filename,
-			download: ver.files[0].url,
-			changelog: ver.changelog ?? undefined, // It's null, not undefined (*angy noises*)
-			isUnsafe: false,
-			published: ver.date_published,
-		}) satisfies VersionItem,
-);
+import SourcedList from "../components/SourcedList.astro";
+import { allVersions } from "../lib/data";
 ---
 
 <Layout>
-	<div class="p-4">
-		<p
-			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
-		>
-			<img src={modrinthIcon.src} class="h-[20px] md:h-[28px] mr-2" />
-			<span class="color-modrinth mr-2">Modrinth</span>
-			<span class="mr-2">Versions</span>
-			<span class="color-green">[SAFE]</span>
-		</p>
-	</div>
-
-	<VersionList versions={modrinthVersions} />
-
-	<div class="p-4">
-		<p
-			class="font-jbm md:text-xl font-bold flex flex-row items-center justify-start b-b-1 pb-2 px-2"
-		>
-			<span class="color-green mr-2">Community</span>
-			<span class="mr-2">Versions</span>
-			<span class="color-yellow">[SOME UNSAFE]</span>
-		</p>
-	</div>
+	<SourcedList versions={allVersions} />
 </Layout>
 
 <style is:global>

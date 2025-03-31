@@ -5,6 +5,7 @@ import BuildInfo from "../components/BuildInfo.astro";
 import ChangelogUI from "../components/ChangelogUI.astro";
 import Header from "../components/Header.astro";
 import UnsafeUI from "../components/UnsafeUI.astro";
+import Sidebar from "../components/Sidebar.astro";
 ---
 
 <!doctype html>
@@ -16,17 +17,27 @@ import UnsafeUI from "../components/UnsafeUI.astro";
         <meta name="generator" content={Astro.generator} />
         <title>The Broken Script</title>
         <ClientRouter />
+
+        <!-- Debugging -->
+        <script src="https://cdn.jsdelivr.net/npm/eruda" is:inline></script>
+        <script is:inline>eruda.init();</script>
     </head>
     <body>
         <UnsafeUI transition:persist />
 	    <ChangelogUI transition:persist />
 	    <Header transition:persist />
 
-        <slot />
-
-        <!-- Helps make sure the build info is at the bottom -->
-	    <div class="pb-24" transition:persist></div>
-	    <BuildInfo transition:persist />
+        <div class="w-full h-full flex flex-col items-start justify-start">
+            <div class="flex flex-row items-start justify-start w-full h-full p-4 space-x-4">
+                <Sidebar transition:persist />
+                
+                <div class="w-full h-full">
+                    <slot />
+                    <div class="w-full h-24"></div>
+                </div>
+            </div>
+            <BuildInfo transition:persist />
+        </div>
     </body>
 </html>
 

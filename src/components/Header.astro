@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import logo from "../assets/logo.png";
 ---
 
@@ -6,23 +7,7 @@ import logo from "../assets/logo.png";
     class="h-24 md:h-20 w-full p-4 flex flex-row items-center justify-between font-jbm"
 >
     <div class="flex flex-row items-center justify-start h-full">
-        <img src={logo.src} class="h-full object-cover" />
+        <Image src={logo} class="h-12 w-12 object-cover" alt="Mod Logo" loading="eager" />
         <p class="md:text-2xl ml-4">The Broken Script</p>
-    </div>
-
-    <div
-        class="flex flex-col md:flex-row md:items-center items-end md:justify-end justify-center md:space-x-4 md:space-y-0 space-y-2"
-    >
-        <a
-            href="/"
-            class="color-white bg-red-9 hover:bg-red-7 transition-all p-1 md:p-2 px-3 md:px-4"
-            >Downloads</a
-        >
-
-        <a
-            href="/archive"
-            class="color-white bg-red-9 hover:bg-red-7 transition-all p-1 md:p-2 px-3 md:px-4"
-            >Archive</a
-        >
     </div>
 </div>

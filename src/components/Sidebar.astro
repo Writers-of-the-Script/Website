@@ -1,0 +1,109 @@
+---
+import { Icon } from "astro-icon/components";
+import modrinth from "../assets/modrinth.svg";
+import neoforge from "../assets/neoforge.svg";
+import forge from "../assets/forge.svg";
+import { loaders, minecraft, tags } from "../lib/data";
+import { fixLoader } from "../lib/strings";
+
+const loaderLogos: Record<string, string> = {
+    neoforge: neoforge.src,
+    forge: forge.src,
+};
+---
+
+<div class="w-md bg-dark-7 font-jbm p-4">
+    <p class="text-lg b-b-1">Source</p>
+
+    <div class="py-4 space-y-2">
+        <div
+            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            id="source-modrinth"
+        >
+            <img src={modrinth.src} class="w-6 h-6 mr-2" alt="Modrinth Logo" />
+            Modrinth
+        </div>
+
+        <div
+            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            id="source-official"
+        >
+            <Icon
+                name="tabler:rosette-discount-check-filled"
+                size="24"
+                class="mr-2 color-orange"
+            />
+            Official Releases
+        </div>
+
+        <div
+            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            id="source-community"
+        >
+            <Icon name="tabler:users" size="24" class="mr-2" />
+            Community Versions
+        </div>
+    </div>
+
+    <p class="text-lg b-b-1">Loader</p>
+
+    <div class="py-4 space-y-2">
+        {
+            loaders.map((loader) => (
+                <div
+                    class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                    id={`loader-${loader}`}
+                >
+                    <img
+                        src={loaderLogos[loader]}
+                        class="w-6 h-6 mr-2"
+                        alt={`${fixLoader(loader)} Logo`}
+                    />
+                    {fixLoader(loader)}
+                </div>
+            ))
+        }
+    </div>
+
+    <p class="text-lg b-b-1">Minecraft</p>
+
+    <div class="py-4 space-y-2">
+        {
+            minecraft.map((version) => (
+                <div
+                    class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                    id={`version-${version}`}
+                >
+                    {version}
+                </div>
+            ))
+        }
+    </div>
+
+    {
+        tags.length > 0 && (
+            <>
+                <p class="text-lg b-b-1">Tags</p>
+
+                <div class="py-4 space-y-2">
+                    {tags.map((tag) => (
+                        <div
+                            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                            id={`tag-${tag}`}
+                        >
+                            {tag}
+                        </div>
+                    ))}
+                </div>
+            </>
+        )
+    }
+</div>
+
+<script src="../lib/sources.ts"></script>
+
+<style is:inline>
+    .selected {
+        background-color: rgb(75 75 75 / 1);
+    }
+</style>
