@@ -1,26 +1,16 @@
 ---
-import { ClientRouter } from "astro:transitions";
-import logo from "../assets/logo.png";
 import BuildInfo from "../components/BuildInfo.astro";
 import ChangelogUI from "../components/ChangelogUI.astro";
 import Header from "../components/Header.astro";
 import UnsafeUI from "../components/UnsafeUI.astro";
 import Sidebar from "../components/Sidebar.astro";
+import BaseHead from "../components/BaseHead.astro";
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width" />
-        <link rel="icon" type="image/png" href={logo.src} />
-        <meta name="generator" content={Astro.generator} />
-        <title>The Broken Script</title>
-        <ClientRouter />
-
-        <!-- Debugging -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/eruda" is:inline></script>
-        <script is:inline>eruda.init();</script> -->
+        <BaseHead />
     </head>
     <body>
         <UnsafeUI transition:persist />

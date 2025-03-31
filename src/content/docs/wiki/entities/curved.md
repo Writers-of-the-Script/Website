@@ -1,0 +1,49 @@
+---
+title: Curved
+---
+
+<ab>curvedspawn.ogg</ab> **Curved** is a player-like entity; formerly a
+player named [DyeXD412](Lore "wikilink"). Listening to Disc 13 on loop
+corrupted him and over time turned him into an entity.
+
+## Appearance
+
+A player-like entity with an oversaturated Steve skin missing his head,
+where it would be is a void. Decrepit in posture, Curved stands crooked
+and lethargic but walks like a player would otherwise.
+
+He appears to be violently glitching, his model constantly shaking and
+visually teleporting around.
+
+## Behaviour
+
+Curved has been reported to spawn underground in caves or mineshafts, he
+will stand there until he notices a player within range. Upon detection
+he will rapidly advance towards the player in spastic, twitchy,
+unnatural pathing movements as he decimates blocks in his way towards
+the player. He deals enough damage to one-hit a player even in a full
+set of netherite armor.
+
+However, he can be killed, after which he will drop multiple items,
+display a kill message in chat, and leave the game shortly after.
+
+He drops the following items on death, although the amounts of each may
+vary:
+
+- [Disc 16](../items)
+- Stone Sword
+- Stone Pickaxe
+- Diamonds
+- Iron Ingots
+- Rotten Flesh
+- String
+- Dirt
+- Oak Logs
+- Oak Planks
+- Oak Saplings
+- Cobblestone
+- Redstone Torches
+
+## Notes
+
+1. Building the Herobrine shrine plays his spawn sound (but doesn't spawn him).

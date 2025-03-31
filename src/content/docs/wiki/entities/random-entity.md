@@ -1,0 +1,23 @@
+---
+title: Random Entity
+---
+
+**Random Entity** is a player-like entity that can spawn randomly in all
+biomes and dimensions.
+
+## Appearance
+
+Humanoid, player-like entity with a purple and black "missing texture"
+texture.
+
+## Behaviour
+
+Random Entity will spawn and roam around aimlessly, completely passive
+and unresponsive to player attacks. However, other mobs can hurt it.
+
+It's capable of spawning a random entity after an uncertain amount of
+time.
+
+Random entity population.png|They spawn like endermen in the End...
+
+[Category:Mechanics](Category:Mechanics "wikilink")

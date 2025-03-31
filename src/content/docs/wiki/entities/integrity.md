@@ -1,0 +1,115 @@
+---
+title: Integrity
+---
+
+**Integrity** is an intelligent Void Entity and the main antagonist of
+[The Broken Script](The_Broken_Script "wikilink") and
+[spectrum_11](spectrum_11 "wikilink"). It's heavily implied that
+Integrity is ultimately responsible for everything that has occurred as
+he is the source of The Broken Script's corruption.
+
+Integrity is the most powerful of all currently-known Void Entities. He
+is capable of manipulating game mechanics, such as removing the players'
+ability to leave the game and even transforming his victims into
+entities.
+
+It is theorized that at some unknown point in time, as early as the
+Alpha version of Minecraft, Integrity entered the world and began
+waiting for players to join it.
+
+## Appearance
+
+Integrity is a pitch black, slender, wire-like entity standing at about
+9 blocks tall. He stands upright and bears a flipped, triangular head.
+
+## Behaviour
+
+Not much is known about this entity. Originally located in spectrum_11,
+however as of 1.9, it seems he's joined the others. Unless forced
+through chat commands or a command block, there's currently no known
+methodology to reach him.
+
+### spectrum_11
+
+#### Watching
+
+Integrity will appear on the ground and look at the player, waving at
+them while his body is split in half.
+
+A ringing bell will signal his appearance.
+
+Getting too close to him will cause one of four things to happen:
+
+1.  He vanishes and teleports the player in his place.
+2.  He vanishes and teleports the player in his place, randomly placing
+    around bedrock.
+3.  He kicks the player from the world with message "You still have some
+    time."
+4.  He switches to Chase behaviour.
+
+#### Chase
+
+Integrity will chase the player and try to kill them. He's capable of
+destroying blocks in his chasing state, and can bridge over the water
+with polished basalt towards whoever he is chasing.
+
+#### Endgame
+
+Integrity will play "You will become one of us" voice line and ban the
+player from the world with message "Connection terminated: No further
+information".
+
+### The Broken Script
+
+Currently, Integrity isn't properly implemented into the mod, its
+confirmed more of him will be arriving in future updates of The Broken
+Script.
+
+#### Unfinished Boss Fight
+
+Integrity was supposed to have a boss fight in the 1.9 update, however
+it was seemingly scrapped after most of the TBS community voted against
+it on a poll wendigodrip made on the first official Discord Server.
+Integrity's first phase was completed however and it can only be spawned
+in by commands.
+
+In phase 1, Integrity will emit static noises and eerie ambience will be
+emitted from his location. Integrity will slowly walk towards the player
+and has the ability to destroy blocks in his way. He seemingly doesn't
+lose agro on the player. He uses the following abilities at random:
+
+**Missiles:** Integrity will summon several black missiles from the sky.
+These explode on impact
+
+**Blindness:** Integrity will give the player the blindness status
+effect
+
+**Invisibility:** Integrity will turn invisible. In this state he moves
+alot faster, to the point where it almost seems like hes teleporting.
+When he uses this ability a corrupted voiceline is heard.
+
+## Notes
+
+1.  It is known that he is the "final boss", so to say. As Integrity is
+    seemingly the source of all the suffering in [The Broken
+    Script](The_Broken_Script "wikilink"). His immediate demise could
+    theoretically be the salvation of the [former
+    clan](Lore "wikilink")'s souls within [The Broken
+    Script](The_Broken_Script "wikilink").
+
+## Media
+
+<tabber>
+
+|-|Sounds=
+
+integritydefeated.ogg|Defeated Speech integrityendgamespeech.ogg|Endgame
+Speech integrityspeechandcounting1.ogg|Speech and Counting
+integrityphase3loop.ogg|Phase 3 loop moonglitch.ogg|Curious
+integritychaseloop.ogg|Chase (spectrum_11)
+youwillbecomeoneofus.ogg|Endgame (spectrum_11)
+
+</tabber>
+
+[Category:Entities](Category:Entities "wikilink")
+[Category:Entities](Category:Entities "wikilink")

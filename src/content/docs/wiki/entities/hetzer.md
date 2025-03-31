@@ -1,0 +1,35 @@
+---
+title: Hetzer
+---
+
+## Appearance
+
+A non-Euclidean entity, Hetzer's appearance seems to be reminiscent of
+an [Ophanim](https://en.wikipedia.org/wiki/Ophanim).
+
+Hetzer could be best described as a "spheroid" consisting of several
+rings encasing a small cube in the centre. It's texture seems to be
+white noise.
+
+## Behaviour
+
+Upon approaching Hetzer, within 16-17 blocks of the entity, there are
+two possible interactions that could occur:
+
+1.  Hetzer will disappear and false subwoofer lullaby will play for 50
+    seconds as time is set to day. Afterwards subwoofer lullaby will end
+    and time will be set to midnight. A minute afterwards Circuit will
+    spawn disguised as a creeper.
+2.  Hetzer will disappear and false subwoofer lullaby will play for 50
+    seconds as time is set to midnight. A minute afterwards Circuit will
+    spawn.
+
+## Notes
+
+1.  According to wendigodrip, Hetzer teleports in entities for
+    self-defence.
+2.  We have no indication of how exactly it occured, but Hetzer was
+    formerly _Blackout_. Disc 14 depicts the moments before
+    _Blackout_'s demise.
+
+[Category:Entities](Category:Entities "wikilink")

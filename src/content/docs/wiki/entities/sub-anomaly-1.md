@@ -1,0 +1,51 @@
+---
+title: Sub Anomaly 1
+---
+
+## Appearance
+
+**Sub Anomaly 1** appears to be a "cloud" of black, spastic particles
+that has no discernible body or point of origin.
+
+## Behavior
+
+A lot of entities inside of the Broken script, from 'entities' to
+anomalies to soul to the creatures of the void have an association with
+this appearance that Sub Anomaly 1 takes on. What it is, we cannot say
+for certain, as we do not know of it's origins or associations. But it
+is theorized that it is some kind of Semi-sentient void Corruption
+
+Seemingly, this cloud of corruption seems to wander mindlessly, with the
+intent of approaching a player. When a player is within the cloud it
+will inflict damage upon them, generally 1-2 hearts per tick of damage.
+
+Items dropped by the player can disappear if inside the cloud of
+corruption.
+
+Sub Anomaly 1 is capable of 'cobblestone bridging' across water, the
+width of the bridge seems to range around 6 blocks wide, it's as
+unsightly as you can imagine.
+
+## Notes
+
+1.  Like [Random Entity](Random_Entity "wikilink") Sub Anomaly 1 cannot
+    be damaged by players, however it can take damage from other
+    sources, such as an iron golem.
+2.  A fascinating discovery is that Sub Anomaly 1 seems capable of
+    killing other entities. A member of our community claims to have
+    witnessed two confirmed kills, that being of an instance of Circuit
+    and the other of r2.
+3.  Furthermore, Sub Anomaly 1 one of the very few entities capable of
+    fighting back against mobs, currently.
+4.  Deterrence strategy discovered by YouTuber,
+    [Auro](https://youtube.com/@auromancy?si=0Jk0CJkhXc97A8D7), is to
+    make a bubble column using kelp + soul sand or using magma blocks.
+    Sub Anomaly 1 isn't capable of replacing water-logged objects, which
+    seems to include bubble columns.
+5.  It's possible to lure Sub Anomaly 1 into a deleted chunk by building
+    a bridge for it to follow you on, you can then break the block
+    beneath it to make it drop to the void and disappear
+6.  It's hitbox radius is extremely large and can clip through walls,
+    anything behind a wall will be killed by Sub Anomaly 1. A
+    recommendation is not to save animals inside a box or a small house
+    because Sub Anomaly 1 will eventually kill them.
