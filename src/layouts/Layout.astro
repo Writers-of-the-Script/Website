@@ -19,8 +19,8 @@ import Sidebar from "../components/Sidebar.astro";
         <ClientRouter />
 
         <!-- Debugging -->
-        <script src="https://cdn.jsdelivr.net/npm/eruda" is:inline></script>
-        <script is:inline>eruda.init();</script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/eruda" is:inline></script>
+        <script is:inline>eruda.init();</script> -->
     </head>
     <body>
         <UnsafeUI transition:persist />
@@ -28,7 +28,7 @@ import Sidebar from "../components/Sidebar.astro";
 	    <Header transition:persist />
 
         <div class="w-full h-full flex flex-col items-start justify-start">
-            <div class="flex flex-row items-start justify-start w-full h-full p-4 space-x-4">
+            <div class="flex flex-col md:flex-row items-start justify-start w-full h-full p-4 space-y-4 md:space-y-0 md:space-x-4">
                 <Sidebar transition:persist />
                 
                 <div class="w-full h-full">
@@ -36,6 +36,7 @@ import Sidebar from "../components/Sidebar.astro";
                     <div class="w-full h-24"></div>
                 </div>
             </div>
+
             <BuildInfo transition:persist />
         </div>
     </body>

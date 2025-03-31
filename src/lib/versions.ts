@@ -15,6 +15,7 @@ export const version = (
     name: string,
     unsafe = false,
     tags: string[] = [],
+    changelog?: string,
     minecraft = "1.20.1",
     loader = "forge",
 ): VersionItem => ({
@@ -25,6 +26,7 @@ export const version = (
     minecraft,
     loader,
     tags,
+    changelog,
 });
 
 export const zeroPointX: VersionItem[] = [
