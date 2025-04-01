@@ -3,8 +3,8 @@ title: Integrity
 ---
 
 **Integrity** is an intelligent Void Entity and the main antagonist of
-[The Broken Script](The_Broken_Script "wikilink") and
-[spectrum_11](spectrum_11 "wikilink"). It's heavily implied that
+[The Broken Script](/wiki/tbs) and
+[spectrum_11](/wiki/spectrum-11). It's heavily implied that
 Integrity is ultimately responsible for everything that has occurred as
 he is the source of The Broken Script's corruption.
 
@@ -91,11 +91,7 @@ When he uses this ability a corrupted voiceline is heard.
 ## Notes
 
 1.  It is known that he is the "final boss", so to say. As Integrity is
-    seemingly the source of all the suffering in [The Broken
-    Script](The_Broken_Script "wikilink"). His immediate demise could
-    theoretically be the salvation of the [former
-    clan](Lore "wikilink")'s souls within [The Broken
-    Script](The_Broken_Script "wikilink").
+    seemingly the source of all the suffering in [The Broken Script](/wiki/tbs). His immediate demise could theoretically be the salvation of the [former clan](/wiki/lore)'s souls within [The Broken Script](/wiki/tbs).
 
 ## Media
 
@@ -110,6 +106,3 @@ integritychaseloop.ogg|Chase (spectrum_11)
 youwillbecomeoneofus.ogg|Endgame (spectrum_11)
 
 </tabber>
-
-[Category:Entities](Category:Entities "wikilink")
-[Category:Entities](Category:Entities "wikilink")

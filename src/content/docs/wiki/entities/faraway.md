@@ -7,7 +7,7 @@ Little is known about **Faraway** as they rarely appear.
 What is known about Faraway is that it is the only entity that doesn't
 try to kick, ban, crash, or otherwise harm players. Even when it is
 present near a player they don't prevent players from
-[sleeping](Err.sleep "wikilink").
+[sleeping](/wiki/mechanics/errsleep).
 
 ## Appearance
 
@@ -35,5 +35,3 @@ will disappear all the same if any player approaches them.
 
 Occasionally Faraway will slowly move towards the player if not directly
 looked at. If Faraway moves within the radius, it will vanish as usual.
-
-[Category:Entities](Category:Entities "wikilink")

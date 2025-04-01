@@ -29,5 +29,3 @@ chasing a player
 
 1.  While chasing, Nothingiswatching is capable of breaking blocks and
     harming entities in its path.
-
-[Category:Entities](Category:Entities "wikilink")

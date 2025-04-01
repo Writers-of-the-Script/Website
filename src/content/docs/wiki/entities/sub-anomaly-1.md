@@ -28,7 +28,7 @@ unsightly as you can imagine.
 
 ## Notes
 
-1.  Like [Random Entity](Random_Entity "wikilink") Sub Anomaly 1 cannot
+1.  Like [Random Entity](/wiki/entities/random-entity) Sub Anomaly 1 cannot
     be damaged by players, however it can take damage from other
     sources, such as an iron golem.
 2.  A fascinating discovery is that Sub Anomaly 1 seems capable of

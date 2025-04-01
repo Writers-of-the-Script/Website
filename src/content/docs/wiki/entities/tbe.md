@@ -4,15 +4,15 @@ title: The Broken End
 
 **The Broken End** is a seemingly intelligent Void Entity, it could be
 easily stated that he harbours only malicious intent towards players. It
-is assumed that he works for [Integrity](Integrity "wikilink"), acting
+is assumed that he works for [Integrity](/wiki/entities/integrity), acting
 as an executioner of Integrity's plans, though this is speculation based
 off what evidence has been gathered from the Broken Script.
 
 The Broken End is a very powerful and very dangerous entity, allegedly
 capable of doing irreversible damage to players by killing them and
 taking their souls. He has the ability to prevent players from sleeping
-via an [err.endisnear](Err.sleep "wikilink") error, and is capable of
-causing a [minecraft.chatengine](minecraft.chatengine "wikilink")
+via an [err.endisnear](/wiki/entities/errsleep) error, and is capable of
+causing a [minecraft.chatengine](/wiki/mechanics/minecraftchatengine)
 failure.
 
 It is assumed that the Broken End first appeared on 01.11.2018, his
@@ -28,8 +28,8 @@ the side with a long and crooked neck. In 1.8 The Broken End stood at 12
 blocks tall. However in the 1.9 version of the Broken Script, his height
 now stands at a hulking 24 blocks tall. In his calm state, The Broken
 End bears a single white eye, and when enraged he has multiple red eyes
-that resemble those of [Integrity](Integrity "wikilink") and the [The
-Moon](The_Moon "wikilink")'s 8th phase.
+that resemble those of [Integrity](/wiki/entities/integrity) and the [The
+Moon](/wiki/mechanics/moon)'s 8th phase.
 
 ## Behaviour
 
@@ -50,7 +50,7 @@ set to midnight and one of two interactions to occur:
 
 ### Void Holes
 
-<!-- ![TBE_destruction.gif](../../assets/wiki/TBE_destruction.gif "TBE_destruction.gif") -->
+![TBE_destruction.gif](../../../../assets/wiki/TBE%20destruction.gif)
 
 Rarely, upon being stared at by the player, The Broken End will
 disappear and spawn a "Physical Stacktrace" block in its place that will
@@ -80,5 +80,3 @@ Thebrokenendarrives.mp3|Spawn thebrokenendishere.ogg|Chase
 thebrokenendspeech.ogg|Endgame Speech
 
 </tabber>
-
-[Category:Entities](Category:Entities "wikilink")

@@ -16,6 +16,7 @@
         "astro-icon": "^1.1.5",
         "date-fns": "^4.1.0",
         "marked": "^15.0.7",
+        "starlight-ion-theme": "^2.2.3",
         "typerinth": "^1.1.0"
     },
     "devDependencies": {

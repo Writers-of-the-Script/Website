@@ -20,7 +20,7 @@ On the wall is a sign saying "Wrong way =)", with redstone torches on either sid
 
 Notable is the jukebox against the wall and the chest in front of it. The chest is filled with name.revuxor, with a Music Disc chirp in the center.
 
-All of this seems to be left by [Revuxor](../entities/revuxor) himself. The exact purpose is unknown, but if he only wanted to mock the player, then leaving both the jukebox and the disc with it was not necessary, which inclines towards the option with a probable attempt at emotional support for the player.
+All of this seems to be left by [Revuxor](/wiki/entities/revuxor) himself. The exact purpose is unknown, but if he only wanted to mock the player, then leaving both the jukebox and the disc with it was not necessary, which inclines towards the option with a probable attempt at emotional support for the player.
 
 ## Exit
 

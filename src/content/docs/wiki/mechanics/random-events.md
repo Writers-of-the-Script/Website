@@ -2,7 +2,7 @@
 title: Random Events
 ---
 
-In [The Broken Script](The_Broken_Script "wikilink"), Random events may
+In [The Broken Script](/wiki/tbs), Random events may
 occur to the player or the world around the player. These events are
 anonymous in nature with no real rhyme or reason to them, some of them
 are rather innocuous, maybe some even helpful, meanwhile others maybe
@@ -15,26 +15,27 @@ documented thus far.
 
 ### Music
 
-<ab>song.ogg</ab> song.ogg starts playing, the player is given blindness
+<!-- TODO: Embed audio -->
+`song.ogg` starts playing, the player is given blindness
 II, slowness II, and slow falling II.
 
-The origin of the song is from [CHRISTMAS EVE PARTY - GEMINI HOME
-ENTERTAINMENT](https://www.youtube.com/watch?v=gPIN2Q-PBQs&list=TLPQMjMwMzIwMjU-HBskoneyiQ&index=2)
+The origin of the song is from [CHRISTMAS EVE PARTY - GEMINI HOME ENTERTAINMENT](https://www.youtube.com/watch?v=gPIN2Q-PBQs&list=TLPQMjMwMzIwMjU-HBskoneyiQ&index=2)
 
 ### Null Sad
 
-<ab>Normalambienceevent.ogg</ab> normalambienceevent.ogg starts playing,
+<!-- TODO: Embed audio -->
+`normalambienceevent.ogg` starts playing,
 subtitled "null sad". This track is also used for the
-[Null_Torture](Null_Torture "wikilink") Dimension as well as the
-[Clan_Void](Clan_Void "wikilink")
+[Null_Torture](/wiki/dimensions/null-torture) Dimension as well as the
+[Clan_Void](/wiki/dimensions/clan-void).
 
 ### Null Jumpscare
 
 null appears floating in front of the player accompanied by black
-particles and the <ab>randomassjumpscare.ogg</ab> randomassjumpscare.ogg
-track plays.
+particles and the `randomassjumpscare.ogg` track plays.
+<!-- TODO: Embed audio -->
 
-<!-- ![Null_float.png](../../assets/wiki/Null_float.png "Null_float.png") -->
+![Null_float.png](../../../../assets/wiki/Null%20float.png)
 
 ### Phantom Music Disc 13
 
@@ -58,15 +59,11 @@ Walking sounds play behind the player.
 
 Messages display in chat:
 
-OpenGL Error: 1282 (Invalid operation)
-
-OpenGL Error: 1282 (Invalid operation)
-
-OpenGL Error: 1282 (Invalid operation)
-
-OpenGL Error: 1282 (Invalid operation)
-
-OpenGL Error: 0 (Here I am.)
+> `OpenGL Error: 1282 (Invalid operation)` \
+> `OpenGL Error: 1282 (Invalid operation)` \
+> `OpenGL Error: 1282 (Invalid operation)` \
+> `OpenGL Error: 1282 (Invalid operation)` \
+> `OpenGL Error: 0 (Here I am.)`
 
 A creepy sound plays.
 
@@ -74,9 +71,8 @@ A creepy sound plays.
 
 Frame UI appears with the following text:
 
-Good luck.
-
-\=)
+> `Good luck.` \
+> `\=)`
 
 Time of the day is set to midnight.
 
@@ -94,7 +90,7 @@ Frame UI appears with 5x9 grid of text each saying "null".
 
 Frame UI appears with the following text:
 
-help
+> `help`
 
 ### null line
 
@@ -103,8 +99,8 @@ middle of the screen.
 
 ### BSoD
 
-Distorted BSoD appears and <ab>Fakebsodauido.ogg</ab> fakebsodauido.ogg
-starts playing.
+<!-- TODO: Embed audio -->
+Distorted BSoD appears and `fakebsodauido.ogg` starts playing.
 
 ### Lightning
 
@@ -146,43 +142,43 @@ The player is flung up into the air.
 
 Message displays in chat:
 
-Null joined the game
+> `Null joined the game`
 
 ### Null leaves
 
 Message displays in chat:
 
-Null left the game
+> `Null left the game`
 
 ### It was your fault.
 
 Message displays in chat:
 
-It was your fault.
+> `It was your fault.`
 
 ### null
 
 Message displays in chat:
 
-null
+> `null`
 
 ### null.err
 
 Message displays in chat:
 
-null.err
+> `null.err`
 
 ### 000
 
 Message displays in chat:
 
-000
+> `000`
 
 ### I am right behind you.
 
 Message displays in chat:
 
-I am right behind you.
+> `I am right behind you.`
 
 This message can also be displayed in dark red.
 
@@ -190,31 +186,31 @@ This message can also be displayed in dark red.
 
 Message displays in chat:
 
-I see you.
+> `I see you.`
 
 ### Can you see me?
 
 Message displays in chat:
 
-Can you see me?
+> `Can you see me?`
 
 ### Help us.
 
 Message displays in chat:
 
-Help us.
+> `Help us.`
 
 ### Joined the game
 
 Yellow message displays in chat:
 
-joined the game
+> `joined the game`
 
 ### Obfuscated message
 
 Message displays in chat:
 
-AAAAAAAAA (in obfuscated text)
+> `AAAAAAAAA` (in obfuscated text)
 
 ### Look around
 
@@ -222,10 +218,9 @@ The player's camera is forced to look in the X, Y, Z axes.
 
 ### **Leave Potion Effect**
 
-Player is given a potion effect named ''Why can't you just leave? II''.
+Player is given a potion effect named `Why can't you just leave?` which has gameplay effects and lasts about 60 seconds.
 
-Which seems to have no actual effect and lasts about 60 seconds.
-<!-- ![WhyCantYouJustLeaveEffect.png](../../assets/wiki/WhyCantYouJustLeaveEffect.png "WhyCantYouJustLeaveEffect.png") -->
+![WhyCantYouJustLeaveEffect.png](../../../../assets/wiki/WhyCantYouJustLeaveEffect.png)
 
 ### Lava
 
@@ -244,7 +239,7 @@ was. the blocks also lag behind once being broken, taking about 5
 seconds to actually drop, in that space of time you can mine it over and
 over again.
 
-<!-- ![2025-03-22_19.13.44.png](../../assets/wiki/2025-03-22_19.13.44.png "2025-03-22_19.13.44.png") -->
+![2025-03-22_19.13.44.png](../../../../assets/wiki/2025-03-22%2019.13.44.png)
 
 ### Random block Deletion
 
@@ -254,12 +249,12 @@ without any warning, preceding sound or visual cue.
 
 ### Hello block Sabotage
 
-Similar to the Lava block source, the [Hello](Items#Hello "wikilink")
+Similar to the Lava block source, the [Hello](/wiki/items#Hello)
 block will be placed at the player's base to sabotage their home.
 
 ### 431434 block Sabotage
 
-Similar to the Hello block, the [431434](Items#431434 "wikilink") block
+Similar to the Hello block, the [431434](/wiki/items#431434) block
 will be placed in the player's base to sabotage their home.
 
 ### Redstone torch
@@ -287,7 +282,7 @@ command for it does not work.
 
 A heartbeat sound will play. The same sound plays when the netherrack
 cross with a sign structure is placed when you break the
-[Hello](Items#Hello "wikilink") block.
+[Hello](/wiki/items#Hello) block.
 
 ### Hunger
 
@@ -310,15 +305,13 @@ The weather will change to rain.
 
 Message displays in a java pop up:
 
-Here I am.
+> `Here I am.`
 
 ### Curious Integrity
 
-A sound labeled as Integrity.curious will play and the player's render
-distance will be set to 2.
+A sound labeled as `integrity.curious` will play and the player's render
+distance will be set to 2 chunks.
 
 ### Integrity joining
 
-A sound labeled as Integrity.join will play.
-
-[Category:Mechanics](Category:Mechanics "wikilink")
+A sound labeled as `integrity.join` will play.

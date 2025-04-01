@@ -2,9 +2,10 @@
 title: Curved
 ---
 
-<ab>curvedspawn.ogg</ab> **Curved** is a player-like entity; formerly a
-player named [DyeXD412](Lore "wikilink"). Listening to Disc 13 on loop
-corrupted him and over time turned him into an entity.
+<!-- TODO: Embed audio -->
+`curvedspawn.ogg`
+
+**Curved** is a player-like entity; formerly a player named [DyeXD412](/wiki/lore). Listening to Disc 13 on loop corrupted him and over time turned him into an entity.
 
 ## Appearance
 
@@ -30,7 +31,7 @@ display a kill message in chat, and leave the game shortly after.
 He drops the following items on death, although the amounts of each may
 vary:
 
-- [Disc 16](../items)
+- [Disc 16](/wiki/items)
 - Stone Sword
 - Stone Pickaxe
 - Diamonds

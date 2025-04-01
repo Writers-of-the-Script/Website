@@ -6,7 +6,7 @@ title: spectrum_11
 
 It is suspected to take place somewhere in Alpha Minecraft due to neon green grass and absence of several mechanics such as hunger and sprinting.
 
-Opening this mod causes all text within the game to become broken and glitched. Worlds will slowly fall apart. Eventually, the single entity will spawn, being [Integrity](./entities/integrity).
+Opening this mod causes all text within the game to become broken and glitched. Worlds will slowly fall apart. Eventually, the single entity will spawn, being [Integrity](/wiki/entities/integrity).
 
 Notes:
 

@@ -42,4 +42,4 @@ This room is filled with white exit blocks that take you out of the Clan Void di
 
 ## Entities
 
-The only entity known to spawn in Clan Void is [Circuit](../entities/circuit) disguised as a villager. It may appear randomly near the player and begin following them.
+The only entity known to spawn in Clan Void is [Circuit](/wiki/entities/circuit) disguised as a villager. It may appear randomly near the player and begin following them.

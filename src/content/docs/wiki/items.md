@@ -2,7 +2,7 @@
 title: Items
 ---
 
-[The Broken Script](./tbs) adds a few items to the game. A few of them are rather innocuous, but the sourced location of said items can infer meaning to them. This page lists relevant items that require documentation.
+[The Broken Script](/wiki/tbs) adds a few items to the game. A few of them are rather innocuous, but the sourced location of said items can infer meaning to them. This page lists relevant items that require documentation.
 
 # List of Items
 
@@ -16,17 +16,17 @@ An item that is just a flat plane of the "missing texture" texture.
 
 ## name.revuxor
 
-name.revuxor is an item with a texture depicting an extremely pixelated, grayscale image of [Revuxor](./entities/revuxor)'s gore after being killed by [Circuit](./entities/circuit) in real life.
+name.revuxor is an item with a texture depicting an extremely pixelated, grayscale image of [Revuxor](/wiki/entities/revuxor)'s gore after being killed by [Circuit](/wiki/entities/circuit) in real life.
 
 We do not know how or why an image of what was done to Revuxor seems to exist in the game now, and we do not know if it is just an image or if it is actually parts of his decimated body brought into the code.
 
-It can be found in chests in places where Revuxor was present and left something behind, such as the [Gore Structure](./structures#Gore_Structure) or [Dead End](./dimensions/null-torture#Dead_End).
+It can be found in chests in places where Revuxor was present and left something behind, such as the [Gore Structure](/wiki/structures#Gore_Structure) or [Dead End](/wiki/dimensions/null-torture#Dead_End).
 
 ## Record 14
 
-Record 14 is a music disc with a texture of Music Disc 13. It can be found in a chest inside the OVERLORD's room in the [Cave Base](./structures/cave-base).
+Record 14 is a music disc with a texture of Music Disc 13. It can be found in a chest inside the OVERLORD's room in the [Cave Base](/wiki/structures/cave-base).
 
-The disc depicts a player named [__Blackout__](./lore#Members_2), who was the leader of [Blackout's Clan](./lore), and how he was ambushed and killed by [Circuit](./entities/circuit).
+The disc depicts a player named [__Blackout__](/wiki/lore#Members_2), who was the leader of [Blackout's Clan](/wiki/lore), and how he was ambushed and killed by [Circuit](/wiki/entities/circuit).
 
 ## Record 15
 
@@ -36,11 +36,11 @@ Record 15 is a music disc with a texture of Music Disc cat. It is crucial to the
 
 What you hear in the beginning of the disc's audio is a player initially collecting wood and breaking a few leaves as he does so. Around the mid-point of the audio you will begin to hear the rapid placement of blocks. It's assumed that the player here is putting down torches in rapid succession. Afterwards the player will return to logging before walking off a small ledge and injuring themselves seemingly to collect wood that had fallen down. As they continue gathering items on the ground, a drone sound can be heard. Apparently unaware of it, they wander around for a bit more before something lets out a loud, inhuman scream and the disc gets cut short in the middle of it.
 
-The disc depicts a player named [xXram2dieXx](./entities/xXram2dieXx), who was the leader of [xXram2dieXx's Clan](./lore), and how he was ambushed and killed by [The Broken End](./entities/tbe).
+The disc depicts a player named [xXram2dieXx](/wiki/entities/xXram2dieXx), who was the leader of [xXram2dieXx's Clan](/wiki/lore), and how he was ambushed and killed by [The Broken End](/wiki/entities/tbe).
 
 ## Record 16
 
-Record 16 is a music disc with a texture of Music Disc 11. It is dropped by [Curved](./entities/curved).
+Record 16 is a music disc with a texture of Music Disc 11. It is dropped by [Curved](/wiki/entities/curved).
 
 The audio is a very crude and robotic voice repeating a string of Hex Code. Transcribed and Translated as follows:
 
@@ -58,7 +58,7 @@ The audio is a very crude and robotic voice repeating a string of Hex Code. Tran
 
 431434 is an indestructible, non-solid block of pitch black color. It is replaceable and can be washed away, dropping itself.
 
-If the player enters it, they will be teleported to either [Clan Void](./dimensions/clan-void) or [Null Torture](./dimensions/null-torture). This behavior does not apply to mobs or items.
+If the player enters it, they will be teleported to either [Clan Void](/wiki/dimensions/clan-void) or [Null Torture](/wiki/dimensions/null-torture). This behavior does not apply to mobs or items.
 
 ## Console
 
@@ -91,11 +91,11 @@ If the player enters it, they will be teleported to the Overworld. This behavior
 
 ## Hello
 
-Hello is a transparent block that can be found in one of xXram2dieXx's chests in the [Clan Build](./structures/clan-build).
+Hello is a transparent block that can be found in one of xXram2dieXx's chests in the [Clan Build](/wiki/structures/clan-build).
 
 ![HelloBlock.png](../../../assets/wiki/HelloBlock.png)
 
-It can be placed by either the player or it can randomly spawn as a [random event](./mechanics/random-events).
+It can be placed by either the player or it can randomly spawn as a [random event](/wiki/mechanics/random-events).
 
 Upon breaking Hello, it will spawn a 5x3 cross made of netherrack with a sign on the 4th height block emitting a fast heartbeat sound for few seconds. Its destruction is a known condition for [xXram2dieXx](./entities/xXram2dieXx) to spawn.
 

@@ -13,10 +13,9 @@ full cycle takes 7 in game days, but upon surviving the 7th night, the
 8th day will return to the start of the cycle and it will keep repeating
 until the counter is reset.
 
-In the 1.8 version of the mod, [The Broken
-End](The_Broken_End "wikilink") was a common spawn during the 8th phase.
-However, as of 1.9, it is unconfirmed whether this behaviour is the
-same.
+In the 1.8 version of the mod, [The Broken End](/wiki/entities/tbe) was a
+common spawn during the 8th phase. However, as of 1.9, it is unconfirmed
+whether this behaviour is the same.
 
 ## Moon phases
 
@@ -55,7 +54,7 @@ sky.
 
 While players can still sleep as normal, a slight increase in random
 events, structure spawns, and entity spawns has been observed. Some
-players have reported seeing [Faraway](Faraway "wikilink") more
+players have reported seeing [Faraway](/wiki/entities/faraway) more
 frequently- starting at this phase and continuing for the rest of the
 cycle.
 
@@ -84,21 +83,21 @@ infested.
 
 Players will no longer be able to sleep, with any attempts resulting in
 an err.themoon popup. err.soul is also common during this phase, as
-[r2](r2 "wikilink") has been observed to spawn frequently alongside [sub
-Anomaly 1](sub_Anomaly_1 "wikilink") and [Faraway](Faraway "wikilink").
+[r2](/wiki/entities/r2) has been observed to spawn frequently alongside
+[Sub Anomaly 1](/wiki/entities/sub-anomaly-1) and [Faraway](/wiki/entities/faraway).
 
 ### Phase 8- Day 7
 
 The tendrils seem to have agglomerated into one large mass with 4
 distinct eyes, bearing a striking resemblance to the eyes of
-[Integrity](Integrity "wikilink") and [The Broken
-End](The_Broken_End "wikilink") in their enraged states.
+[Integrity](/wiki/entities/integrity) and [The Broken End](/wiki/entities/tbe)
+in their enraged states.
 
 Players will no longer be able to sleep, with any attempts resulting in
 an err.themoon popup. err.soul is also common during this phase, as
-[r2](r2 "wikilink") has been observed to spawn frequently alongside [sub
-Anomaly 1](sub_Anomaly_1 "wikilink") and [Faraway](Faraway "wikilink").
-Rarer entities, such as [Circuit](Circuit "wikilink")'s deceiver form,
+[r2](/wiki/entities/r2) has been observed to spawn frequently alongside
+[Sub Anomaly 1](/wiki/entities/sub-anomaly-1) and [Faraway](/wiki/entities/faraway).
+Rarer entities, such as [Circuit](/wiki/entities/circuit)'s deceiver form,
 have also been observed to spawn more consistently during this phase.
 
 ### Gallery
@@ -117,5 +116,3 @@ have also been observed to spawn more consistently during this phase.
 set of moon phases, seemingly unused.
 [File:old_moon_phases.png|The](File:old_moon_phases.png%7CThe) old
 moon phase textures from 1.8.
-
-[Category:Mechanics](Category:Mechanics "wikilink")

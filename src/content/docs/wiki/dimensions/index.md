@@ -8,7 +8,7 @@ title: Dimensions
 
 ## Clan Void
 
-[Clan Void](./clan-void) consists of 2 layers separated by 1 cobblestone block, the top layer is an endless plane of cobblestone blocks, the bottom layer consists of endless rooms, there are 9 types of rooms, a Storage Room with 16 double chests, a Disc Room with 4 double chests filled with disc 13, and 4 jukeboxes, a Hub Room with doors and signs in it, an exit room consisting of an outer layer of the "exit" blocks, a Furnace Room with 16 furnaces, and 4 crafting tables, a Crafting Room with a structure made of crating tables in it, a Stone Room with a structure made of multiple types of stone, and lastly a empty room with nothing to note of.
+[Clan Void](/wiki/dimensions/clan-void) consists of 2 layers separated by 1 cobblestone block, the top layer is an endless plane of cobblestone blocks, the bottom layer consists of endless rooms, there are 9 types of rooms, a Storage Room with 16 double chests, a Disc Room with 4 double chests filled with disc 13, and 4 jukeboxes, a Hub Room with doors and signs in it, an exit room consisting of an outer layer of the "exit" blocks, a Furnace Room with 16 furnaces, and 4 crafting tables, a Crafting Room with a structure made of crating tables in it, a Stone Room with a structure made of multiple types of stone, and lastly a empty room with nothing to note of.
 
 <File:An> Exit.png|An Exit <File:Empty> Room.png|Empty Room <File:Stone>
 Room.png|Stone Structure <File:Crafting> Room.png|Crafting Room
@@ -17,12 +17,12 @@ Room.png|Stone Structure <File:Crafting> Room.png|Crafting Room
 
 There is an entity resembling Null that can spawn, it will attempt to power off your computer (even on the community made "even safer version"), and spam chat if you get too close to it.
 
-The [Clan Void](./clan-void) dimension also contains a replica of your world made with dirt and smooth cobblestone on it's underground layer.
+The [Clan Void](/wiki/dimensions/clan-void) dimension also contains a replica of your world made with dirt and smooth cobblestone on it's underground layer.
 
 [File:ClanVoidUndergroundDirtLayer.png|A](File:ClanVoidUndergroundDirtLayer.png%7CA)
-view of the Dirt Layer of [Clan Void](Clan_Void "wikilink").
+view of the Dirt Layer of [Clan Void](/wiki/dimensions/clan-void).
 [File:ClanVoidWORLD2DirtLayerReplica.png|A](File:ClanVoidWORLD2DirtLayerReplica.png%7CA)
-cave spot found at -583, 68, 32 in [WORLD2](WORLD2 "wikilink").
+cave spot found at -583, 68, 32 in [WORLD2](/wiki/lore/world2).
 [File:ClanVoidUndergroundDirtLayerReplica.png|Same](File:ClanVoidUndergroundDirtLayerReplica.png%7CSame)
 cave spot getting replicated in the Dirt Layer.
 
@@ -32,7 +32,7 @@ cave spot getting replicated in the Dirt Layer.
 
 ## Null Torture
 
-[Null Torture](./null-torture) is an infinitely extending 9x7 bedrock tunnel. On both sides of the tunnel are lava channels 2 blocks wide and 1 block deep.
+[Null Torture](/wiki/dimensions/null-torture) is an infinitely extending 9x7 bedrock tunnel. On both sides of the tunnel are lava channels 2 blocks wide and 1 block deep.
 
 While traveling through the dimension, it is possible to come across signs left on the floor by an unknown person, describing their stay there and thoughts.
 
@@ -50,7 +50,7 @@ outside of the Tunnels
 
 ## Day A
 
-[Day A](./day-a) resembles a superflat world, with growing grass and oak trees. It is possible to find floating islands not high from the surface, which are made of chiseled stone bricks and dirt. Under the first layer of grass there is immediately bedrock, separating the two layers.
+[Day A](/wiki/dimensions/day-a) resembles a superflat world, with growing grass and oak trees. It is possible to find floating islands not high from the surface, which are made of chiseled stone bricks and dirt. Under the first layer of grass there is immediately bedrock, separating the two layers.
 
 The lower layer is a full-fledged terrain, consisting of dirt, chiseled stone bricks instead of stone, and quartz blocks seemingly instead of water.
 
@@ -58,7 +58,7 @@ The lower layer is a full-fledged terrain, consisting of dirt, chiseled stone br
 
 ## Day B
 
-[Day B](./day-b) is a procedurally generating set of approximately 4 rooms made out of protected void blocks, doors and lights. As with other dimensions, there is an all-dirt terrain below the protected void- although protected void cannot be broken through normal means.
+[Day B](/wiki/dimensions/day-b) is a procedurally generating set of approximately 4 rooms made out of protected void blocks, doors and lights. As with other dimensions, there is an all-dirt terrain below the protected void- although protected void cannot be broken through normal means.
 
 The consoles present in day b will bring up a menu when clicked, allowing the player to enter codes for responses. So far, the discovered responses are as follows:
 
@@ -70,7 +70,7 @@ The consoles present in day b will bring up a menu when clicked, allowing the pl
 
 Console interactions
 
-**Currently, it is unknown how to access the [Day B](./day-b) dimension without the use of commands.**
+**Currently, it is unknown how to access the [Day B](/wiki/dimensions/day-b) dimension without the use of commands.**
 
 [File:day_b_pillars.png|A](File:day_b_pillars.png%7CA) console
 surrounded by pillars. [File:dayb_1.png|A](File:dayb_1.png%7CA) large

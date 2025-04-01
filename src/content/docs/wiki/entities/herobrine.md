@@ -21,5 +21,3 @@ anything.
 ## Gallery
 
 HerobrineWiki.png|Herobrine Watching
-
-[Category:Entities](Category:Entities "wikilink")

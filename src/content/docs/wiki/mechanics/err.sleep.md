@@ -10,13 +10,8 @@ in bed.
 
 Types of err.sleep:
 
-  - err.null - Indicates [Null](Null "wikilink")'s presence.
-  - err.soul - Indicates [r2](r2 "wikilink")’s presence.
-  - err.texture - Indicates [notexture](notexture "wikilink")'s
-    presence.
-  - err.endisnear - Indicates [The Broken
-    End](The_Broken_End "wikilink")'s presence.
-  - err.themoon - Occurs during 7th and 8th stages of [The
-    Moon](The_Moon "wikilink").
-
-[Category:Mechanics](Category:Mechanics "wikilink")
+  - err.null - Indicates [Null](/wiki/entities/null)'s presence.
+  - err.soul - Indicates [r2](/wiki/entities/r2)’s presence.
+  - err.texture - Indicates [notexture](/wiki/entities/notexture)'s presence.
+  - err.endisnear - Indicates [The Broken End](/wiki/entities/tbe)'s presence.
+  - err.themoon - Occurs during 7th and 8th stages of [The Moon](/wiki/mechanics/moon).

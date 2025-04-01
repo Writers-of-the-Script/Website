@@ -2,7 +2,7 @@
 title: Entities
 ---
 
-**Entities** within [The Broken Script](../tbs) range from player-like to non-euclidean horrors of the void made of geometry or cables/wires. Many of them are hostile, some are conditionally hostile dependant on player reaction to their presence (ie. looking at them, attacking them, drawing too close to them, etc.). Abilities and behaviour can differ between entities, though the most severe conclusion to an interaction with an entity from The Broken Script is the banning of the player from their own world.
+**Entities** within [The Broken Script](/wiki/tbs) range from player-like to non-euclidean horrors of the void made of geometry or cables/wires. Many of them are hostile, some are conditionally hostile dependant on player reaction to their presence (ie. looking at them, attacking them, drawing too close to them, etc.). Abilities and behaviour can differ between entities, though the most severe conclusion to an interaction with an entity from The Broken Script is the banning of the player from their own world.
 
 Most entities spawn naturally in the overworld depending on a few variables and conditions. Some, present within the mod's files, are not included into a world's natural spawnrate and must be summoned either through a chat command or a command block.
 
@@ -46,7 +46,7 @@ are not outwardly hostile, but relatively benign in their presence.
 
 ## Void Creatures
 
-[The Broken Script](../tbs) is antagonized by a trio of **Void Creatures**, as the name implies, these entities originate from the Void. They are considered the highest level threat in The Broken Script as encounters with them often end in the player's demise one way or another.
+[The Broken Script](/wiki/tbs) is antagonized by a trio of **Void Creatures**, as the name implies, these entities originate from the Void. They are considered the highest level threat in The Broken Script as encounters with them often end in the player's demise one way or another.
 
 Through unknown means and under unknown conditions, Void Creatures are seemingly able to crawl out of the game and into the real world, at least through the monitors of computers under the influence of the Void.
 

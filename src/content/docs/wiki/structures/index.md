@@ -27,17 +27,17 @@ them in a [youtube video](https://youtu.be/Y16vdetFVH8).
 
 ### Clan Build
 
-[Clan Build](Clan_Build "wikilink") is a large, 5 story build (6 if you
+[Clan Build](/wiki/structures/clan-build) is a large, 5 story build (6 if you
 include the roof) made of cobblestone and smooth stone. Signs found on
 each floor indicate that this base used to belong to the [0nullvoid0's
-Clan](Lore#0nullvoid0's_Clan "wikilink") before the void entities began
+Clan](/wiki/lore#0nullvoid0's_Clan) before the void entities began
 to wreak destruction.
 
   - The base contains chests filled entirely with missing texture items
     called name.null. They disappear from the inventory upon being used
     by the player and otherwise serve little purpose.
   - Each floor has signs dated between 2018 and 2019, hinting at the
-    [Lore](Lore "wikilink") behind the base, and the Clan that lived in
+    [Lore](/wiki/lore) behind the base, and the Clan that lived in
     it.
   - The 5th floor of the base contains void blocks that will teleport
     the player to the clan void when touched. They cannot be broken
@@ -46,12 +46,12 @@ to wreak destruction.
   - The roof of the base has more signs and a circle of Redstone torches
     that serve an unknown purpose.
 
-<!-- ![Clan_build_1.png](../../assets/wiki/Clan_build_1.png "Clan_build_1.png") -->
+![Clan_build_1.png](../../../../assets/wiki/Clan%20build%201.png)
 
 ### Cave Base
 
-[Cave Base](Cave_Base "wikilink") is another clan base belonging to
-[Blackout's Clan](Lore#Blackout's_Clan "wikilink") that can spawn in
+Cave Base is another clan base belonging to
+[Blackout's Clan](/wiki/lore) that can spawn in
 loaded chunks underground. Due to the nature of its spawning and the way
 The Broken Script affects cave generation, a minimap mod or large scale
 excavation is often required to find it naturally.
@@ -63,7 +63,7 @@ excavation is often required to find it naturally.
     another in the adjacent chest. All other chests in the base are
     filled entirely with name.null.
 
-<!-- ![Cave_Base.png](../../assets/wiki/Cave_Base.png "Cave_Base.png") -->
+![Cave_Base.png](../../../../assets/wiki/Cave%20Base.png)
 
 ### Wooden Starter Base
 
@@ -73,7 +73,7 @@ as iron, wooden tools and cooked food- though exact item numbers can
 vary. The furnaces contain a small amount of coal, and occasionally some
 cooked food.
 
-<!-- ![Wood_base_interior.png](../../assets/wiki/Wood_base_interior.png "Wood_base_interior.png") -->
+![Wood_base_interior.png](../../../../assets/wiki/Wood%20base%20interior.png)
 
 ### Crafting Table
 
@@ -95,11 +95,11 @@ torch on top.
 
 Thankfully, the Towers are shorter than their authentic counterpart
 (15-20 blocks up), so they can be easily removed if necessary.
-<!-- ![ScoutTowerDirt.png](../../assets/wiki/ScoutTowerDirt.png "ScoutTowerDirt.png") -->
+![ScoutTowerDirt.png](../../../../assets/wiki/ScoutTowerDirt.png)
 
 ### Failed Aether Portal Frame
 
-<!-- ![GlowstoneFrame.png](../../assets/wiki/GlowstoneFrame.png "GlowstoneFrame.png") -->
+![GlowstoneFrame.png](../../../../assets/wiki/GlowstoneFrame.png)
 
 ## Signs
 
@@ -112,35 +112,37 @@ signs, it still makes it slightly clear that not everything wants to
 *harm* you.
 
 Sadly, placing a sign with a response yields no results.
-<!-- ![NullSign.png](../../assets/wiki/NullSign.png "NullSign.png") -->
+![NullSign.png](../../../../assets/wiki/NullSign.png)
 
 ### Sign Abomination
 
 A small clump of fences and signs with some reading: A0, C0, B0,
-<!-- ![SignPostTree.png](../../assets/wiki/SignPostTree.png "SignPostTree.png") -->
+![SignPostTree.png](../../../../assets/wiki/SignPostTree.png)
 
 ## Anomalies
 
 ### Nether brick lava source
 
-<!-- ![Nether_brick_lava_source_structure.Jpeg.png](../../assets/wiki/Nether_brick_lava_source_structure.Jpeg.png "Nether_brick_lava_source_structure.Jpeg.png") -->
+![Nether_brick_lava_source_structure.Jpeg.png](../../../../assets/wiki/Nether%20brick%20lava%20source%20structure.Jpeg.png)
 
 ### Gore Structure
 
 The Gore Structure is a small wooden build lit by redstone torches, and
 made entirely from oak logs and planks. Inside is a chest that contains
-[name.revuxor](Items#name.revuxor "wikilink") items, and in the middle
+[name.revuxor](/wiki/items#name.revuxor) items, and in the middle
 of those is a book and quill. The book and quill contains the following
 binary code inside, which translates into:
 
+```
 > 01000100 01101111 01101110 00100111 01110100 00100000 01101100
 > 01101001 01110011 01110100 01100101 01101110 00100000 01110100
 > 01101111 00100000 01110100 01101000 01100101 01101101 00100000
 > 00111101 00101001
 
 > Don't listen to them =)
+```
 
-<!-- ![GoreStructure.png](../../assets/wiki/GoreStructure.png "GoreStructure.png") -->
+![GoreStructure.png](../../../../assets/wiki/GoreStructure.png)
 
 ### Carcas
 
@@ -154,21 +156,23 @@ Book and Quill reads:
 >
 > Is there is something you are looking for?
 
-<!-- ![House_frame.png](../../assets/wiki/House_frame.png "House_frame.png") -->
-<!-- ![Chest.png](../../assets/wiki/Chest.png "Chest.png") -->
+![House_frame.png](../../../../assets/wiki/House%20frame.png)
+![Chest.png](../../../../assets/wiki/Chest.png)
 
 ### **Lonely wooden door**
 
 A 3x3 wooden wall with a door in the middle.
-<!-- ![Wooden_door.png](../../assets/wiki/Wooden_door.png "Wooden_door.png") -->
+
+![Wooden_door.png](../../../../assets/wiki/Wooden%20door.png)
 
 ### **Mossy Stone Bricks Cylinder**
 
 The mossy stone bricks cylinder is a semi-circular structure containing
 redstone torches around it, as well as one inside it, surrounded by
 redstone and normal torches.
-<!-- ![Mossy_stone_bricks_cylinder_outside.png](../../assets/wiki/Mossy_stone_bricks_cylinder_outside.png "Mossy_stone_bricks_cylinder_outside.png") -->
-<!-- ![Mossy_stone_bricks_cylinder.png](../../assets/wiki/Mossy_stone_bricks_cylinder.png "Mossy_stone_bricks_cylinder.png") -->
+
+![Mossy_stone_bricks_cylinder_outside.png](../../../../assets/wiki/Mossy%20stone%20bricks%20cylinder%20outside.png)
+![Mossy_stone_bricks_cylinder.png](../../../../assets/wiki/Mossy%20stone%20bricks%20cylinder.png)
 
 ### **Trap house**
 
@@ -178,7 +182,7 @@ second has numerous redstone torches on the walls and a double chest
 with no contents. If the player opens this chest, two TNTs will
 activate.
 
-<!-- ![Trap_house_in_river.png](../../assets/wiki/Trap_house_in_river.png "Trap_house_in_river.png") -->
+![Trap_house_in_river.png](../../../../assets/wiki/Trap%20house%20in%20river.png)
 
 <File:Trap> house room 1.png|Room 1 <File:Trap> house room 2.png|Room 2
 
@@ -187,7 +191,7 @@ activate.
 A cross made of mossy cobblestone blocks, with a base made principal of
 redstone and netherrack.
 
-<!-- ![Redstone_Mossy_Cobblestone_cross.png](../../assets/wiki/Redstone_Mossy_Cobblestone_cross.png "Redstone_Mossy_Cobblestone_cross.png") -->
+![Redstone_Mossy_Cobblestone_cross.png](../../../../assets/wiki/Redstone%20Mossy%20Cobblestone%20cross.png)
 
 ### 2 bedrocks
 
@@ -200,7 +204,7 @@ redstone and netherrack.
 The mossy cobblestone cross is a four-block-high structure. There is
 nothing inside the cross.
 
-<!-- ![Mossy_Cobblestone_Cross.png](../../assets/wiki/Mossy_Cobblestone_Cross.png "Mossy_Cobblestone_Cross.png") -->
+![Mossy_Cobblestone_Cross.png](../../../../assets/wiki/Mossy%20Cobblestone%20Cross.png)
 
 **Hole Corruption**
 
@@ -209,18 +213,19 @@ torches.
 
 It's the most common structure to be spawned.
 
-<!-- ![World_Corruption.png](../../assets/wiki/World_Corruption.png "World_Corruption.png") -->
+![World_Corruption.png](../../../../assets/wiki/World%20Corruption.png)
 
 ### Gift Chest
 
 Chest containing 5 Diamonds surrounded by 4 redstone torches. A sign
 attached to the chest reads "gift"
 
-<!-- ![Chest_gift.png](../../assets/wiki/Chest_gift.png "Chest_gift.png") -->
+![Chest_gift.png](../../../../assets/wiki/Chest%20gift.png)
 
 An alternative version of this chest can be found
 without the sign, containing only 10 Diamonds.
-<!-- ![GiftAlt.png](../../assets/wiki/GiftAlt.png "GiftAlt.png") -->
+
+![GiftAlt.png](../../../../assets/wiki/GiftAlt.png)
 
 <File:Gift> chest.png|The gift chest contents. <File:GiftAlt>
 Contents.png|The alt gift chest contents.

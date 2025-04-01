@@ -19,5 +19,3 @@ It's capable of spawning a random entity after an uncertain amount of
 time.
 
 Random entity population.png|They spawn like endermen in the End...
-
-[Category:Mechanics](Category:Mechanics "wikilink")

@@ -7,14 +7,17 @@ Welcome to the community FAQ.
 This page is designed for one thing and one thing only: To help you all navigate
 the common questions to cross our community.
 
+# General Questions
+
+### Where's the official Discord?
+
+You can join the official server for The Broken Script using [this invite](https://discord.gg/nullnullnullnull).
+
 # The Broken Script 1.9.3
 
 ### Why is the moon purple? Is it broken?
 
-Yeah... It is. It's fixed in the latest alpha for Minecraft 1.21.1 and in the
-[community patches](https://discord.com/invite/thebrokencommunity). The
-community patches can be found `#mod-archives` channel. Replace the TBS jar with
-it.
+Yeah... It is. It's fixed in the latest alpha for Minecraft 1.21.1 and a patched version can be found in the [Community Discord](https://discord.com/invite/thebrokencommunity) in the `#mod-archives` channel. Replace the TBS jar with it.
 
 =(
 
@@ -25,13 +28,13 @@ it.
 ### Will 1.9.3 crash my game?
 
 Yes. 1.9.3 will do what TBS has always done, you run the risk of your game crashing due to the
-[entities](../entities) within, and/or they will ban you from your own world.
+[entities](/wiki/entities) within, and/or they will ban you from your own world.
 However Wendigodrip has been generous. He has included the command
 `/TBS_config` for players to customize and control some of the events and anomalies in TBS.
 
 ### Why can't I use commands in my world?
 
-Perhaps [Integrity](../entities/integrity) is preventing you from using commands.
+Perhaps [Integrity](/wiki/entities/integrity) is preventing you from using commands.
 
 ### How to turn off VHS filter? The black bars on the screen? /removevhs no longer works.
 
@@ -67,7 +70,7 @@ No, that would be a custom edit of the mod made by Swayle. No, we don't know whe
 
 ### What is spectrum_11 and do I need to download it?
 
-[Spectrum_11](../spectrum-11) is a... To put it in simple terms for the initiates here, spectrum_11 is an Easter egg of sorts, originally found inside of TBS' files but no longer. This is because our host, wendigodrip keeps forgetting to add it into the TBS he uploaded to Modrinth.
+[Spectrum_11](/wiki/spectrum-11) is a... To put it in simple terms for the initiates here, spectrum_11 is an Easter egg of sorts, originally found inside of TBS' files but no longer. This is because our host, wendigodrip keeps forgetting to add it into the TBS he uploaded to Modrinth.
 
 ### Why is my game/computer lagging so much?
 
@@ -87,7 +90,7 @@ It is not. It seems that the invasive actions that was present in 1.9 have been 
 
 ### When will things begin?
 
-From what we've observed, it takes a while before events start to ramp up inside of a world. It might take you a few nights in your world before you start seeing more entities. If you want to bother Null, visit his [page](../entities/null) to know more about how to bother him.
+From what we've observed, it takes a while before events start to ramp up inside of a world. It might take you a few nights in your world before you start seeing more entities. If you want to bother Null, visit his [page](/wiki/entities/null) to know more about how to bother him.
 
 ### Reputation system? How do you increase/decrease?
 

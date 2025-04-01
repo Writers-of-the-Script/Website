@@ -2,12 +2,11 @@
 title: Clan Build
 ---
 
-<!-- ![Clan_build_1.png](../../assets/wiki/Clan_build_1.png "Clan_build_1.png") -->
+![Clan_build_1.png](../../../../assets/wiki/Clan%20build%201.png)
 
 Clan Build is a large, 5 story build made of cobblestone and smooth
-stone. It was built by the [0nullvoid0's
-Clan](Lore#0nullvoid0's_Clan "wikilink") and used as a home and base for
-its [members](Lore#Members "wikilink").
+stone. It was built by the [0nullvoid0's Clan](/wiki/lore#0nullvoid0s-clan) and used as a home and base for
+its [members](/wiki/lore#Members).
 
 ## 1st Floor
 
@@ -18,14 +17,15 @@ the floor. The right path leads to a glass-enclosed decoration, which is
 a kind of fountain of flowing lava. The left path leads to the stairs to
 the outside of the 2nd floor.
 
-<!-- ![CBhallentrance.png](../../assets/wiki/CBhallentrance.png "CBhallentrance.png") SIGNS -->
+![CBhallentrance.png](../../../../assets/wiki/CBhallentrance.png) SIGNS
 
-`|1.10.2018 can I rent the room?`
-`|Sure`
-`|14.10.2018 ty guys, but I think I need to build my own base`
-`|Okay`
+> `1.10.2018 can I rent the room?`
+> `Sure`
 
-`|Nice deco :)`
+> `14.10.2018 ty guys, but I think I need to build my own base`
+> `Okay`
+
+> `Nice deco :)`
 
 ### DyeXD412's room
 
@@ -80,25 +80,23 @@ room, formerly 0nullvoid0, and the one on the left is WHYER4's room.
 
 ## 5th Floor
 
-Originally, observed in [WORLD2](WORLD2 "wikilink") to be the Nether
+Originally, observed in [WORLD2](/wiki/lore/world2) to be the Nether
 Portal room, it is no longer that. Corrupted blocks called "It" litter
 the room like the signs scattered about it. Where the Nether Portal once
 was, is the Clan_Void teleportation block called, "431434". Something
 foul seemed to have occurred here, but the signs do not help make sense
 of the situation witnessed here.
 
-<!-- ![Freakyroom.png](../../assets/wiki/Freakyroom.png "Freakyroom.png") -->
+![Freakyroom.png](../../../../assets/wiki/Freakyroom.png)
 
-`|The end is nigh`
-`|The end is null`
-`|This is not a happy place.`
-`|we will meet him`
-`|together`
-`|Betray`
-`|He changed`
-`|The only way out`
-`|00.00.0000 memories `**`(18)`**
+> `The end is nigh` \
+> `The end is null` \
+> `This is not a happy place.` \
+> `we will meet him` \
+> `together` \
+> `Betray` \
+> `He changed` \
+> `The only way out` \
+> `00.00.0000 memories `**`(18)`**
 
 ## Roof
-
-[Category:Structures](Category:Structures "wikilink")

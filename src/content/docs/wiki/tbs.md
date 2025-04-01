@@ -4,15 +4,15 @@ title: The Broken Script
 
 The Broken Script is a mod haunted by several entities and plagued with technical and visual anomalies. What could occur to one player will be different for the next, almost as though this mod has a mind of it's own. So to say, player experience will vary.
 
-The [Entities](./entities) that can be found within range from passive to hostile to world corrupting. If not played with the provided/safemode (`/TBS_config` as of 1.9.3) players can be "banned" from their world. It is theorized that the only reason why players have not lost their souls, like the other [victims](./lore) now trapped inside of The Broken Script, is due to an entity known as [Revuxor](./entities/revuxor) banning players from their own worlds. Effectively, saving their lives.
+The [Entities](/wiki/entities) that can be found within range from passive to hostile to world corrupting. If not played with the provided/safemode (`/TBS_config` as of 1.9.3) players can be "banned" from their world. It is theorized that the only reason why players have not lost their souls, like the other [victims](/wiki/lore) now trapped inside of The Broken Script, is due to an entity known as [Revuxor](/wiki/entities/revuxor) banning players from their own worlds. Effectively, saving their lives.
 
-What is known about The Broken Script usually derives from inferred information as communications with the Entities within the mod seem limited at best and non-existent at worst. The exception being [Null](./entities/null) who seems receptive to conversation, but only to a certain degree.
+What is known about The Broken Script usually derives from inferred information as communications with the Entities within the mod seem limited at best and non-existent at worst. The exception being [Null](/wiki/entities/null) who seems receptive to conversation, but only to a certain degree.
 
 Upon installation of the Broken Script and booting up Minecraft there is already something noticeably off about the client. The usual Minecraft splash texts are ominous at best and threatening at worst, the music that plays on the title screen is eerie and you cannot Quit the game through the menu.
 
 As of 1.9.3 one must alt+f4 to exit Minecraft.
 
-The reason for this corruption is likely due to [Integrity](./entities/integrity). Information about said corruption of the Minecraft client can be found in [Lore](./lore). However, it seems this Void associated creature is not physically present within the Broken Script. Further investigation indicates that Integrity appears to be hidden within another mod called [Spectrum_11](./spectrum-11). Originally found within the files of the Broken Script, spectrum_11 seems to be missing from 1.9.3. Wendigo has generously provided this extension in his official discord server, however, players are forewarned that spectrum_11 is invasive.
+The reason for this corruption is likely due to [Integrity](/wiki/entities/integrity). Information about said corruption of the Minecraft client can be found in [Lore](/wiki/lore). However, it seems this Void associated creature is not physically present within the Broken Script. Further investigation indicates that Integrity appears to be hidden within another mod called [Spectrum_11](/wiki/spectrum-11). Originally found within the files of the Broken Script, spectrum_11 seems to be missing from 1.9.3. Wendigo has generously provided this extension in his official discord server, however, players are forewarned that spectrum_11 is invasive.
 
 It's by suggestion of this wiki community that players do not open a world with spectrum_11 present in their client.
 
@@ -30,7 +30,7 @@ The Broken Script is better described as an ARG than a horror mod. It was due to
 
 Version 1.8 did not have what Version 1.9 had. The void's control seemed more severe in version 1.9 and the most severe influence the mod had was the ability to send a command to turn off the player's PC. The command itself is simply the equivalent of pressing the power button, however this action scared a large majority of individuals who wished to play the Broken Script. This fear turned into unwarranted hostility, harassment, and death threats sent towards wendigodrip. Following this, the mod was removed from the public.
 
-Upon further investigation, the 1.9 version of the Broken Script only has the ability to turn off your PC, create a single .txt file in the player's desktop, and Lightweight Java Game Library (LWJGL) pop-ups for [err.sleep](./mechanics/err.sleep).
+Upon further investigation, the 1.9 version of the Broken Script only has the ability to turn off your PC, create a single .txt file in the player's desktop, and Lightweight Java Game Library (LWJGL) pop-ups for [err.sleep](/wiki/mechanics/err.sleep).
 
 Video "corruption" caused by the PC shutdown for those recording was not intended, it was simply caused by the recording program not being able to process and save the footage.
 

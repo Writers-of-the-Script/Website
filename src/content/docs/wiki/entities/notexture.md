@@ -23,7 +23,7 @@ Upon spawning, Notexture will start roaming.
 Regardless of phase, it will spawn glitched blocks and replace blocks
 around it as it moves. These blocks will spread on their own without the
 presence of Notexture as well. If at night, it is capable of preventing
-the player from sleeping via a [err.texture](err.sleep "wikilink").
+the player from sleeping via a [err.texture](/wiki/mechanics/errsleep).
 
 Notexture engages in a number of different behaviours, listed below:
 
@@ -34,7 +34,7 @@ to, then picking another target block, and so forth, until it encounters
 a player.
 
 Under seemingly random conditions, Notexture can teleport players to
-[Day-A](Day_A "wikilink").
+[Day-A](/wiki/dimensions/day-a).
 
 ### Chase
 
@@ -48,6 +48,4 @@ player's inventory.
 #### Notes:
 
 As of now, contact with Notexture is the only known way to enter
-[Day-A](Day_A "wikilink")
-
-[Category:Entities](Category:Entities "wikilink")
+[Day-A](/wiki/dimensions/day-a)

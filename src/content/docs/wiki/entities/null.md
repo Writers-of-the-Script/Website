@@ -17,7 +17,7 @@ Humanoid, player-like entity with a solid pitch-black skin.
 Null will join the game (visible in chat) early into the play-through
 and will appear in the tab list. After he joins, he can start to appear
 in the player's world - usually indicated by a static sound cue and the
-[err.null](err.sleep "wikilink") error message if they try to sleep.
+[err.null](/wiki/mechanics/errsleep) error message if they try to sleep.
 Null can engage in a number of different behaviours, listed below:
 
 ### Stalk
@@ -30,7 +30,7 @@ happening:
   - He vanishes and deals a small amount of damage to the player.
   - He vanishes with a lightning strike where he stood.
   - He vanishes and inflicts the player with blindness.
-  - He sends the player to [Null Torture](Null_Torture "wikilink").
+  - He sends the player to [Null Torture](/wiki/dimensions/null-torture).
   - He switches to Scare behaviour.
   - He switches to Chase behaviour.
 
@@ -89,8 +89,7 @@ Nether mining behavior otherwise lines up with his overworld mining
 behavior; he doesn't seem to chase the player if they jump into lava and
 will disappear after a moment. Null's mining area appears hard to
 traverse, trapping the player's movement in a way comparable to the
-[ghost blocks area
-phenomenon](https://thebrokenscript.wiki.gg/wiki/Random_Events#Ghost_blocks_Area).
+[ghost blocks area phenomenon](/wiki/mechanics/random-events#Ghost_blocks_Area).
 
 ## Reputation System
 
@@ -238,8 +237,6 @@ spoilers.
 closeup.png|hey pal\!
 [File:NullTbsRender.png|Artistic](File:NullTbsRender.png%7CArtistic)
 Render, courtesy of Xeon <File:Null> float.png|Null floating as an
-[event](Random_Events "wikilink").
+[event](/wiki/mechanics/random-events).
 [File:RareGlitchOfNull.png|A](File:RareGlitchOfNull.png%7CA) rare sight
 of a glitched null.
-
-[Category:Entities](Category:Entities "wikilink")

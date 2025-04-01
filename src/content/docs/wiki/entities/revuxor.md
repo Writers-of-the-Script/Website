@@ -6,7 +6,7 @@ What is understood about **Revuxor** is minimal, he is rarely seen, as
 he's only been observed on very rare occasions.
 
 It has been confirmed that Revuxor was brutally murdered in real life by
-[Circuit](Circuit "wikilink"). This discovery confirms the theory that
+[Circuit](/wiki/entities/circuit). This discovery confirms the theory that
 the Void, and specifically Circuit, is capable of crawling out into
 reality from one's computer. We do not know how or why an image of what
 was done to Revuxor seems to exist in TBS now, we do not know if it's an
@@ -15,7 +15,7 @@ code.
 
 We do not know if he's the only one who suffered such a fate.
 
-The item would be [name.revuxor](Items "wikilink"), which used to be
+The item would be [name.revuxor](/wiki/items), which used to be
 pixelated gore. In prior versions it was an indiscernible, zoomed-in,
 high contrast red image; Gore.
 
@@ -34,7 +34,7 @@ for just 1 tick.
 
 1.  It was observed that Revuxor appears behind players in replays of
     bans.
-2.  Asking [Null](Null "wikilink") about him leads to him saying "Poor
+2.  Asking [Null](/wiki/entities/null) about him leads to him saying "Poor
     soul."
 3.  Revuxor is titled **thebrokenscript:ban** there's a very likely
     chance that every single time a player's been banned from their
@@ -42,8 +42,7 @@ for just 1 tick.
     protect them from the Void.
 4.  While desperately searching for information on this entity, the wiki
     staff came across a small Russian horror SMP called SiimpAlone. It
-    features a character in it named "[Revuxor
-    (Ревуксор)](https://minecraft-siimpalone.fandom.com/ru/wiki/Revuxor)"
+    features a character in it named "[Revuxor (Ревуксор)](https://minecraft-siimpalone.fandom.com/ru/wiki/Revuxor)"
     it has no relation to the Broken Script however, this is a fun
     easter egg from where Revuxor's name came from.
 
@@ -51,5 +50,3 @@ for just 1 tick.
 
 Namerevuxor.png|Originally a pixelated red mess, name.revuxor otherwise
 known as "gore" is now static.
-
-[Category:Entities](Category:Entities "wikilink")

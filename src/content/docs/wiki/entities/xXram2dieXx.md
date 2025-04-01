@@ -18,7 +18,7 @@ When xXram2dieXx joins the server, the player will be able to find him.
 During this time he will speak in chat. If at any point the player
 approaches xXram2dieXx he will turn into null and kill the player,
 kicking them from their game as well. Doing this seemingly lowers
-[Null](Null "wikilink")'s favour considerably.
+[Null](/wiki/entities/null)'s favour considerably.
 
 ### Dialogue
 
@@ -29,7 +29,7 @@ The server will inform the player, "Local game hosted on port 00000" and
 then a little while afterwards, xXram2dieXx will join the game and set
 the time to midnight.
 
-He cannot be "interacted" with in chat like [Null](Null "wikilink"),
+He cannot be "interacted" with in chat like [Null](/wiki/entities/null),
 instead he will say the following in Hexidecimal over a period of time,
 each time he does speak he will set time to midnight and an ambient cave
 noise will sound, after exhausting this, xXram2dieXx will "leave" the
@@ -47,10 +47,8 @@ xXram2dieXx joined the game.
 ## Notes
 
 1.  Seems quite friendly in text.
-2.  In [WORLD2](Lore "wikilink") xXram2dieXx's former (or temporary)
+2.  In [WORLD2](/wiki/lore) xXram2dieXx's former (or temporary)
     clan build has a little minecart ride inside of it, it is being
     assumed that xXram2dieXx built it. This little structure is entirely
     impractical, completely useless, loops in a very small 2x2 circular
     rail track... and it's the most adorable thing ever.
-
-[Category:Entities](Category:Entities "wikilink")

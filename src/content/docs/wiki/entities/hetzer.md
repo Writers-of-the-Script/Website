@@ -31,5 +31,3 @@ two possible interactions that could occur:
 2.  We have no indication of how exactly it occured, but Hetzer was
     formerly _Blackout_. Disc 14 depicts the moments before
     _Blackout_'s demise.
-
-[Category:Entities](Category:Entities "wikilink")

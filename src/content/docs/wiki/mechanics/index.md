@@ -4,29 +4,27 @@ title: Mechanics
 
 ## Null Reputation
 
-<!-- ![REPNORMAL.png](../../assets/wiki/REPNORMAL.png "REPNORMAL.png") -->
+![REPNORMAL.png](../../../../assets/wiki/REPNORMAL.png)
 
 **Null Reputation** is a measure of how good your standing with
-[Null](Null "wikilink") is. Reputation value does not transfer to other
+[Null](/wiki/entities/null) is. Reputation value does not transfer to other
 saves and is separate for each world.
 
 The player, when creating a new world, has **NORMAL** reputation. The
-exception to this is [WORLD2](WORLD2 "wikilink"), where the player
+exception to this is [WORLD2](/wiki/lore/world2), where the player
 already has **BAD** reputation.
 
 ### Affecting Reputation
 
 #### Increasing
 
-\- Avoiding contact with [Null](Null "wikilink").
-
-\- Not destroying the [random structures](Structures "wikilink").
+- Avoiding contact with [Null](/wiki/entities/null).
+- Not destroying the [random structures](/wiki/structures).
 
 #### Decreasing
 
-\- Triggering [Null](Null "wikilink")'s Chase behaviour.
-
-\- Destroying his structures.
+- Triggering [Null](/wiki/entities/null)'s Chase behaviour.
+- Destroying his structures.
 
 ## Player is already playing on this server
 
@@ -72,5 +70,3 @@ A common occurance when using the mod is being banned from your own
 Singleplay server when reaching certain behaviour states with entities.
 
 This can be prevented by changing it in the config.
-
-[Category:Mechanics](Category:Mechanics "wikilink")
