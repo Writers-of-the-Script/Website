@@ -5,7 +5,7 @@
     "compilerOptions": {
         "types": ["@types/node"]
     },
-    "unstable": ["sloppy-imports", "bare-node-builtins"],
+    "unstable": ["sloppy-imports", "bare-node-builtins", "detect-cjs"],
     "imports": {
         "@/": "./src/"
     }

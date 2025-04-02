@@ -17,6 +17,8 @@ export default defineConfig({
         starlight({
             title: "The Broken Script",
             favicon: "/logo.png",
+            description: "Here I am.",
+            tagline: "The World They Built. The World They Hate.",
             // routeMiddleware: "./src/routeData.ts",
 
             logo: {
@@ -97,8 +99,7 @@ export default defineConfig({
                 imageZoom(),
                 kbd({
                     types: [
-                        { id: "mac", label: "MacOS" },
-                        { id: "windows", label: "Windows", default: true },
+                        { id: "shortcut", label: "Key", default: true },
                     ],
                 }),
                 mdBlocks({
@@ -130,12 +131,16 @@ export default defineConfig({
                                     EditLink: "./src/components/WikiEditButton.astro",
                                     Pagination: "./src/components/WikiPagination.astro",
                                     Header: "./src/components/WikiHeader.astro",
+                                    MobileMenuFooter: "./src/components/WikiMobileMenuFooter.astro",
                                 },
                             });
                         },
                     },
                 }
             ],
+        }),
+        (await import("@playform/compress")).default({
+            Image: false,
         }),
     ],
 });

@@ -25,4 +25,7 @@ pnpm-debug.log*
 
 # Fonts
 # public/assets/fonts
+
+# Other
 /wiki
+lighthouse.json

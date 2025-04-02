@@ -8,10 +8,12 @@ hero:
 ---
 
 import { LinkButton } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
+import eye from "../../assets/gallery/eye.png";
 
 <LinkButton href="/wiki" icon="document" iconPlacement="start">Read the Wiki</LinkButton>
 <LinkButton href="/downloads" variant="secondary" icon="download" iconPlacement="start">Downloads</LinkButton>
 
 <br /><br /><br /><br />
 
-![\<o\>](../../assets/gallery/eye.png)
+<Image src={eye} alt="<o>" loading="eager" />

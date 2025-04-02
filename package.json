@@ -13,7 +13,6 @@
         "@astrojs/starlight": "^0.32.5",
         "@iconify-json/tabler": "^1.2.17",
         "astro": "^5.5.5",
-        "astro-icon": "^1.1.5",
         "date-fns": "^4.1.0",
         "marked": "^15.0.7",
         "starlight-image-zoom": "^0.11.1",
@@ -24,12 +23,16 @@
     },
     "devDependencies": {
         "@deno/astro-adapter": "^0.3.0",
+        "@playform/compress": "^0.1.8",
         "@types/node": "^22.13.14",
         "@unocss/preset-web-fonts": "^66.1.0-beta.7",
         "@unocss/reset": "^66.1.0-beta.7",
+        "astro-compress": "^2.3.7",
+        "lightningcss": "^1.29.3",
         "prettier": "^3.5.3",
         "prettier-plugin-astro": "^0.14.1",
         "sharp": "^0.33.5",
+        "terser": "^5.39.0",
         "unocss": "^66.1.0-beta.7"
     },
     "prettier": {
