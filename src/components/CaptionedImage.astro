@@ -2,15 +2,14 @@
 import { Image } from "astro:assets";
 
 interface Props {
-    src: string;
+    src: Promise<{ default: ImageMetadata }>;
 }
 
 const { src } = Astro.props;
-const { default: img } = await import(src);
 ---
 
 <div>
-    <Image src={img} alt="Image" />
+    <Image src={(await src).default} alt="Image" />
 
     <caption>
         <slot />

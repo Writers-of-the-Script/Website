@@ -29,6 +29,7 @@
         "@unocss/reset": "^66.1.0-beta.7",
         "prettier": "^3.5.3",
         "prettier-plugin-astro": "^0.14.1",
+        "sharp": "^0.33.5",
         "unocss": "^66.1.0-beta.7"
     },
     "prettier": {
