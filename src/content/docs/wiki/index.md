@@ -5,7 +5,7 @@ description: Homepage
 
 ![Site Logo](../../../assets/wiki/Site-logo.png)
 
-is a collaborative wiki designed to document everything we know about The Broken Script. Individuals interested in participating in this effort can [register](Special:UserLogin/signup "wikilink") an account to contribute to this wiki or join the wiki's [Discord server](https://discord.gg/K4nacgXddJ) to participate in suggestions and theories about this ARG.
+The Broken Script wiki is a collaborative wiki designed to document everything we know about The Broken Script. Individuals interested in participating in this effort can [register](Special:UserLogin/signup "wikilink") an account to contribute to this wiki or join the wiki's [Discord server](https://discord.gg/K4nacgXddJ) to participate in suggestions and theories about this ARG.
 
 All Rules and Guidelines regarding behaviour and styling can be found on [this page](/wiki/info/rules-guidelines). Please be sure to read and follow them.
 

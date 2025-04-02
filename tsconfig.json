@@ -3,6 +3,12 @@
     "include": [".astro/types.d.ts", "**/*"],
     "exclude": ["dist"],
     "compilerOptions": {
-        "types": ["@types/node"]
+        "types": ["@types/node"],
+        "paths": {
+            "@/*": ["./src/*"]
+        }
+    },
+    "mdx": {
+        "checkMdx": true
     }
 }

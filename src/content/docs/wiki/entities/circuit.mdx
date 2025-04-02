@@ -3,6 +3,8 @@ title: Circuit
 ---
 
 import { Tabs, TabItem, Steps } from "@astrojs/starlight/components";
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+import CaptionedAudio from "../../../../components/CaptionedAudio.astro";
 
 **Circuit** is an intelligent Void Creature and the lowest in their chain of command.
 
@@ -73,36 +75,32 @@ Circuit seems to reveal itself randomly, and when it does, it reverts to its Cha
 
 ## Media
 
-import jumpscare from "../../../../assets/wiki/Circuitjumpscare.ogg";
-import nullJumpscareOverhaul from "../../../../assets/wiki/Nulljumpscareoverhaul.ogg";
-import youWillRegretThat from "../../../../assets/wiki/Youwillregretthat.ogg";
-
 <Tabs>
     <TabItem label="Gallery">
-        | ![Image](../../../../assets/wiki/Circuit%20lurking.png) |
-        | ---------- |
-        | photo taken seconds before disaster |
+        <CaptionedImage src="../assets/wiki/Circuit lurking.png">
+            Photo taken seconds before disaster
+        </CaptionedImage>
 
-        | ![Image](../../../../assets/wiki/CircuitsHorde.png) |
-        | ---------- |
-        | Results of a foolish attempt to enable devmode in 1.9.3 |
+        <CaptionedImage src="../assets/wiki/CircuitsHorde.png">
+            Results of a foolish attempt to enable devmode in 1.9.3
+        </CaptionedImage>
 
-        | ![Image](../../../../assets/wiki/Circuitstolenullbread.png) |
-        | ---------- |
-        | Looore |
+        <CaptionedImage src="../assets/wiki/Circuitstolenullbread.png">
+            Looore
+        </CaptionedImage>
     </TabItem>
 
     <TabItem label="Sounds">
-        | <audio src={jumpscare} controls /> |
-        | ---------- |
-        | Jumpscare |
+        <CaptionedAudio src="../assets/wiki/Circuitjumpscare.ogg">
+            Jumpscare
+        </CaptionedAudio>
 
-        | <audio src={nullJumpscareOverhaul} controls /> |
-        | ---------- |
-        | Chase |
+        <CaptionedAudio src="../assets/wiki/Nulljumpscareoverhaul.ogg">
+            Chase
+        </CaptionedAudio>
 
-        | <audio src={youWillRegretThat} controls /> |
-        | ---------- |
-        | Hurt sound (Stalk) |
+        <CaptionedAudio src="../assets/wiki/Youwillregretthat.ogg">
+            Hurt sound (Stalk)
+        </CaptionedAudio>
     </TabItem>
 </Tabs>

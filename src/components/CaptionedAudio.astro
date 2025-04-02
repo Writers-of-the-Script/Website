@@ -1,0 +1,16 @@
+---
+interface Props {
+    src: string;
+}
+
+const { src } = Astro.props;
+const { default: realSrc } = await import(src);
+---
+
+<div>
+    <audio src={realSrc} controls />
+
+    <caption>
+        <slot />
+    </caption>
+</div>

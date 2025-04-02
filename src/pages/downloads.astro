@@ -1,0 +1,36 @@
+---
+import StarlightPage from "@astrojs/starlight/components/StarlightPage.astro";
+import SourcedList from "../components/SourcedList.astro";
+import { allVersions } from "../lib/data";
+import UnsafeUI from "../components/UnsafeUI.astro";
+import ChangelogUI from "../components/ChangelogUI.astro";
+import Sidebar from "../components/Sidebar.astro";
+---
+
+<StarlightPage
+    frontmatter={{ title: "Downloads", template: "splash", editUrl: false }}
+    hasSidebar={false}
+>
+    <UnsafeUI />
+    <ChangelogUI />
+
+    <div
+        class="w-full md:w-[calc(100vw_-_2rem)] lg:w-[calc(100vw_-_4rem)] h-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-start justify-start"
+    >
+        <Sidebar />
+
+        <div class="w-full h-full">
+            <SourcedList versions={allVersions} />
+            <div class="w-full h-24"></div>
+        </div>
+    </div>
+</StarlightPage>
+
+<style is:global>
+    .markdown > ol,
+    .markdown > ul,
+    .markdown > li {
+        list-style-type: square;
+        margin-left: 2rem;
+    }
+</style>

@@ -30,7 +30,7 @@ The Broken Script is better described as an ARG than a horror mod. It was due to
 
 Version 1.8 did not have what Version 1.9 had. The void's control seemed more severe in version 1.9 and the most severe influence the mod had was the ability to send a command to turn off the player's PC. The command itself is simply the equivalent of pressing the power button, however this action scared a large majority of individuals who wished to play the Broken Script. This fear turned into unwarranted hostility, harassment, and death threats sent towards wendigodrip. Following this, the mod was removed from the public.
 
-Upon further investigation, the 1.9 version of the Broken Script only has the ability to turn off your PC, create a single .txt file in the player's desktop, and Lightweight Java Game Library (LWJGL) pop-ups for [err.sleep](/wiki/mechanics/err.sleep).
+Upon further investigation, the 1.9 version of the Broken Script only has the ability to turn off your PC, create a single .txt file in the player's desktop, and Lightweight Java Game Library (LWJGL) pop-ups for [err.sleep](/wiki/mechanics/errsleep).
 
 Video "corruption" caused by the PC shutdown for those recording was not intended, it was simply caused by the recording program not being able to process and save the footage.
 

@@ -86,7 +86,7 @@ The unknown person who previously rented the room in [clan_build](/wiki/structur
 
 ### 01.11.2018 - The beginning of the end
 
-[The Broken End](/wiki/entities/tbe) has appeared in the world, causing the chat to break due to a [minecraft.chatengine](/wiki/mechanics/minecraft.chatengine) failure.
+[The Broken End](/wiki/entities/tbe) has appeared in the world, causing the chat to break due to a [minecraft.chatengine](/wiki/mechanics/minecraftchatengine) failure.
 
 Clan members noticed the broken chat and wrote about it, starting to use signs as their main means of communication. They also noted that for unknown reasons, the discord server got deleted too.
 

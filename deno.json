@@ -5,5 +5,8 @@
     "compilerOptions": {
         "types": ["@types/node"]
     },
-    "unstable": ["sloppy-imports"]
+    "unstable": ["sloppy-imports"],
+    "imports": {
+        "@/": "./src/"
+    }
 }

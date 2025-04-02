@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+    src: string;
+}
+
+const { src } = Astro.props;
+const { default: img } = await import(src);
+---
+
+<div>
+    <Image src={img} alt="Image" />
+
+    <caption>
+        <slot />
+    </caption>
+</div>

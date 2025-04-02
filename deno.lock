@@ -13,7 +13,10 @@
     "npm:marked@^15.0.7": "15.0.7",
     "npm:prettier-plugin-astro@~0.14.1": "0.14.1",
     "npm:prettier@^3.5.3": "3.5.3",
+    "npm:starlight-image-zoom@~0.11.1": "0.11.1_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14",
     "npm:starlight-ion-theme@^2.2.3": "2.2.3_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14",
+    "npm:starlight-kbd@0.2": "0.2.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14",
+    "npm:starlight-markdown-blocks@0.1": "0.1.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14",
     "npm:typerinth@^1.1.0": "1.1.0_typescript@5.8.2",
     "npm:unocss@^66.1.0-beta.7": "66.1.0-beta.7_@types+node@22.13.14"
   },
@@ -3381,6 +3384,16 @@
     "space-separated-tokens@2.0.2": {
       "integrity": "sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q=="
     },
+    "starlight-image-zoom@0.11.1_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14": {
+      "integrity": "sha512-TmnAyS+MWWV6h1fjuezrMFA36REd+7QzcjDFFFyC4ws5FDMoHsjQn0MlHM0cUaHEKfQ9y1PpL9LijCvRFuGbuw==",
+      "dependencies": [
+        "@astrojs/starlight",
+        "mdast-util-mdx-jsx",
+        "rehype-raw",
+        "unist-util-visit",
+        "unist-util-visit-parents"
+      ]
+    },
     "starlight-ion-theme@2.2.3_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14": {
       "integrity": "sha512-a7AP5y8cvPMizf5egZav3Amhf8SPDk+AWSsry6D6O8LkOTBLc0OIcVnPuuZ4WVe/w50p/e7F54kW3EtO4wH1Ng==",
       "dependencies": [
@@ -3391,6 +3404,24 @@
         "astro",
         "astro-icon",
         "pathe@2.0.3"
+      ]
+    },
+    "starlight-kbd@0.2.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14": {
+      "integrity": "sha512-KcOFeX8UhwTx6PCy+ldb0HdHBKLxST15ktwHafO7xzVzJG6b1qC7s8rFgH/8C/s6pQiYZJekuRExwZrxMZ/Uhg==",
+      "dependencies": [
+        "@astrojs/starlight"
+      ]
+    },
+    "starlight-markdown-blocks@0.1.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14": {
+      "integrity": "sha512-nPnT/eMNIysR+TZGDzNEf9U0NnED+wPgtuPQaoAwrvoyOoNvAPQtvwDTYw3YzoHL0scEaOIh3J0S04cTZ1qk2w==",
+      "dependencies": [
+        "@astrojs/starlight",
+        "@types/mdast",
+        "hastscript",
+        "mdast-util-directive",
+        "mdast-util-to-string",
+        "unified",
+        "unist-util-visit"
       ]
     },
     "stream-replace-string@2.0.0": {
@@ -3813,7 +3844,10 @@
         "npm:marked@^15.0.7",
         "npm:prettier-plugin-astro@~0.14.1",
         "npm:prettier@^3.5.3",
+        "npm:starlight-image-zoom@~0.11.1",
         "npm:starlight-ion-theme@^2.2.3",
+        "npm:starlight-kbd@0.2",
+        "npm:starlight-markdown-blocks@0.1",
         "npm:typerinth@^1.1.0",
         "npm:unocss@^66.1.0-beta.7"
       ]

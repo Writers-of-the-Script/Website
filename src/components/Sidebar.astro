@@ -12,12 +12,12 @@ const loaderLogos: Record<string, string> = {
 };
 ---
 
-<div class="w-full md:w-md bg-dark-7 font-jbm p-4">
+<div class="w-full md:w-md bg-dark-7 font-jbm p-4 color-white">
     <p class="text-lg b-b-1">Source</p>
 
     <div class="py-4 space-y-2">
         <div
-            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            class="p-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
             id="source-modrinth"
         >
             <img src={modrinth.src} class="w-6 h-6 mr-2" alt="Modrinth Logo" />
@@ -25,7 +25,7 @@ const loaderLogos: Record<string, string> = {
         </div>
 
         <div
-            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            class="p-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
             id="source-official"
         >
             <Icon
@@ -37,7 +37,7 @@ const loaderLogos: Record<string, string> = {
         </div>
 
         <div
-            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+            class="p-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
             id="source-community"
         >
             <Icon name="tabler:users" size="24" class="mr-2" />
@@ -51,7 +51,7 @@ const loaderLogos: Record<string, string> = {
         {
             loaders.map((loader) => (
                 <div
-                    class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                    class="p-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
                     id={`loader-${loader}`}
                 >
                     <img
@@ -71,7 +71,7 @@ const loaderLogos: Record<string, string> = {
         {
             minecraft.map((version) => (
                 <div
-                    class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                    class="px-3 py-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
                     id={`version-${version}`}
                 >
                     {version}
@@ -85,10 +85,10 @@ const loaderLogos: Record<string, string> = {
             <>
                 <p class="text-lg b-b-1">Tags</p>
 
-                <div class="py-4 space-y-2">
+                <div class="py-3 space-y-2">
                     {tags.map((tag) => (
                         <div
-                            class="p-3 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
+                            class="px-3 py-2 flex flex-row items-center justify-start bg-dark-3 hover:bg-dark-1 transition-all cursor-pointer"
                             id={`tag-${tag}`}
                         >
                             {tag}
