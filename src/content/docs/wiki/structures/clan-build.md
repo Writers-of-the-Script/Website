@@ -5,8 +5,8 @@ title: Clan Build
 ![Clan_build_1.png](../../../../assets/wiki/Clan%20build%201.png)
 
 Clan Build is a large, 5 story build made of cobblestone and smooth
-stone. It was built by the [0nullvoid0's Clan](/wiki/lore#0nullvoid0s-clan) and used as a home and base for
-its [members](/wiki/lore#Members).
+stone. It was built by the [0nullvoid0's Clan](/wiki/lore#xxram2diexxs-clan) and used as a home and base for
+its [members](/wiki/lore#members).
 
 ## 1st Floor
 

@@ -249,7 +249,7 @@ without any warning, preceding sound or visual cue.
 
 ### Hello block Sabotage
 
-Similar to the Lava block source, the [Hello](/wiki/items#Hello)
+Similar to the Lava block source, the [Hello](/wiki/items#hello)
 block will be placed at the player's base to sabotage their home.
 
 ### 431434 block Sabotage
@@ -282,7 +282,7 @@ command for it does not work.
 
 A heartbeat sound will play. The same sound plays when the netherrack
 cross with a sign structure is placed when you break the
-[Hello](/wiki/items#Hello) block.
+[Hello](/wiki/items#hello) block.
 
 ### Hunger
 

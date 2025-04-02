@@ -5,6 +5,7 @@ import { ion } from "starlight-ion-theme";
 import imageZoom from "starlight-image-zoom";
 import kbd from "starlight-kbd";
 import mdBlocks from "starlight-markdown-blocks";
+import validator from "starlight-links-validator";
 
 export default defineConfig({
     site: "https://tbssite.stardustmodding.org",
@@ -136,7 +137,10 @@ export default defineConfig({
                             });
                         },
                     },
-                }
+                },
+                validator({
+                    exclude: ["/downloads"],
+                }),
             ],
         }),
         (await import("@playform/compress")).default({

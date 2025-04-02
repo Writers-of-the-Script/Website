@@ -2,7 +2,7 @@
 title: WHYER4
 ---
 
-WHYER4 is a member of [0nullvoid0](/wiki/entities/xXram2dieXx)'s Clan.
+WHYER4 is a member of [0nullvoid0](/wiki/entities/xxram2diexx)'s Clan.
 Through the process of elimination, it can be easily speculated that he
 was the last member of the clan to be eradicated or influenced by the
 void.
@@ -10,7 +10,7 @@ void.
 ## Appearance
 
 There is currently no depiction of WHYER4's appearance. But considering
-the fact that [xXram2dieXx](/wiki/entities/xXram2dieXx)'s and
+the fact that [xXram2dieXx](/wiki/entities/xxram2diexx)'s and
 [DyeXD412](/wiki/entities/curved)'s skin is very likely default Steve, it
 wouldn't be far as to consider him having Steve's appearance as well.
 

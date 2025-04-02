@@ -89,7 +89,7 @@ Nether mining behavior otherwise lines up with his overworld mining
 behavior; he doesn't seem to chase the player if they jump into lava and
 will disappear after a moment. Null's mining area appears hard to
 traverse, trapping the player's movement in a way comparable to the
-[ghost blocks area phenomenon](/wiki/mechanics/random-events#Ghost_blocks_Area).
+[ghost blocks area phenomenon](/wiki/mechanics/random-events#ghost-blocks-area).
 
 ## Reputation System
 

@@ -20,6 +20,7 @@
     "npm:starlight-image-zoom@~0.11.1": "0.11.1_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
     "npm:starlight-ion-theme@^2.2.3": "2.2.3_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
     "npm:starlight-kbd@0.2": "0.2.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
+    "npm:starlight-links-validator@~0.14.3": "0.14.3_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14__lightningcss@1.29.3__terser@5.39.0_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2__lightningcss@1.29.3__terser@5.39.0_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
     "npm:starlight-markdown-blocks@0.1": "0.1.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
     "npm:svgo@^3.3.2": "3.3.2",
     "npm:terser@^5.39.0": "5.39.0",
@@ -845,6 +846,9 @@
       "dependencies": [
         "undici-types"
       ]
+    },
+    "@types/picomatch@3.0.2": {
+      "integrity": "sha512-n0i8TD3UDB7paoMMxA3Y65vUncFJXjcUf7lQY7YyKGl6031FNjfsLs6pdLFCy2GNFxItPJG8GvvpbZc2skH7WA=="
     },
     "@types/sax@1.2.7": {
       "integrity": "sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==",
@@ -2420,6 +2424,9 @@
     "iron-webcrypto@1.2.1": {
       "integrity": "sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg=="
     },
+    "is-absolute-url@4.0.1": {
+      "integrity": "sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A=="
+    },
     "is-alphabetical@2.0.1": {
       "integrity": "sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ=="
     },
@@ -3910,6 +3917,22 @@
         "@astrojs/starlight@0.32.5_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0"
       ]
     },
+    "starlight-links-validator@0.14.3_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14__lightningcss@1.29.3__terser@5.39.0_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2__lightningcss@1.29.3__terser@5.39.0_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0": {
+      "integrity": "sha512-2CvQs0ZdIVExrEQ1bn0r2aFx4n+VSOb6vDWK+gTNb5N1c+nXJ7VjUbEsQhj+9Lb7XgY6Nxqz9JXUM9364hJ3ZA==",
+      "dependencies": [
+        "@astrojs/starlight@0.32.5_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14_lightningcss@1.29.3_terser@5.39.0",
+        "@types/picomatch",
+        "github-slugger",
+        "hast-util-from-html",
+        "hast-util-has-property",
+        "is-absolute-url",
+        "kleur@4.1.5",
+        "mdast-util-mdx-jsx",
+        "mdast-util-to-string",
+        "picomatch@4.0.2",
+        "unist-util-visit"
+      ]
+    },
     "starlight-markdown-blocks@0.1.0_@astrojs+starlight@0.32.5__astro@5.5.5___@types+node@22.13.14___vite@6.2.3____@types+node@22.13.14___zod@3.24.2__@types+node@22.13.14_astro@5.5.5__@types+node@22.13.14__vite@6.2.3___@types+node@22.13.14__zod@3.24.2_@types+node@22.13.14": {
       "integrity": "sha512-nPnT/eMNIysR+TZGDzNEf9U0NnED+wPgtuPQaoAwrvoyOoNvAPQtvwDTYw3YzoHL0scEaOIh3J0S04cTZ1qk2w==",
       "dependencies": [
@@ -4417,6 +4440,7 @@
         "npm:starlight-image-zoom@~0.11.1",
         "npm:starlight-ion-theme@^2.2.3",
         "npm:starlight-kbd@0.2",
+        "npm:starlight-links-validator@~0.14.3",
         "npm:starlight-markdown-blocks@0.1",
         "npm:terser@^5.39.0",
         "npm:typerinth@^1.1.0",

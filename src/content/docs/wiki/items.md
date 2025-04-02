@@ -20,13 +20,13 @@ name.revuxor is an item with a texture depicting an extremely pixelated, graysca
 
 We do not know how or why an image of what was done to Revuxor seems to exist in the game now, and we do not know if it is just an image or if it is actually parts of his decimated body brought into the code.
 
-It can be found in chests in places where Revuxor was present and left something behind, such as the [Gore Structure](/wiki/structures#Gore_Structure) or [Dead End](/wiki/dimensions/null-torture#Dead_End).
+It can be found in chests in places where Revuxor was present and left something behind, such as the [Gore Structure](/wiki/structures#gore-structure) or [Dead End](/wiki/dimensions/null-torture#dead-end).
 
 ## Record 14
 
-Record 14 is a music disc with a texture of Music Disc 13. It can be found in a chest inside the OVERLORD's room in the [Cave Base](/wiki/structures/cave-base).
+Record 14 is a music disc with a texture of Music Disc 13. It can be found in a chest inside the OVERLORD's room in the Cave Base.
 
-The disc depicts a player named [__Blackout__](/wiki/lore#Members_2), who was the leader of [Blackout's Clan](/wiki/lore), and how he was ambushed and killed by [Circuit](/wiki/entities/circuit).
+The disc depicts a player named [__Blackout__](/wiki/lore#members-1), who was the leader of [Blackout's Clan](/wiki/lore), and how he was ambushed and killed by [Circuit](/wiki/entities/circuit).
 
 ## Record 15
 
@@ -36,7 +36,7 @@ Record 15 is a music disc with a texture of Music Disc cat. It is crucial to the
 
 What you hear in the beginning of the disc's audio is a player initially collecting wood and breaking a few leaves as he does so. Around the mid-point of the audio you will begin to hear the rapid placement of blocks. It's assumed that the player here is putting down torches in rapid succession. Afterwards the player will return to logging before walking off a small ledge and injuring themselves seemingly to collect wood that had fallen down. As they continue gathering items on the ground, a drone sound can be heard. Apparently unaware of it, they wander around for a bit more before something lets out a loud, inhuman scream and the disc gets cut short in the middle of it.
 
-The disc depicts a player named [xXram2dieXx](/wiki/entities/xXram2dieXx), who was the leader of [xXram2dieXx's Clan](/wiki/lore), and how he was ambushed and killed by [The Broken End](/wiki/entities/tbe).
+The disc depicts a player named [xXram2dieXx](/wiki/entities/xxram2diexx), who was the leader of [xXram2dieXx's Clan](/wiki/lore), and how he was ambushed and killed by [The Broken End](/wiki/entities/tbe).
 
 ## Record 16
 
@@ -97,7 +97,7 @@ Hello is a transparent block that can be found in one of xXram2dieXx's chests in
 
 It can be placed by either the player or it can randomly spawn as a [random event](/wiki/mechanics/random-events).
 
-Upon breaking Hello, it will spawn a 5x3 cross made of netherrack with a sign on the 4th height block emitting a fast heartbeat sound for few seconds. Its destruction is a known condition for [xXram2dieXx](./entities/xXram2dieXx) to spawn.
+Upon breaking Hello, it will spawn a 5x3 cross made of netherrack with a sign on the 4th height block emitting a fast heartbeat sound for few seconds. Its destruction is a known condition for [xXram2dieXx](/wiki/entities/xxram2diexx) to spawn.
 
 
 | ![Image](../../../assets/wiki/HelloBlockCross.png) |

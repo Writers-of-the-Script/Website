@@ -11,7 +11,7 @@ off what evidence has been gathered from the Broken Script.
 The Broken End is a very powerful and very dangerous entity, allegedly
 capable of doing irreversible damage to players by killing them and
 taking their souls. He has the ability to prevent players from sleeping
-via an [err.endisnear](/wiki/entities/errsleep) error, and is capable of
+via an [err.endisnear](/wiki/mechanics/errsleep) error, and is capable of
 causing a [minecraft.chatengine](/wiki/mechanics/minecraftchatengine)
 failure.
 

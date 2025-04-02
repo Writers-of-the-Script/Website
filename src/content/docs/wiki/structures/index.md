@@ -29,8 +29,7 @@ them in a [youtube video](https://youtu.be/Y16vdetFVH8).
 
 [Clan Build](/wiki/structures/clan-build) is a large, 5 story build (6 if you
 include the roof) made of cobblestone and smooth stone. Signs found on
-each floor indicate that this base used to belong to the [0nullvoid0's
-Clan](/wiki/lore#0nullvoid0's_Clan) before the void entities began
+each floor indicate that this base used to belong to the [0nullvoid0's Clan](/wiki/lore#xxram2diexxs-clan) before the void entities began
 to wreak destruction.
 
   - The base contains chests filled entirely with missing texture items
@@ -129,7 +128,7 @@ A small clump of fences and signs with some reading: A0, C0, B0,
 
 The Gore Structure is a small wooden build lit by redstone torches, and
 made entirely from oak logs and planks. Inside is a chest that contains
-[name.revuxor](/wiki/items#name.revuxor) items, and in the middle
+[name.revuxor](/wiki/items#namerevuxor) items, and in the middle
 of those is a book and quill. The book and quill contains the following
 binary code inside, which translates into:
 

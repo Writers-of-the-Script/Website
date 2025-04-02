@@ -8,7 +8,7 @@ of [xXram2dieXx's Clan](/wiki/lore#xxram2diexxs-clan).
 ## Appearance
 
 xXram2dieXx's exact appearance as a player is unknown, but his
-[xXram2dieXx](/wiki/entities/xXram2dieXx) entity skin suggests he most
+[xXram2dieXx](/wiki/entities/xxram2diexx) entity skin suggests he most
 likely used default Steve skin.
 
 ## Personality
@@ -49,7 +49,7 @@ clarify it.
 
 On 04.11.2018, after soemone requested more oak wood, he agreed to go
 get some, and while he was at it, he was ambushed and killed by [The Broken End](/wiki/entities/tbe). All of this was somehow recorded
-on [Record 15](/wiki/items#Record_15).
+on [Record 15](/wiki/items#record-15).
 
 After his death at the hands of The Broken End, his soul was somehow
 split into several parts, each of which seems to have subsequently
@@ -58,8 +58,8 @@ soul:
 
   - [Null](/wiki/entities/null), a part of his soul that was able to somehow
     retain his original consciousness and memories, thus being
-    classified as a [Soul](/wiki/entities#Souls) entity.
-  - [xXram2dieXx](/wiki/entities/xXram2dieXx), a part of his soul that
+    classified as a [Soul](/wiki/entities#souls) entity.
+  - [xXram2dieXx](/wiki/entities/xxram2diexx), a part of his soul that
     exhibits only unconscious, mild anomalous properties and is directly
-    tied to the [Hello](/wiki/items#Hello) block, thus being
-    classified as an [Anomaly](/wiki/entities#Anomalies) entity.
+    tied to the [Hello](/wiki/items#hello) block, thus being
+    classified as an [Anomaly](/wiki/entities#anomalies) entity.

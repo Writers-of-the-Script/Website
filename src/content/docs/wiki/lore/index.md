@@ -16,13 +16,62 @@ Within the Broken Script, a few usernames can be found across structures, some t
 
 ### Members
 
-// TODO
+> - **Name:** [xXram2dieXx (Formerly 0nullvoid0)](/wiki/lore/xxram2diexx)
+> - **Notes:**
+>
+> xXram2dieXx, also formerly known as `0nullvoid0`, was the leader of his clan.
+> His soul likely splintered across several different [Entities](/wiki/entities) within [The Broken Script](/wiki/tbs).
+> He seemed to be a spirited and playful person before the events that occured.
+>
+> ![XXram2dieXxSign.png](../../../../assets/wiki/XXram2dieXxSign.png)
+
+---
+
+> - **Name:** DyeXD412 [(Curved)](/wiki/entities/curved)
+> - **Notes:**
+>
+> A member of [xXram2dieXx](/wiki/lore/xxram2diexx)'s clan.
+> During the events leading up to the downfall of the clan, DyeXD412 was found listening to Disc 13 over and over on the [Clan Build](/wiki/structures/clan-build)'s 4th floor. He would not respond and would keep repeating the disc over and over.
+>
+> ![CurvedWiki.png](../../../../assets/wiki/CurvedWiki.png)
+
+---
+
+> - **Name:** [WHYER4](/wiki/lore/whyer4)
+> - **Notes:**
+>
+> Not much is known about WHYER4, aside from the fact that they were a member of [xXram2dieXx](/wiki/lore/xxram2diexx)'s clan.
+>
+> ![WHYER4Sign.png](../../../../assets/wiki/WHYER4Sign.png)
 
 ## Blackout's Clan
 
 ### Members
 
-// TODO
+> - **Name:** [__Blackout__ (Hetzer)](/wiki/entities/hetzer)
+> - **Notes:**
+>
+> The leader of his clan. He was likely killed by Circuit, as depicted by [Disc 14](/wiki/items#record-14), before becoming [Hetzer](/wiki/entities/hetzer). It is unknown why he is the way he is.
+>
+> ![Placeholder](../../../../assets/wiki/Placeholder.png)
+
+---
+
+> - **Name:** OVERLORD
+> - **Notes:**
+>
+> Unknown.
+>
+> ![Placeholder](../../../../assets/wiki/Placeholder.png)
+
+---
+
+> - **Name:** catfish12
+> - **Notes:**
+>
+> Unknown.
+>
+> ![Placeholder](../../../../assets/wiki/Placeholder.png)
 
 # Timeline
 
