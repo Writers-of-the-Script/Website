@@ -27,14 +27,69 @@ eternally imprisoned in Minecraft.
 
 Only one soul is known.
 
-// TODO
+> - **Name:** [Null](/wiki/entities/null)
+> - **Notes:**
+>
+> [Null](/wiki/entities/null) is a player-like entity and a splinter of [0nullvoid0](/wiki/lore/xxram2diexx)'s soul.
+> [Null](/wiki/entities/null) will join the game (visible in chat) early into the playthrough and will appear in the tab list.
+> After he joins, he can start to appear in the player's world. Interactions with [Null](/wiki/entities/null) vary the most as he can be seemingly erratic, however it could be observed that [Null](/wiki/entities/null) is an entity that could be reasoned with.
+>
+> ![Nullwatching.png](../../../../assets/wiki/Nullwatching.png)
 
 ## Entities
 
 This classification is for players who have suffered a fate worse than
 death and been warped into, seemingly, monsterous presences.
 
-// TODO
+> - **Name:** [Curved](/wiki/entities/curved)
+> - **Notes:**
+>
+> [Curved](/wiki/entities/curved) is a player-like entity; formerly a player named [DyeXD412](/wiki/lore#members).
+> Listening to Disc 13 on loop corrupted him and over time turned him into an entity. He appears to be violently glitching, his model constantly shaking and visually teleporting around.
+>
+> ![CurvedWiki.png](../../../../assets/wiki/CurvedWiki.png)
+
+> - **Name:** [Faraway](/wiki/entities/faraway)
+> - **Notes:**
+>
+> [Faraway](/wiki/entities/faraway) is a player-like entity with a solid white glowing texture. Faraway will rarely appear on the ground, somewhere in the vicinity of the player, and watch them. Occasionally they will slowly move towards the player if not directly looked at.
+>
+> ![Faraway_in_the_wild.png](../../../../assets/wiki/Faraway%20in%20the%20wild.png)
+
+> - **Name:** [Hetzer](/wiki/entities/hetzer)
+> - **Notes:**
+>
+> [Hetzer](/wiki/entities/hetzer) could be best described as a "spheroid" consisting of several rings encasing a small cube in the center. Its texture seems to be white noise. Hetzer is an entity that seems to be shrouded in falsehoods, upon approach it will disappear, and an edited version of Minecraft's Subwoofer Lullaby, known as the False Subwoofer Lullaby, will play before the music abruptly stops, time is set to midnight, and after a minute [Circuit](/wiki/entities/circuit) will spawn.
+>
+> ![HetzerWiki.png](../../../../assets/wiki/HetzerWiki.png)
+
+> - **Name:** [Notexture](/wiki/entities/notexture)
+> - **Notes:**
+>
+> [Notexture](/wiki/entities/notexture) is a player-like entity with the ability to teleport the player to another dimension when physically interacted with. There's little information on him other than what is known of his behavior. [Notexture](/wiki/entities/notexture) spawns and replaces blocks with missing texture blocks as it moves, and is seemingly hostile.
+>
+> ![Notext.png](../../../../assets/wiki/Notext.png)
+
+> - **Name:** [Nothing is Watching](/wiki/entities/nothingiswatching)
+> - **Notes:**
+>
+> [Nothing is Watching](/wiki/entities/nothingiswatching) is a rectangular black censor box with nothing behind it. Upon direct player observation, black screen artifacts appear and [Nothing is Watching](/wiki/entities/nothingiswatching) will rapidly begin approaching the player, barreling through physical objects, damaging entities, and destroying the blocks in its path. Getting hit by it causes the game to crash.
+>
+> ![Nothingwatches.png](../../../../assets/wiki/Nothingwatches.png)
+
+> - **Name:** [r2](/wiki/entities/r2)
+> - **Notes:**
+>
+> [r2](/wiki/entities/r2) (sometimes referred to as "Siluet") is a deformed humanoid silhouette with no visible features. It is approximately 3 bloxks tall and shakes erratically both when standing still and moving. Upon direct player observation, [r2](/wiki/entities/r2) will either disappear or it will lock in on the player's location and rapidly begin approach. Physical contact with [r2](/wiki/entities/r2) will kill the player and crash their game.
+>
+> ![SiluetWiki.png](../../../../assets/wiki/SiluetWiki.png)
+
+> - **Name:** [Revuxor](/wiki/entities/revuxor)
+> - **Notes:**
+>
+> [Revuxor](/wiki/entities/revuxor) is a player-like entity with a monochrome Steve skin. He is one of the more mysterious player-like entities. In any instance where the player is going to be banned, he will appear behind them for just a single tick.
+>
+> ![RevuxorWiki.png](../../../../assets/wiki/RevuxorWiki.png)
 
 ## Anomalies
 
@@ -42,7 +97,26 @@ Classified as players who have also been warped beyond recognition, but
 not as powerful as the entities, for the most part, it seems Anomalies
 are not outwardly hostile, but relatively benign in their presence.
 
-// TODO
+> - **Name:** [xXram2dieXx](/wiki/entities/xxram2diexx)
+> - **Notes:**
+>
+> [xXram2dieXx](/wiki/entities/xxram2diexx) is a player-like entity and is likely a splinter of [0nullvoid0](/wiki/lore/xxram2diexx)'s soul. After breaking a hello block, xXram2dieXx will be able to join the world. When this happens, the server will inform the player, "`Local game hosted on port [00000]`", and then after a few seconds, xXram2dieXx can be observed joining the game, and the time will be set to midnight.
+>
+> ![XXram2dieXx.png](../../../../assets/wiki/XXram2dieXx.png)
+
+> - **Name:** [Herobrine](/wiki/entities/herobrine)
+> - **Notes:**
+>
+> [Herobrine](/wiki/entities/herobrine) is a player-like entity with a darkened Steve skin and glowing white eyes. Herobrine from the creepypasta and legends seems to exist within [The Broken Script](/wiki/tbs). How he came to be, what his intentions are, and who his affiliations are with, is unknown.
+>
+> ![HerobrineWiki.png](../../../../assets/wiki/HerobrineWiki.png)
+
+> - **Name:** [Sub Anomaly 1](/wiki/entities/sub-anomaly-1)
+> - **Notes:**
+>
+> [Sub Anomaly 1](/wiki/entities/sub-anomaly-1) appears to be a "cloud" of black, spastic particles that has no discernible body or point of origin. Due to the appearance, it could be assumed this is a moving mass of corruption, which will slowly move towards the player, inflicting damage when near. Not much can be said about it, since that is the only thing it does.
+>
+> ![SubAnomaly-1.png](../../../../assets/wiki/SubAnomaly-1.png)
 
 ## Void Creatures
 
@@ -50,4 +124,9 @@ are not outwardly hostile, but relatively benign in their presence.
 
 Through unknown means and under unknown conditions, Void Creatures are seemingly able to crawl out of the game and into the real world, at least through the monitors of computers under the influence of the Void.
 
-// TODO
+> - **Name:** [Circuit](/wiki/entities/circuit)
+> - **Notes:** Loud.
+>
+> [Circuit](/wiki/entities/circuit) is the lowest in the Void Creature chain of command. He is capable of shapeshifting in order to trick the player. [Null](/wiki/entities/null) believes that everything was all his fault, and what that implies can only be theorized. It's heavily implied that [Circuit](/wiki/entities/circuit) impersonated [Null](/wiki/entities/null) and caused the downfall of the clan server. Of the Void Creatures, Circuit's behaviors are the most documented, as he frequently haunts every action of the players in [The Broken Script](/wiki/tbs). He is also very loud.
+>
+> ![CircuitWiki.png](../../../../assets/wiki/CircuitWiki.png)

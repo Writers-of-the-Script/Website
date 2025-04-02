@@ -221,15 +221,10 @@ spoilers.
 
 ## Notes
 
-1.  It's theorized that Null's name reminds him of who he has become,
-    which he hates. Notably, he reacts with the same amount of vitriol
-    at the mention of xXram2dieXx.
-2.  There is a popular creepypasta of the same name,
-    [Null](https://minecraftcreepypasta.fandom.com/wiki/Null) However,
-    the one from the Broken Script seems to be only related in name.
-3.  You can glitch null by typing "Fuck you" and then pasting "Friend?",
-    you'll need a friend for that to do so. The spawned glitched null is
-    named "\[\]" and has a 3 blocks in height hitbox.
+1. It's theorized that Null's name reminds him of who he has become, which he hates. Notably, he reacts with the same amount of vitriol at the mention of xXram2dieXx.
+2. There is a popular creepypasta of the same name, [Null](https://minecraftcreepypasta.fandom.com/wiki/Null) However, the one from the Broken Script seems to be only related in name.
+3. You can glitch null by typing "Fuck you" and then pasting "Friend?", you'll need a friend for that to do so. The spawned glitched null is named "\[\]" and has a 3 blocks in height hitbox.
+4. Null is confirmed to be 14 years old.
 
 ## Gallery
 
