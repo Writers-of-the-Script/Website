@@ -2,6 +2,8 @@
 title: Random Events
 ---
 
+import CaptionedAudio from "../../../../components/CaptionedAudio.astro";
+
 In [The Broken Script](/wiki/tbs), Random events may
 occur to the player or the world around the player. These events are
 anonymous in nature with no real rhyme or reason to them, some of them
@@ -15,25 +17,34 @@ documented thus far.
 
 ### Music
 
-<!-- TODO: Embed audio -->
 `song.ogg` starts playing, the player is given blindness
 II, slowness II, and slow falling II.
 
 The origin of the song is from [CHRISTMAS EVE PARTY - GEMINI HOME ENTERTAINMENT](https://www.youtube.com/watch?v=gPIN2Q-PBQs&list=TLPQMjMwMzIwMjU-HBskoneyiQ&index=2)
 
+<CaptionedAudio src={import("../../../../assets/wiki/Song.ogg")}>
+    `song.ogg`
+</CaptionedAudio>
+
 ### Null Sad
 
-<!-- TODO: Embed audio -->
 `normalambienceevent.ogg` starts playing,
 subtitled "null sad". This track is also used for the
 [Null_Torture](/wiki/dimensions/null-torture) Dimension as well as the
 [Clan_Void](/wiki/dimensions/clan-void).
 
+<CaptionedAudio src={import("../../../../assets/wiki/Normalambienceevent.ogg")}>
+    `normalambienceevent.ogg`
+</CaptionedAudio>
+
 ### Null Jumpscare
 
 null appears floating in front of the player accompanied by black
 particles and the `randomassjumpscare.ogg` track plays.
-<!-- TODO: Embed audio -->
+
+<CaptionedAudio src={import("../../../../assets/wiki/Randomassjumpscare.ogg")}>
+    `randomassjumpscare.ogg`
+</CaptionedAudio>
 
 ![Null_float.png](../../../../assets/wiki/Null%20float.png)
 
@@ -99,8 +110,11 @@ middle of the screen.
 
 ### BSoD
 
-<!-- TODO: Embed audio -->
 Distorted BSoD appears and `fakebsodauido.ogg` starts playing.
+
+<CaptionedAudio src={import("../../../../assets/wiki/Fakebsodauido.ogg")}>
+    `fakebsodauido.ogg`
+</CaptionedAudio>
 
 ### Lightning
 

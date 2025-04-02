@@ -70,10 +70,10 @@ death and been warped into, seemingly, monsterous presences.
 >
 > ![Notext.png](../../../../assets/wiki/Notext.png)
 
-> - **Name:** [Nothing is Watching](/wiki/entities/nothingiswatching)
+> - **Name:** [Nothing is Watching](/wiki/entities/nothing-is-watching)
 > - **Notes:**
 >
-> [Nothing is Watching](/wiki/entities/nothingiswatching) is a rectangular black censor box with nothing behind it. Upon direct player observation, black screen artifacts appear and [Nothing is Watching](/wiki/entities/nothingiswatching) will rapidly begin approaching the player, barreling through physical objects, damaging entities, and destroying the blocks in its path. Getting hit by it causes the game to crash.
+> [Nothing is Watching](/wiki/entities/nothing-is-watching) is a rectangular black censor box with nothing behind it. Upon direct player observation, black screen artifacts appear and [Nothing is Watching](/wiki/entities/nothing-is-watching) will rapidly begin approaching the player, barreling through physical objects, damaging entities, and destroying the blocks in its path. Getting hit by it causes the game to crash.
 >
 > ![Nothingwatches.png](../../../../assets/wiki/Nothingwatches.png)
 
@@ -130,3 +130,17 @@ Through unknown means and under unknown conditions, Void Creatures are seemingly
 > [Circuit](/wiki/entities/circuit) is the lowest in the Void Creature chain of command. He is capable of shapeshifting in order to trick the player. [Null](/wiki/entities/null) believes that everything was all his fault, and what that implies can only be theorized. It's heavily implied that [Circuit](/wiki/entities/circuit) impersonated [Null](/wiki/entities/null) and caused the downfall of the clan server. Of the Void Creatures, Circuit's behaviors are the most documented, as he frequently haunts every action of the players in [The Broken Script](/wiki/tbs). He is also very loud.
 >
 > ![CircuitWiki.png](../../../../assets/wiki/CircuitWiki.png)
+
+> - **Name:** [Integrity](/wiki/entities/integrity)
+> - **Notes:**
+>
+> [Integrity](/wiki/entities/integrity) is a Void Creature and the main antagonist of [The Broken Script](/wiki/tbs), ultimately responsible for everything that has occured. He is the presumed source of [The Broken Script](/wiki/tbs)'s corruption. It is theorized that at some unknown point in time, as early as the Alpha versions of Minecraft, [Integrity](/wiki/entities/integrity) entired the world and began waiting for players to join it.
+>
+> ![IntegrityWiki.png](../../../../assets/wiki/IntegrityWiki.png)
+
+> - **Name:** [The Broken End](/wiki/entities/tbe)
+> - **Notes:**
+>
+> [The Broken End](/wiki/entities/tbe) is a very dangerous Void Creature. His size is hulking and it's assumed that he works for [Integrity](/wiki/entities/integrity). [The Broken End](/wiki/entities/tbe) is a very powerful entity, capable of doing irreversible damage to players by killing them and taking their souls. [The Broken End](/wiki/entities/tbe) is also capable of causing the [minecraft.chatengine](/wiki/mechanics/minecraftchatengine) failure.
+>
+> ![TBEjerk.png](../../../../assets/wiki/TBEjerk.png)

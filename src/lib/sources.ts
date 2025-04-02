@@ -1,6 +1,6 @@
 const sources = ["modrinth", "official", "community"];
 
-// TODO: Make these synamic like in ./data.ts
+// TODO: Make these dynamic like in ./data.ts
 const loaders = ["forge", "neoforge"];
 const minecraft = ["1.20.1", "1.21.1"];
 

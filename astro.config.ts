@@ -57,16 +57,6 @@ export default defineConfig({
                 },
 
                 {
-                    label: "[tabler:stack-3-filled] Dimensions",
-                    autogenerate: { directory: "wiki/dimensions" },
-                },
-
-                {
-                    label: "[tabler:ghost-3-filled] Entities",
-                    autogenerate: { directory: "wiki/entities" },
-                },
-
-                {
                     label: "[tabler:book-filled] Lore",
                     autogenerate: { directory: "wiki/lore" },
                 },
@@ -77,8 +67,18 @@ export default defineConfig({
                 },
 
                 {
+                    label: "[tabler:stack-3-filled] Dimensions",
+                    autogenerate: { directory: "wiki/dimensions" },
+                },
+
+                {
                     label: "[tabler:buildings] Structures",
                     autogenerate: { directory: "wiki/structures" },
+                },
+
+                {
+                    label: "[tabler:ghost-3-filled] Entities",
+                    autogenerate: { directory: "wiki/entities" },
                 },
             ],
 
