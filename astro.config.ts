@@ -11,6 +11,26 @@ export default defineConfig({
     site: "https://tbssite.stardustmodding.org",
     prefetch: true,
 
+    server: Deno.env.has("REDSTONE_IS_DUMB")
+        ? {
+            port: 4000,
+        }
+        : {},
+
+    vite: {
+        server: Deno.env.has("REDSTONE_IS_DUMB")
+            ? {
+                port: 4000,
+                strictPort: true,
+                hmr: {
+                    port: 4000,
+                    clientPort: 443,
+                    protocol: "wss",
+                },
+            }
+            : {},
+    },
+
     integrations: [
         UnoCSS({
             injectReset: true,
@@ -127,12 +147,17 @@ export default defineConfig({
                                 components: {
                                     ...config.components,
                                     Head: "./src/components/WikiHead.astro",
-                                    Sidebar: "./src/components/WikiSidebar.astro",
-                                    SiteTitle: "./src/components/WikiSiteTitle.astro",
-                                    EditLink: "./src/components/WikiEditButton.astro",
-                                    Pagination: "./src/components/WikiPagination.astro",
+                                    Sidebar:
+                                        "./src/components/WikiSidebar.astro",
+                                    SiteTitle:
+                                        "./src/components/WikiSiteTitle.astro",
+                                    EditLink:
+                                        "./src/components/WikiEditButton.astro",
+                                    Pagination:
+                                        "./src/components/WikiPagination.astro",
                                     Header: "./src/components/WikiHeader.astro",
-                                    MobileMenuFooter: "./src/components/WikiMobileMenuFooter.astro",
+                                    MobileMenuFooter:
+                                        "./src/components/WikiMobileMenuFooter.astro",
                                 },
                             });
                         },
