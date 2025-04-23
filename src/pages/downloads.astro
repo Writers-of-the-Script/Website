@@ -5,15 +5,17 @@ import { allVersions } from "../lib/data";
 import UnsafeUI from "../components/UnsafeUI.astro";
 import ChangelogUI from "../components/ChangelogUI.astro";
 import Sidebar from "../components/Sidebar.astro";
+import BuildInfo from "../components/BuildInfo.astro";
 ---
+
+<UnsafeUI />
+<ChangelogUI />
+<BuildInfo invis />
 
 <StarlightPage
     frontmatter={{ title: "Downloads", template: "splash", editUrl: false }}
     hasSidebar={false}
 >
-    <UnsafeUI />
-    <ChangelogUI />
-
     <div
         class="w-full md:w-[calc(100vw_-_2rem)] lg:w-[calc(100vw_-_4rem)] h-full flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-start justify-start"
     >

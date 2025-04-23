@@ -10,23 +10,40 @@ const branch = cp
     .split("/")
     .pop()!
     .trim();
+
+interface Props {
+    invis?: boolean;
+}
+
+const { invis } = Astro.props;
 ---
 
-<div class="font-jbm text-sm text-gray fixed bottom-0 p-2 w-full bg-dark-3">
-    <span class="hidden md:inline-block">This website is open source.</span>
-
-    Built from branch <a
-        class="text-light underline"
-        href={`${repo}/tree/${branch}`}
-        target="_blank">{branch}</a
-    >
-
-    at commit <a
-        class="text-light underline"
-        href={`${repo}/commit/${hash}`}
-        target="_blank">{hash}</a
-    >.
-</div>
+{
+    invis != true && (
+        <div class="font-jbm text-sm text-gray fixed bottom-0 p-2 w-full bg-dark-3">
+            <span class="hidden md:inline-block">
+                This website is open source.
+            </span>
+            Built from branch{" "}
+            <a
+                class="text-light underline"
+                href={`${repo}/tree/${branch}`}
+                target="_blank"
+            >
+                {branch}
+            </a>
+            at commit{" "}
+            <a
+                class="text-light underline"
+                href={`${repo}/commit/${hash}`}
+                target="_blank"
+            >
+                {hash}
+            </a>
+            .
+        </div>
+    )
+}
 
 <meta id="__repo" name="github-repo" content={repo} />
 <meta id="__branch" name="github-branch" content={branch} />

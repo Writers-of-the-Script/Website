@@ -1,9 +1,9 @@
 <div
-    class="fixed z-10 w-full h-full bg-[rgba(0,0,0,0.5)] hidden items-center justify-center flex-col"
+    class="fixed z-10 w-full h-full bg-[rgba(0,0,0,0.5)] hidden items-center justify-center flex-col top-0"
     id="unsafe-outer"
 >
     <div
-        class="w-[90%] md:w-3xl h-md bg-dark-4 font-jbm p-4 overflow-scroll lg:overflow-unset"
+        class="w-[90%] md:w-3xl h-md bg-dark-4 font-jbm p-4 overflow-scroll lg:overflow-unset text-white"
         id="unsafe-container"
     >
         <p class="text-yellow text-lg font-bold">
@@ -98,7 +98,7 @@
             ev.stopPropagation();
         });
 
-        const as = document.querySelectorAll("a");
+        const as = document.getElementsByTagName("a");
 
         const repo = (document.getElementById("__repo") as HTMLMetaElement)
             .content;
@@ -107,8 +107,8 @@
             .content;
 
         for (const a of as) {
-            if (a.href.includes("!!unsafe:/files/")) {
-                const url = `${repo}/raw/${branch}/files/${a.href.split("!!unsafe:/files/").pop()}`;
+            if (a.href.includes("!!unsafe:")) {
+                const url = `${repo}/raw/${branch}${a.href.split("!!unsafe:").pop()}`;
                 const clone = a.cloneNode(true);
 
                 a.parentNode!.replaceChild(clone, a);
@@ -125,7 +125,6 @@
         }
     };
 
-    updateLinks();
     window.addEventListener("load", updateLinks);
     document.addEventListener("astro:page-load", updateLinks);
 </script>
