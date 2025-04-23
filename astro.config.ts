@@ -7,18 +7,20 @@ import kbd from "starlight-kbd";
 import mdBlocks from "starlight-markdown-blocks";
 import validator from "starlight-links-validator";
 
+const env = "Deno" in globalThis ? Deno.env.toObject() : process.env;
+
 export default defineConfig({
     site: "https://tbssite.stardustmodding.org",
     prefetch: true,
 
-    server: Deno.env.has("REDSTONE_IS_DUMB")
+    server: env.REDSTONE_IS_DUMB
         ? {
             port: 4000,
         }
         : {},
 
     vite: {
-        server: Deno.env.has("REDSTONE_IS_DUMB")
+        server: env.REDSTONE_IS_DUMB
             ? {
                 port: 4000,
                 strictPort: true,
