@@ -6,10 +6,12 @@ interface Props {
 const { src } = Astro.props;
 ---
 
-<div>
-    <audio src={(await src).default} controls />
+<div class="border-1 p-3 border-[rgba(255,255,255,0.2)]">
+    <audio src={(await src).default} controls></audio>
 
     <caption>
-        <slot />
+        <div class="italic font-bold">
+            <slot />
+        </div>
     </caption>
 </div>

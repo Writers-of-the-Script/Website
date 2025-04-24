@@ -2,6 +2,8 @@
 title: Random Entity
 ---
 
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+
 **Random Entity** is a player-like entity that can spawn randomly in all
 biomes and dimensions.
 
@@ -18,4 +20,8 @@ and unresponsive to player attacks. However, other mobs can hurt it.
 It's capable of spawning a random entity after an uncertain amount of
 time.
 
-Random entity population.png|They spawn like endermen in the End...
+<CaptionedImage
+    src={import("../../../../assets/wiki/Random entity population.png")}
+>
+    They spawn like endermen in the End...
+</CaptionedImage>

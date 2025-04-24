@@ -2,10 +2,11 @@
 title: Chat Interactions
 ---
 
-In the 1.8 version of [The Broken Script](/wiki/tbs) it was required for the players to be
-within a certain vicinity of [Null](/wiki/entities/null) watching to interact with him. It no longer
-seems to be the case in version 1.9. There are seemingly no conditions and
-responses are based off what the player says in chat.
+In the 1.8 version of [The Broken Script](/wiki/tbs) it was required for the
+players to be within a certain vicinity of [Null](/wiki/entities/null) watching
+to interact with him. It no longer seems to be the case in version 1.9. There
+are seemingly no conditions and responses are based off what the player says in
+chat.
 
 The following interactions are capable of taking place, and are arranged in a
 table. Expand the table at your own risk, as it contains heavy spoilers.

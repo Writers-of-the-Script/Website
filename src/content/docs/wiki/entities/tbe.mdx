@@ -2,6 +2,10 @@
 title: The Broken End
 ---
 
+import { Tabs, TabItem, Steps } from "@astrojs/starlight/components";
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+import CaptionedAudio from "../../../../components/CaptionedAudio.astro";
+
 **The Broken End** is a seemingly intelligent Void Entity, it could be
 easily stated that he harbours only malicious intent towards players. It
 is assumed that he works for [Integrity](/wiki/entities/integrity), acting
@@ -39,14 +43,14 @@ standing nearby observing the player. Approaching too close to the
 Broken End or observing him directly will cause the in-game time to be
 set to midnight and one of two interactions to occur:
 
-  - If scared away, it will disappear, playing a heartbeat sound and
-    giving the player blindness.
-  - If enraged, it will begin chase with an ear-piercing scream, upon
-    reaching the player it takes only one hit to send the player out of
-    their own world, effectively banning the player. However, if the
-    Broken End is unable to reach the player, the chase will eventually
-    timeout and end. In this enraged, chase state, the Broken End is
-    capable of breaking blocks.
+- If scared away, it will disappear, playing a heartbeat sound and
+  giving the player blindness.
+- If enraged, it will begin chase with an ear-piercing scream, upon
+  reaching the player it takes only one hit to send the player out of
+  their own world, effectively banning the player. However, if the
+  Broken End is unable to reach the player, the chase will eventually
+  timeout and end. In this enraged, chase state, the Broken End is
+  capable of breaking blocks.
 
 ### Void Holes
 
@@ -59,24 +63,41 @@ their spread once they encounter water or air. Blocks will disappear
 down to the void, and it is impossible to break the spreading blocks
 unless in creative mode.
 
-  - Currently, this behaviour is relatively undocumented and seems to be
-    quite rare.
+- Currently, this behaviour is relatively undocumented and seems to be
+  quite rare.
 
 ## Notes
 
-1.  If the player types "The Broken End" in chat, Circuit will reply
-    with "Administration".
+<Steps>
+    1. If the player types "The Broken End" in chat, Circuit will reply with
+    "Administration".
+</Steps>
 
 ## Media
 
-<tabber> |-|Gallery=
+<Tabs>
+    <TabItem label="Gallery">
+        <CaptionedImage src={import("../../../../assets/wiki/Help.gif")}>
+            The "B" in "The Broken End" stands for Busting a Move
+        </CaptionedImage>
 
-Help.gif| The "B" in "The Broken End" stands for Busting a move
-TBE.png|TBE's old design prior to 1.9
+        <CaptionedImage src={import("../../../../assets/wiki/TBE.png")}>
+            TBE's old design prior to 1.9
+        </CaptionedImage>
+    </TabItem>
 
-|-|Sounds=
+    <TabItem label="Sounds">
+        <CaptionedAudio src={import("../../../../assets/wiki/Thebrokenendarrives.mp3")}>
+            Spawn
+        </CaptionedAudio>
 
-Thebrokenendarrives.mp3|Spawn thebrokenendishere.ogg|Chase
-thebrokenendspeech.ogg|Endgame Speech
+        <CaptionedAudio src={import("../../../../assets/wiki/Thebrokenendishere.ogg")}>
+            Chase
+        </CaptionedAudio>
 
-</tabber>
+        <CaptionedAudio src={import("../../../../assets/wiki/Thebrokenendspeech.ogg")}>
+            Endgame Speech
+        </CaptionedAudio>
+    </TabItem>
+
+</Tabs>

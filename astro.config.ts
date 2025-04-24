@@ -15,21 +15,21 @@ export default defineConfig({
 
     server: env.REDSTONE_IS_DUMB
         ? {
-            port: 4000,
-        }
+              port: 4000,
+          }
         : {},
 
     vite: {
         server: env.REDSTONE_IS_DUMB
             ? {
-                port: 4000,
-                strictPort: true,
-                hmr: {
-                    port: 4000,
-                    clientPort: 443,
-                    protocol: "wss",
-                },
-            }
+                  port: 4000,
+                  strictPort: true,
+                  hmr: {
+                      port: 4000,
+                      clientPort: 443,
+                      protocol: "wss",
+                  },
+              }
             : {},
     },
 
@@ -48,9 +48,7 @@ export default defineConfig({
                 src: "./src/assets/logo.png",
             },
 
-            customCss: [
-                "./src/styles/docs.css",
-            ],
+            customCss: ["./src/styles/docs.css"],
 
             sidebar: [
                 {
@@ -121,9 +119,7 @@ export default defineConfig({
             plugins: [
                 imageZoom(),
                 kbd({
-                    types: [
-                        { id: "shortcut", label: "Key", default: true },
-                    ],
+                    types: [{ id: "shortcut", label: "Key", default: true }],
                 }),
                 mdBlocks({
                     blocks: {

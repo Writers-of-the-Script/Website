@@ -2,6 +2,9 @@
 title: Integrity
 ---
 
+import { Tabs, TabItem, Steps } from "@astrojs/starlight/components";
+import CaptionedAudio from "../../../../components/CaptionedAudio.astro";
+
 **Integrity** is an intelligent Void Entity and the main antagonist of
 [The Broken Script](/wiki/tbs) and
 [spectrum_11](/wiki/spectrum-11). It's heavily implied that
@@ -90,19 +93,44 @@ When he uses this ability a corrupted voiceline is heard.
 
 ## Notes
 
-1.  It is known that he is the "final boss", so to say. As Integrity is
-    seemingly the source of all the suffering in [The Broken Script](/wiki/tbs). His immediate demise could theoretically be the salvation of the [former clan](/wiki/lore)'s souls within [The Broken Script](/wiki/tbs).
+<Steps>
+    1. It is known that he is the "final boss", so to say. As Integrity is
+    seemingly the source of all the suffering in [The Broken Script](/wiki/tbs).
+    His immediate demise could theoretically be the salvation of the [former
+    clan](/wiki/lore)'s souls within [The Broken Script](/wiki/tbs).
+</Steps>
 
 ## Media
 
-<tabber>
+<Tabs>
+    <TabItem label="Sounds">
+        <CaptionedAudio src={import("../../../../assets/wiki/Integritydefeated.ogg")}>
+            Defeated Speech
+        </CaptionedAudio>
 
-|-|Sounds=
+        <CaptionedAudio src={import("../../../../assets/wiki/Integrityendgamespeech.ogg")}>
+            Endgame Speech
+        </CaptionedAudio>
 
-integritydefeated.ogg|Defeated Speech integrityendgamespeech.ogg|Endgame
-Speech integrityspeechandcounting1.ogg|Speech and Counting
-integrityphase3loop.ogg|Phase 3 loop moonglitch.ogg|Curious
-integritychaseloop.ogg|Chase (spectrum_11)
-youwillbecomeoneofus.ogg|Endgame (spectrum_11)
+        <CaptionedAudio src={import("../../../../assets/wiki/Integrityspeechandcounting1.ogg")}>
+            Speech and Counting
+        </CaptionedAudio>
 
-</tabber>
+        <CaptionedAudio src={import("../../../../assets/wiki/Integrityphase3loop.ogg")}>
+            Phase 3 loop
+        </CaptionedAudio>
+
+        <CaptionedAudio src={import("../../../../assets/wiki/Moonglitch.ogg")}>
+            Curious
+        </CaptionedAudio>
+
+        <CaptionedAudio src={import("../../../../assets/wiki/Integritychaseloop.ogg")}>
+            Chase (spectrum_11)
+        </CaptionedAudio>
+
+        <CaptionedAudio src={import("../../../../assets/wiki/Youwillbecomeoneofus.ogg")}>
+            Endgame (spectrum_11)
+        </CaptionedAudio>
+    </TabItem>
+
+</Tabs>

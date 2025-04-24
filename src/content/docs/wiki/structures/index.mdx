@@ -2,6 +2,8 @@
 title: Structures
 ---
 
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+
 Structures in The Broken Script are builds that randomly spawn around
 the world after some time. They will spawn in loaded chunks around the
 player, sometimes in front of their very eyes, and can range from some
@@ -32,18 +34,18 @@ include the roof) made of cobblestone and smooth stone. Signs found on
 each floor indicate that this base used to belong to the [0nullvoid0's Clan](/wiki/lore#xxram2diexxs-clan) before the void entities began
 to wreak destruction.
 
-  - The base contains chests filled entirely with missing texture items
-    called name.null. They disappear from the inventory upon being used
-    by the player and otherwise serve little purpose.
-  - Each floor has signs dated between 2018 and 2019, hinting at the
-    [Lore](/wiki/lore) behind the base, and the Clan that lived in
-    it.
-  - The 5th floor of the base contains void blocks that will teleport
-    the player to the clan void when touched. They cannot be broken
-    normally, but can be harvested with water and placed down elsewhere.
-    All signs on this floor are dated 00.00.0000.
-  - The roof of the base has more signs and a circle of Redstone torches
-    that serve an unknown purpose.
+- The base contains chests filled entirely with missing texture items
+  called name.null. They disappear from the inventory upon being used
+  by the player and otherwise serve little purpose.
+- Each floor has signs dated between 2018 and 2019, hinting at the
+  [Lore](/wiki/lore) behind the base, and the Clan that lived in
+  it.
+- The 5th floor of the base contains void blocks that will teleport
+  the player to the clan void when touched. They cannot be broken
+  normally, but can be harvested with water and placed down elsewhere.
+  All signs on this floor are dated 00.00.0000.
+- The roof of the base has more signs and a circle of Redstone torches
+  that serve an unknown purpose.
 
 ![Clan_build_1.png](../../../../assets/wiki/Clan%20build%201.png)
 
@@ -55,12 +57,12 @@ loaded chunks underground. Due to the nature of its spawning and the way
 The Broken Script affects cave generation, a minimap mod or large scale
 excavation is often required to find it naturally.
 
-  - The base has 8 rooms - 1 "clan rules" room, 3 rooms belonging to one
-    of the players, 2 storage rooms, a portal room, and a room
-    containing a block of protected void.
-  - A jukebox in one of the storage rooms contains Record 14, with
-    another in the adjacent chest. All other chests in the base are
-    filled entirely with name.null.
+- The base has 8 rooms - 1 "clan rules" room, 3 rooms belonging to one
+  of the players, 2 storage rooms, a portal room, and a room
+  containing a block of protected void.
+- A jukebox in one of the storage rooms contains Record 14, with
+  another in the adjacent chest. All other chests in the base are
+  filled entirely with name.null.
 
 ![Cave_Base.png](../../../../assets/wiki/Cave%20Base.png)
 
@@ -108,7 +110,7 @@ There is a chance of a oak sign being spawned with text on it. They
 often range from cryptic messages from heartfelt comments about your
 house (example; "Nice house" sign). While it is unclear who wrote these
 signs, it still makes it slightly clear that not everything wants to
-*harm* you.
+_harm_ you.
 
 Sadly, placing a sign with a response yields no results.
 ![NullSign.png](../../../../assets/wiki/NullSign.png)
@@ -183,7 +185,15 @@ activate.
 
 ![Trap_house_in_river.png](../../../../assets/wiki/Trap%20house%20in%20river.png)
 
-<File:Trap> house room 1.png|Room 1 <File:Trap> house room 2.png|Room 2
+{/* <File:Trap> house room 1.png|Room 1 <File:Trap> house room 2.png|Room 2 */}
+
+<CaptionedImage src={import("../../../../assets/wiki/Trap house room 1.png")}>
+    Room 1
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Trap house room 2.png")}>
+    Room 2
+</CaptionedImage>
 
 ### **Redstone Mossy Cobblestone Cross**
 
@@ -226,15 +236,35 @@ without the sign, containing only 10 Diamonds.
 
 ![GiftAlt.png](../../../../assets/wiki/GiftAlt.png)
 
-<File:Gift> chest.png|The gift chest contents. <File:GiftAlt>
-Contents.png|The alt gift chest contents.
+<CaptionedImage src={import("../../../../assets/wiki/Gift chest.png")}>
+    The gift chest contents.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/GiftAlt Contents.png")}>
+    The alt gift chest contents.
+</CaptionedImage>
 
 # Gallery
 
-<File:Lavacast> grief.gif|A two story player base being destroyed by a
-lavacast structure. <File:Clan> void structures.png|Two broken lavacast
-structures in the clan void, showing that structures can spawn, albeit
-rarely, in that dimension. <File:Hidden> chest.png|Hidden chest within
-the Wooden frame <File:Chest> contents.png|contents of the hidden chest
-within the Wooden Frame <File:Scary> book.png|Book found within the
-Wooden Frame structure
+<CaptionedImage src={import("../../../../assets/wiki/Lavacast grief.gif")}>
+    A two-story player base being destroyed by a lavacast structure.
+</CaptionedImage>
+
+<CaptionedImage
+    src={import("../../../../assets/wiki/Clan void structures.png")}
+>
+    Two broken lavacast structures in the clan void, showing that structures can
+    spawn, albeit rarely, in that dimension.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Hidden chest.png")}>
+    Hidden chest within the Wooden frame
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Chest contents.png")}>
+    Contents of the hidden chest within the Wooden Frame
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Scary book.png")}>
+    Book found within the Wooden Frame structure
+</CaptionedImage>

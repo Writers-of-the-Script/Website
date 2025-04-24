@@ -84,7 +84,7 @@ const setup = () => {
                 const loader = el.dataset.loader!;
                 const version = el.dataset.minecraft!;
                 const elementTags = el.dataset.tags!.split(";");
-                
+
                 const tagsCheck =
                     enabledTags.length <= 0 ||
                     enabledTags.every((tag) => elementTags.includes(tag));

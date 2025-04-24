@@ -2,6 +2,9 @@
 title: "Null"
 ---
 
+import { Tabs, TabItem, Steps } from "@astrojs/starlight/components";
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+
 **Null** is a player-like entity and one of the parts of 0nullvoid0's soul.
 
 His intentions are currently not clear, but according to himself, he wants
@@ -107,22 +110,40 @@ spawn rates increase or get more intense.
 
 ## Notes
 
-1. It's theorized that Null's name reminds him of who he has become, which he
-   hates. Notably, he reacts with the same amount of vitriol at the mention of
-   xXram2dieXx.
-2. There is a popular creepypasta of the same name,
-   [Null](https://minecraftcreepypasta.fandom.com/wiki/Null) However, the one
-   from the Broken Script seems to be only related in name.
-3. You can glitch null by typing "Fuck you" and then pasting "Friend?", you'll
-   need a friend for that to do so. The spawned glitched null is named "\[\]"
-   and has a 3 blocks in height hitbox.
-4. Null is confirmed to be 14 years old.
+<Steps>
+    1. It's theorized that Null's name reminds him of who he has become, which
+    he hates. Notably, he reacts with the same amount of vitriol at the mention
+    of xXram2dieXx. 2. There is a popular creepypasta of the same name,
+    [Null](https://minecraftcreepypasta.fandom.com/wiki/Null) However, the one
+    from the Broken Script seems to be only related in name. 3. You can glitch
+    null by typing "Fuck you" and then pasting "Friend?", you'll need a friend
+    for that to do so. The spawned glitched null is named "\[\]" and has a 3
+    blocks in height hitbox. 4. Null is confirmed to be 14 years old.
+</Steps>
 
 ## Gallery
 
-<File:Null> sneaky.png|dude thinks he's slick <File:Null> closeup.png|hey pal\!
-[File:NullTbsRender.png|Artistic](File:NullTbsRender.png%7CArtistic) Render,
-courtesy of Xeon <File:Null> float.png|Null floating as an
-[event](/wiki/mechanics/random-events).
-[File:RareGlitchOfNull.png|A](File:RareGlitchOfNull.png%7CA) rare sight of a
-glitched null.
+<Tabs>
+    <TabItem label="Gallery">
+        <CaptionedImage src={import("../../../../assets/wiki/Null sneaky.png")}>
+            Dude thinks he's slick
+        </CaptionedImage>
+
+        <CaptionedImage src={import("../../../../assets/wiki/Null closeup.png")}>
+            Hey pal!
+        </CaptionedImage>
+
+        <CaptionedImage src={import("../../../../assets/wiki/NullTbsRender.png")}>
+            Artistic Render, courtesy of Xeon
+        </CaptionedImage>
+
+        <CaptionedImage src={import("../../../../assets/wiki/Null float.png")}>
+            Null floating as an [event](/wiki/mechanics/random-events)
+        </CaptionedImage>
+
+        <CaptionedImage src={import("../../../../assets/wiki/RareGlitchOfNull.png")}>
+            Rare sight of a glitched null.
+        </CaptionedImage>
+    </TabItem>
+
+</Tabs>

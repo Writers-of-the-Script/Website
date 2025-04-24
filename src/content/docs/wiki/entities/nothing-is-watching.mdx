@@ -2,6 +2,7 @@
 title: Nothing is Watching
 ---
 
+import { Steps } from "@astrojs/starlight/components";
 import CaptionedImage from "../../../../components/CaptionedImage.astro";
 
 ## Appearance
@@ -22,13 +23,15 @@ In some instances, Nothing is Watching will follow its target player
 around until they either get too close or look directly at it. Rarely,
 it will vanish instead of attacking when looked at.
 
+## Notes
+
+<Steps>
+    1. While chasing, Nothing is Watching is capable of breaking blocks and
+    harming entities in its path.
+</Steps>
+
 ## Gallery
 
 <CaptionedImage src={import("../../../../assets/wiki/NothingChasing.png")}>
     Nothing is Watching chasing a player.
 </CaptionedImage>
-
-# Notes
-
-1.  While chasing, Nothing is Watching is capable of breaking blocks and
-    harming entities in its path.

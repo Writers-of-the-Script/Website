@@ -4,7 +4,9 @@ title: ARG
 
 ## spectrum_11
 
-[spectrum_11.jar](/wiki/spectrum-11) is a secret secondary mod found within the main mod's files, and depicts events that chronologically happen before the events of The Broken Script.
+[spectrum_11.jar](/wiki/spectrum-11) is a secret secondary mod found within the
+main mod's files, and depicts events that chronologically happen before the
+events of The Broken Script.
 
 ## song.ogg
 

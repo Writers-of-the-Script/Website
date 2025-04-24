@@ -1,16 +1,16 @@
 {
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-	"features": {
-		"ghcr.io/meaningful-ooo/devcontainer-features/fish:2": {
-			"fisher": true
-		},
-		"ghcr.io/shyim/devcontainers-features/bun:0": {},
-		"ghcr.io/devcontainers-community/features/deno:1": {
-			"version": "latest"
-		},
-		"ghcr.io/schlich/devcontainer-features/just:0": {},
-		"ghcr.io/devcontainers-extra/features/composer:1": {
-			"version": "latest"
-		}
-	}
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "features": {
+        "ghcr.io/meaningful-ooo/devcontainer-features/fish:2": {
+            "fisher": true
+        },
+        "ghcr.io/shyim/devcontainers-features/bun:0": {},
+        "ghcr.io/devcontainers-community/features/deno:1": {
+            "version": "latest"
+        },
+        "ghcr.io/schlich/devcontainer-features/just:0": {},
+        "ghcr.io/devcontainers-extra/features/composer:1": {
+            "version": "latest"
+        }
+    }
 }

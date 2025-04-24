@@ -2,6 +2,8 @@
 title: The Moon
 ---
 
+import CaptionedImage from "../../../../components/CaptionedImage.astro";
+
 As of 1.9, the moon phases have been implemented as a world event, not a
 retexture. The moon functions on a "days passed" system, where after a
 (currently unknown) condition is met, it will start to cycle through 8
@@ -102,17 +104,46 @@ have also been observed to spawn more consistently during this phase.
 
 ### Gallery
 
-[File:moon_1.png|The](File:moon_1.png%7CThe) moon's first phase.
-[File:moon_2.png|The](File:moon_2.png%7CThe) moon's second phase.
-[File:moon_3.png|The](File:moon_3.png%7CThe) moon's third phase.
-[File:moon_4.png|The](File:moon_4.png%7CThe) moon's fourth phase.
-[File:moon_5.png|The](File:moon_5.png%7CThe) moon's fifth phase.
-[File:moon_6.png|The](File:moon_6.png%7CThe) moon's sixth phase.
-[File:moon_7.png|The](File:moon_7.png%7CThe) moon's seventh phase.
-[File:moon_8.png|The](File:moon_8.png%7CThe) moon's eighth phase.
-[File:moon_phases_full.png|All](File:moon_phases_full.png%7CAll) of
-1.9's moon phases.
-[File:unused_moon_phases.png|Another](File:unused_moon_phases.png%7CAnother)
-set of moon phases, seemingly unused.
-[File:old_moon_phases.png|The](File:old_moon_phases.png%7CThe) old
-moon phase textures from 1.8.
+<CaptionedImage src={import("../../../../assets/wiki/Moon 1.png")}>
+    The moon's first phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 2.png")}>
+    The moon's second phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 3.png")}>
+    The moon's third phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 4.png")}>
+    The moon's fourth phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 5.png")}>
+    The moon's fifth phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 6.png")}>
+    The moon's sixth phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 7.png")}>
+    The moon's seventh phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon 8.png")}>
+    The moon's eighth phase.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Moon phases full.png")}>
+    All of 1.9's moon phases.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Unused moon phases.png")}>
+    Another set of moon phases, seemingly unused.
+</CaptionedImage>
+
+<CaptionedImage src={import("../../../../assets/wiki/Old moon phases.png")}>
+    The old moon phase textures from 1.8.
+</CaptionedImage>
