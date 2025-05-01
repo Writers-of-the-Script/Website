@@ -167,12 +167,13 @@ export default defineConfig({
                     },
                 },
                 validator({
-                    exclude: ["/downloads"],
+                    exclude: ["/downloads", "/javadoc"],
                 }),
             ],
         }),
         (await import("@playform/compress")).default({
             Image: false,
+            Exclude: ["/javadoc"],
         }),
     ],
 });
