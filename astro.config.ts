@@ -15,21 +15,21 @@ export default defineConfig({
 
     server: env.REDSTONE_IS_DUMB
         ? {
-              port: 4000,
-          }
+            port: 4000,
+        }
         : {},
 
     vite: {
         server: env.REDSTONE_IS_DUMB
             ? {
-                  port: 4000,
-                  strictPort: true,
-                  hmr: {
-                      port: 4000,
-                      clientPort: 443,
-                      protocol: "wss",
-                  },
-              }
+                port: 4000,
+                strictPort: true,
+                hmr: {
+                    port: 4000,
+                    clientPort: 443,
+                    protocol: "wss",
+                },
+            }
             : {},
     },
 
@@ -99,6 +99,11 @@ export default defineConfig({
                 {
                     label: "[tabler:ghost-3-filled] Entities",
                     autogenerate: { directory: "wiki/entities" },
+                },
+
+                {
+                    label: "[tabler:code] Documentation",
+                    autogenerate: { directory: "docs", collapsed: true },
                 },
             ],
 

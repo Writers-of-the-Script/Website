@@ -1,0 +1,85 @@
+---
+title: Getting Started
+sidebar:
+    order: 2
+---
+
+import { kotlinSetupBlock, groovySetupBlock } from "../../../lib/code.ts";
+import { getLatestVersion } from "../../../lib/tbs-version.ts";
+import { Tabs, TabItem, Code } from "@astrojs/starlight/components";
+
+It's pretty easy to get The Broken Script set up for development. Here's a template to get you going:
+
+<Tabs>
+    <TabItem label="Gradle Kotlin DSL">
+        <Code code={await kotlinSetupBlock()} lang="kt" title="build.gradle.kts" ins={[await getLatestVersion()]} />
+    </TabItem>
+
+    <TabItem label="Gradle Groovy DSL">
+        <Code code={await groovySetupBlock()} lang="groovy" title="build.gradle" ins={[await getLatestVersion()]} />
+    </TabItem>
+</Tabs>
+
+Make sure to add the mod as a dependency to your `neoforge.mods.toml`!
+
+```toml title="neoforge.mods.toml"
+[[dependencies.${mod_id}]] # If you don't use variable replacements, replace '${mod_id}' with your mod ID.
+    modId = "thebrokenscript"
+    type = "REQUIRED"
+    versionRange = "[1.9.7,)"
+    ordering = "AFTER"
+    side = "BOTH"
+```
+
+The mod provides a convenient wrapper over many registries that makes the process of many things easier.
+Check out the [RegistryWrapper](/javadoc/dev/wendigodrip/thebrokenscript/api/registry/RegistryWrapper.html) class in the docs!
+To set this up, add this to your mod's main class:
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyMod.kt" ins={5,10,16}
+        package com.example.mymod
+
+        import net.neoforged.fml.common.Mod
+        import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper
+
+        @Mod(MyMod.MOD_ID)
+        object MyMod {
+            const val MOD_ID: String = "my_mod"
+            val REGISTRAR = RegistryWrapper(MOD_ID)
+
+            init {
+                // Your code here...
+                // Maybe register some stuff! :)
+
+                REGISTRAR.setup(MOD_BUS)
+            }
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyMod.java" ins={6,11,17}
+        package com.example.mymod;
+
+        import net.neoforged.fml.ModContainer;
+        import net.neoforged.fml.common.Mod;
+        import net.neoforged.bus.api.IEventBus;
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper;
+
+        @Mod(MyMod.MOD_ID)
+        public class MyMod {
+            public static final String MOD_ID = "my_mod";
+            public static final RegistryWrapper REGISTRAR = new RegistryWrapper(MOD_ID);
+
+            public MyMod(IEventBus bus, ModContainer mod) {
+                // Your code here...
+                // Maybe register some stuff! :)
+
+                REGISTRAR.setup(bus);
+            }
+        }
+        ```
+    </TabItem>
+</Tabs>

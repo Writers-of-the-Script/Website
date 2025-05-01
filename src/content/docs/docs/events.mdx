@@ -1,0 +1,119 @@
+---
+title: Creating Events
+---
+
+import { Steps, Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+The events API lets you easily create your own events by inheriting from the [BaseEvent](/javadoc/dev/wendigodrip/thebrokenscript/api/event/BaseEvent.html) class.
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyEvent.kt"
+        package com.example.mymod.events
+
+        import dev.wendigodrip.thebrokenscript.api.event.BaseEvent
+        import net.minecraft.world.entity.Entity
+        import net.minecraft.world.level.Level
+        import net.minecraft.world.phys.Vec3
+
+        //              BaseEvent(weight: Int)
+        class MyEvent : BaseEvent(1) {
+            // level: The level the event was executed in.
+            // entity: The entity the event was executed on.
+            // pos: The position of the entity, where the event was executed.
+            override fun execute(level: Level, entity: Entity, pos: Vec3) {
+                // Your code here...
+            }
+        }
+        ```
+    </TabItem>
+    <TabItem label="Java">
+        ```java title="MyEvent.java"
+        package com.example.mymod.events;
+
+        import dev.wendigodrip.thebrokenscript.api.event.BaseEvent;
+        import net.minecraft.world.entity.Entity;
+        import net.minecraft.world.level.Level;
+        import net.minecraft.world.phys.Vec3;
+
+        public class MyEvent extends BaseEvent {
+            public MyEvent() {
+                super(/* weight = */ 1);
+            }
+
+            // level: The level the event was executed in.
+            // entity: The entity the event was executed on.
+            // pos: The position of the entity, where the event was executed.
+            @Override
+            public void execute(Level level, Entity entity, Vec3 pos) {
+                // Your code here...
+            }
+        }
+        ```
+    </TabItem>
+</Tabs>
+
+There are a LOT of utilities in the base class, so I'd recommend taking a good look at the docs!
+
+Don't forget to register the event:
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyMod.kt" ins={6,17}
+        package com.example.mymod
+
+        import net.neoforged.fml.common.Mod
+        import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper
+        import com.example.mymod.events.MyEvent
+
+        @Mod(MyMod.MOD_ID)
+        object MyMod {
+            const val MOD_ID: String = "my_mod"
+            val REGISTRAR = RegistryWrapper(MOD_ID)
+
+            init {
+                // Your code here...
+
+                //              [   ID   ]  [Constructor]
+                REGISTRAR.event("my_event", ::MyEvent)
+                REGISTRAR.setup(MOD_BUS) // <- Make sure you register everything before calling setup()!
+            }
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyMod.java" ins={7,18}
+        package com.example.mymod;
+
+        import net.neoforged.fml.ModContainer;
+        import net.neoforged.fml.common.Mod;
+        import net.neoforged.bus.api.IEventBus;
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper;
+        import com.example.mymod.events.MyEvent;
+
+        @Mod(MyMod.MOD_ID)
+        public class MyMod {
+            public static final String MOD_ID = "my_mod";
+            public static final RegistryWrapper REGISTRAR = new RegistryWrapper(MOD_ID);
+
+            public MyMod(IEventBus bus, ModContainer mod) {
+                // Your code here...
+
+                //              [   ID   ]  [Constructor]
+                REGISTRAR.event("my_event", MyEvent::new);
+                REGISTRAR.setup(bus); // <- Make sure you register everything before calling setup()!
+            }
+        }
+        ```
+    </TabItem>
+</Tabs>
+
+After registering, you can test your event using the `/tbs dev event force [id]` command,
+but make sure to enable cheats in the config first!
+
+<Aside type="note">
+    Custom events won't be enabled by default in the config. This is a known issue and is being worked
+    on for the next update. Happy coding!
+</Aside>
