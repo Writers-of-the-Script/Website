@@ -2,5 +2,7 @@
     --sl-font: "JetBrains Mono";
     --sl-font-system: "JetBrains Mono";
     --sl-font-system-mono: "JetBrains Mono";
+    /* Changing the text color looks kinda weird. */
+    /* --sl-color-text: rgb(225, 225, 225); */
     --sl-color-text-accent: rgb(255, 70, 70);
 }

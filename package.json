@@ -22,7 +22,8 @@
         "starlight-ion-theme": "^2.2.3",
         "starlight-kbd": "^0.2.0",
         "starlight-markdown-blocks": "^0.1.0",
-        "typerinth": "^1.1.0"
+        "typerinth": "^1.1.0",
+        "typescript": "^5.8.3"
     },
     "devDependencies": {
         "@deno/astro-adapter": "^0.3.0",

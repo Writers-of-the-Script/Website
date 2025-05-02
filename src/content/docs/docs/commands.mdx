@@ -1,0 +1,163 @@
+---
+title: Commands
+sidebar:
+    order: 5
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+<Aside type="danger">
+    The command framework is only available for people who write their mod in
+    Kotlin! Due to the way it uses variadic arguments and many other features,
+    it won't be possible to get all the utility out of it with Java!
+</Aside>
+
+The Broken Script features a fully-featured command framework that allows for
+quick and easy registration of commands using a concise DSL.
+
+Check out the [Javadoc](https://dev.kadaroja.com/javadoc/dev/wendigodrip/thebrokenscript/api/commands/package-summary.html)
+for all the things it includes (I recommend starting at the `CommandDSL` class).
+
+## Initial Setup
+
+To start, you have to create the DSL wrapper inside the `RegisterCommandsEvent`:
+
+```kt title="MyCommands.kt" {12}
+package com.example.mymod.commands
+
+import dev.wendigodrip.thebrokenscript.api.commands.CommandDSL
+import net.neoforged.bus.api.SubscribeEvent
+import net.neoforged.fml.common.EventBusSubscriber
+import net.neoforged.neoforge.event.RegisterCommandsEvent
+
+@EventBusSubscriber
+object MyCommands {
+    @SubscribeEvent
+    fun register(event: RegisterCommandsEvent) {
+        CommandDSL(event.dispatcher) {
+            // Your code here...
+        }
+    }
+}
+```
+
+## Adding Commands
+
+To add commands, you just call `add()` with your syntax and arguments, and a block that handles the command.
+
+```kt title="MyCommands.kt" ins={4-7,14-40}
+package com.example.mymod.commands
+
+// ...
+import net.minecraft.commands.arguments.EntityArgument
+import dev.wendigodrip.thebrokenscript.api.ext.EntityTypeExt.trySpawnOneThousand
+import dev.wendigodrip.thebrokenscript.registry.TBSEntities
+import net.minecraft.network.chat.Component
+
+@EventBusSubscriber
+object MyCommands {
+    @SubscribeEvent
+    fun register(event: RegisterCommandsEvent) {
+        CommandDSL(event.dispatcher) {
+            // Arguments are denoted with brackets ('[]'), and their names are inside.
+            // The number of arguments should ALWAYS match the number of argument *types* provided.
+
+            // This would be `/funny [players]`, so
+            // `/funny @s` or `/funny SomePlayer` or even `/funny @a[tag=do_the_funny]` would work.
+            add("funny [players]", EntityArgument.players()) {
+                // Get the argument
+                val players = EntityArgument.getPlayers(it, "players")
+
+                // Go through every player the selector ('players') matched
+                for (player in players) {
+                    // Spawn 1000 circuits at the player's location.
+                    // `trySpawnOneThousand` is an extension function from TBS's `EntityTypeExt` object.
+                    TBSEntities.CIRCUIT.get().trySpawnOneThousand(player.level(), player.position())
+                }
+
+                // 'it' represents the `CommandSource` that executed the command.
+                // Why are there brackets around the component? For some reason Mojang decided
+                // the message argument in `sendSuccess()` needed to be a supplier, which I think
+                // is dumb. The brackets are a way of letting Kotlin know that it's a function that
+                // can be called, and in this case it just returns the component. It's like a closure.
+                it.source.sendSuccess({ Component.literal("Sent 1000 circuits to their location(s).") }, true)
+
+                // the return value of the command, see the `/return` command on the Minecraft wiki
+                // if you're unsure, just leave it as `0`
+                0
+            }
+        }
+    }
+}
+```
+
+## Groups
+
+The framework also allows you to create groups of commands, so you don't have to repeatedly
+type the same prefix when making them.
+
+```kt title="MyCommands.kt" ins={14-17,60} mark={18-59}
+package com.example.mymod.commands
+
+// ...
+import net.minecraft.commands.arguments.EntityArgument
+import dev.wendigodrip.thebrokenscript.api.ext.EntityTypeExt.trySpawnOneThousand
+import dev.wendigodrip.thebrokenscript.registry.TBSEntities
+import net.minecraft.network.chat.Component
+
+@EventBusSubscriber
+object MyCommands {
+    @SubscribeEvent
+    fun register(event: RegisterCommandsEvent) {
+        CommandDSL(event.dispatcher) {
+            // All commands in this group will start with `/funny`.
+            // If all commands in this group should require permission level 4,
+            // you could do `group("funny", 4)` instead.
+            group("funny") {
+                // This would be `/funny send [players]`, so
+                // `/funny send @s` or `/funny send SomePlayer` or even `/funny send @a[tag=do_the_funny]` would work.
+                add("send [players]", EntityArgument.players()) {
+                    // Get the argument
+                    val players = EntityArgument.getPlayers(it, "players")
+
+                    // Go through every player the selector ('players') matched
+                    for (player in players) {
+                        // Spawn 1000 circuits at the player's location.
+                        // `trySpawnOneThousand` is an extension function from TBS's `EntityTypeExt` object.
+                        TBSEntities.CIRCUIT.get().trySpawnOneThousand(player.level(), player.position())
+                    }
+
+                    // 'it' represents the `CommandSource` that executed the command.
+                    // Why are there brackets around the component? For some reason Mojang decided
+                    // the message argument in `sendSuccess()` needed to be a supplier, which I think
+                    // is dumb. The brackets are a way of letting Kotlin know that it's a function that
+                    // can be called, and in this case it just returns the component. It's like a closure.
+                    it.source.sendSuccess({ Component.literal("Sent 1000 circuits to their location(s).") }, true)
+
+                    // the return value of the command, see the `/return` command on the Minecraft wiki
+                    // if you're unsure, just leave it as `0`
+                    0
+                }
+
+                // This would be `/funny me`.
+                add("me") {
+                    // Spawn 1000 circuits at the sender's location.
+                    // `trySpawnOneThousand` is an extension function from TBS's `EntityTypeExt` object.
+                    TBSEntities.CIRCUIT.get().trySpawnOneThousand(it.source.level, it.source.position)
+
+                    // 'it' represents the `CommandSource` that executed the command.
+                    // Why are there brackets around the component? For some reason Mojang decided
+                    // the message argument in `sendSuccess()` needed to be a supplier, which I think
+                    // is dumb. The brackets are a way of letting Kotlin know that it's a function that
+                    // can be called, and in this case it just returns the component. It's like a closure.
+                    it.source.sendSuccess({ Component.literal("Sent 1000 circuits to your location.") }, true)
+
+                    // the return value of the command, see the `/return` command on the Minecraft wiki
+                    // if you're unsure, just leave it as `0`
+                    0
+                }
+            }
+        }
+    }
+}
+```

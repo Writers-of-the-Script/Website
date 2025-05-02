@@ -6,7 +6,9 @@ sidebar:
 
 import { kotlinSetupBlock, groovySetupBlock } from "../../../lib/code.ts";
 import { getLatestVersion } from "../../../lib/tbs-version.ts";
-import { Tabs, TabItem, Code } from "@astrojs/starlight/components";
+import { Tabs, TabItem, Code, Aside } from "@astrojs/starlight/components";
+
+## Initial Setup
 
 It's pretty easy to get The Broken Script set up for development. Here's a template to get you going:
 
@@ -20,6 +22,8 @@ It's pretty easy to get The Broken Script set up for development. Here's a templ
     </TabItem>
 </Tabs>
 
+## Adding the Dependency
+
 Make sure to add the mod as a dependency to your `neoforge.mods.toml`!
 
 ```toml title="neoforge.mods.toml"
@@ -30,6 +34,8 @@ Make sure to add the mod as a dependency to your `neoforge.mods.toml`!
     ordering = "AFTER"
     side = "BOTH"
 ```
+
+## Registries
 
 The mod provides a convenient wrapper over many registries that makes the process of many things easier.
 Check out the [RegistryWrapper](/javadoc/dev/wendigodrip/thebrokenscript/api/registry/RegistryWrapper.html) class in the docs!
@@ -82,4 +88,17 @@ To set this up, add this to your mod's main class:
         }
         ```
     </TabItem>
+
 </Tabs>
+
+## Important Notes
+
+<Aside type="note">
+    The Broken Script, itself, is written in [Kotlin](https://kotlinlang.org/).
+    While it *is* possible to use our API with Java, a lot of the extension
+    functions and utilities we provide are only easily usable from Kotlin. Some
+    of the syntax for a lot of our API also becomes easier if you use Kotlin. We
+    highly recommend using it. Getting it set up in your mod is pretty easy,
+    just follow the instructions on the [Kotlin for
+    Forge](https://github.com/thedarkcolour/KotlinForForge) docs.
+</Aside>

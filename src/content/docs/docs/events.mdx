@@ -1,10 +1,15 @@
 ---
 title: Creating Events
+sidebar:
+    order: 3
 ---
 
 import { Steps, Tabs, TabItem, Aside } from "@astrojs/starlight/components";
 
-The events API lets you easily create your own events by inheriting from the [BaseEvent](/javadoc/dev/wendigodrip/thebrokenscript/api/event/BaseEvent.html) class.
+## Setup
+
+The events API lets you easily create your own events by inheriting from the
+[BaseEvent](/javadoc/dev/wendigodrip/thebrokenscript/api/event/BaseEvent.html) class.
 
 <Tabs>
     <TabItem label="Kotlin">
@@ -27,6 +32,7 @@ The events API lets you easily create your own events by inheriting from the [Ba
         }
         ```
     </TabItem>
+
     <TabItem label="Java">
         ```java title="MyEvent.java"
         package com.example.mymod.events;
@@ -51,9 +57,28 @@ The events API lets you easily create your own events by inheriting from the [Ba
         }
         ```
     </TabItem>
+
 </Tabs>
 
 There are a LOT of utilities in the base class, so I'd recommend taking a good look at the docs!
+
+## Weights
+
+The weight property, which you need to specify when calling the super constructor, determines how
+often events are called.
+
+All events have their own weights which determine how often an event is triggered. A higher number
+will mean the event is more frequent. The weight must be an integer, meaning you can't use `0.25`
+or something like that.
+
+All current events in The Broken Script itself use the weight of `1`. This may change in the future.
+
+<Aside type="note">
+    If you're unsure what your weight should be, just make it `1`! It just means
+    it has the same chance of being triggered randomly than any other.
+</Aside>
+
+## Registration
 
 Don't forget to register the event:
 
@@ -108,12 +133,25 @@ Don't forget to register the event:
         }
         ```
     </TabItem>
+
 </Tabs>
+
+<Aside type="tip" title="Technical Details">
+    Events are registered using the class's constructor. The reason for this is
+    because internally, our registry system uses the
+    [`DeferredRegister`](https://docs.neoforged.net/docs/concepts/registries#deferredregister)
+    from NeoForge to perform registration, which allows things to be registered
+    at the correct time without us having to hook into the correct events
+    manually. The classes you register should only ever be instantiated once
+    after registry sync (which happens when you initially join a world or
+    server), and therefore can hold temporary state inside them.
+</Aside>
 
 After registering, you can test your event using the `/tbs dev event force [id]` command,
 but make sure to enable cheats in the config first!
 
-<Aside type="note">
-    Custom events won't be enabled by default in the config. This is a known issue and is being worked
-    on for the next update. Happy coding!
+<Aside type="caution">
+    Custom events won't be enabled by default in the config. This is a known
+    issue and is being worked on for the next update. This is due to the way the
+    current config system works.
 </Aside>

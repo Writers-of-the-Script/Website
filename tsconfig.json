@@ -1,14 +1,23 @@
 {
-    "extends": "astro/tsconfigs/strict",
-    "include": [".astro/types.d.ts", "**/*"],
-    "exclude": ["dist"],
-    "compilerOptions": {
-        "types": ["@types/node"],
-        "paths": {
-            "@/*": ["./src/*"]
-        }
-    },
-    "mdx": {
-        "checkMdx": true
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
+  "compilerOptions": {
+    "types": [
+      "@types/node"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
     }
+  },
+  "mdx": {
+    "checkMdx": true
+  }
 }

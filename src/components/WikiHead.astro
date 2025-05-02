@@ -122,6 +122,11 @@ const head = createHead(headDefaults, config.head, data.head);
 
 <ClientRouter />
 
+{import.meta.env.DEV && (
+    <script is:inline src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script is:inline>eruda.init();</script>
+)}
+
 {
     head.map(({ tag: Tag, attrs, content }) => (
         <Tag {...attrs} set:html={content} />

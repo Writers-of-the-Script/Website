@@ -1,0 +1,272 @@
+---
+title: Creating Chat Responses
+sidebar:
+    order: 4
+---
+
+import { Steps, Tabs, TabItem, Aside } from "@astrojs/starlight/components";
+
+## Setup
+
+The chat responses API lets you easily create your own chat responses by inheriting from the
+[ChatResponse](/javadoc/dev/wendigodrip/thebrokenscript/api/responses/ChatResponse.html) class.
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyResponse.kt"
+        package com.example.mymod.responses
+
+        import dev.wendigodrip.thebrokenscript.api.responses.ChatResponse
+        import net.minecraft.world.entity.player.Player
+        import net.minecraft.world.level.Level
+
+        class MyResponse : ChatResponse() {
+            // These are the pieces of text that will trigger the response.
+            // If any of these, not all of them, are found in the player's message,
+            // it will trigger.
+            override val triggers: List<String> = listOf("My Trigger 1", "My Trigger 2")
+
+            // level: The level the sender was in.
+            // sender: The player who sent the message.
+            override fun respond(level: Level, sender: Player) {
+                // Your code here...
+            }
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyResponse.java"
+        package com.example.mymod.responses;
+
+        import dev.wendigodrip.thebrokenscript.api.responses.ChatResponse;
+        import net.minecraft.world.entity.player.Player;
+        import net.minecraft.world.level.Level;
+        import java.util.List;
+
+        public class MyResponse extends ChatResponse {
+            @Override
+            public List<String> getTriggers() {
+                // These are the pieces of text that will trigger the response.
+                // If any of these, not all of them, are found in the player's message,
+                // it will trigger.
+                return List.of("My Trigger 1", "My Trigger 2");
+            }
+
+            // level: The level the sender was in.
+            // sender: The player who sent the message.
+            @Override
+            public void respond(Level level, Player sender) {
+                // Your code here...
+            }
+        }
+        ```
+    </TabItem>
+
+</Tabs>
+
+There are a LOT of utilities in the base class, so I'd recommend taking a good look at the docs!
+
+## Registration
+
+Don't forget to register the response:
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyMod.kt" ins={6,17}
+        package com.example.mymod
+
+        import net.neoforged.fml.common.Mod
+        import thedarkcolour.kotlinforforge.neoforge.forge.MOD_BUS
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper
+        import com.example.mymod.responses.MyResponse
+
+        @Mod(MyMod.MOD_ID)
+        object MyMod {
+            const val MOD_ID: String = "my_mod"
+            val REGISTRAR = RegistryWrapper(MOD_ID)
+
+            init {
+                // Your code here...
+
+                //                     [     ID    ]  [Constructor]
+                REGISTRAR.chatResponse("my_response", ::MyResponse)
+                REGISTRAR.setup(MOD_BUS) // <- Make sure you register everything before calling setup()!
+            }
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyMod.java" ins={7,18}
+        package com.example.mymod;
+
+        import net.neoforged.fml.ModContainer;
+        import net.neoforged.fml.common.Mod;
+        import net.neoforged.bus.api.IEventBus;
+        import dev.wendigodrip.thebrokenscript.api.registry.RegistryWrapper;
+        import com.example.mymod.responses.MyResponse;
+
+        @Mod(MyMod.MOD_ID)
+        public class MyMod {
+            public static final String MOD_ID = "my_mod";
+            public static final RegistryWrapper REGISTRAR = new RegistryWrapper(MOD_ID);
+
+            public MyMod(IEventBus bus, ModContainer mod) {
+                // Your code here...
+
+                //                     [     ID    ]  [Constructor]
+                REGISTRAR.chatResponse("my_response", MyResponse::new);
+                REGISTRAR.setup(bus); // <- Make sure you register everything before calling setup()!
+            }
+        }
+        ```
+    </TabItem>
+
+</Tabs>
+
+<Aside type="tip" title="Technical Details">
+    Chat responses are registered using the class's constructor. The reason for
+    this is because internally, our registry system uses the
+    [`DeferredRegister`](https://docs.neoforged.net/docs/concepts/registries#deferredregister)
+    from NeoForge to perform registration, which allows things to be registered
+    at the correct time without us having to hook into the correct events
+    manually. The classes you register should only ever be instantiated once
+    after registry sync (which happens when you initially join a world or
+    server), and therefore can hold temporary state inside them.
+</Aside>
+
+After registering, you can test your response by triggering it!
+
+<Aside type="caution">
+    Custom chat responses won't be enabled by default in the config. This is a
+    known issue and is being worked on for the next update. This is due to the
+    way the current config system works.
+</Aside>
+
+## Customization
+
+There's a few variables you can modify in your chat responses that impact if, and how, it triggers.
+
+### Delay
+
+You can customize how many ticks it will take for your response to be triggered.
+
+> Default: `0`
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyResponse.kt" add={6}
+        package com.example.mymod.responses
+
+        // ...
+
+        class MyResponse : ChatResponse() {
+            override val delay: Int = 100 // set your own number here
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyResponse.java" add={6-9}
+        package com.example.mymod.responses;
+
+        // ...
+
+        public class MyResponse extends ChatResponse {
+            @Override
+            public int getDelay() {
+                return 100; // set your own number here
+            }
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+</Tabs>
+
+### Case Sensitivity
+
+You can customize whether the triggers should be case-sensetive or not.
+If this is set to true, the player must type your trigger with the correct capitalization to trigger it.
+
+> Default: `false`
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyResponse.kt" add={6}
+        package com.example.mymod.responses
+
+        // ...
+
+        class MyResponse : ChatResponse() {
+            override val caseSensetive: Boolean = true
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyResponse.java" add={6-9}
+        package com.example.mymod.responses;
+
+        // ...
+
+        public class MyResponse extends ChatResponse {
+            @Override
+            public boolean getCaseSensetive() {
+                return true;
+            }
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+</Tabs>
+
+### Full Message
+
+Chat responses will by default assume that if any trigger is anywhere in a message, it
+will trigger. This can be turned off by setting `isFullMessage` to `true`, which means
+that any of the triggers must be same as the entire message the player typed for it to trigger.
+
+> Default: `false`
+
+<Tabs>
+    <TabItem label="Kotlin">
+        ```kt title="MyResponse.kt" add={6}
+        package com.example.mymod.responses
+
+        // ...
+
+        class MyResponse : ChatResponse() {
+            override val isFullMessage: Boolean = true
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+    <TabItem label="Java">
+        ```java title="MyResponse.java" add={6-9}
+        package com.example.mymod.responses;
+
+        // ...
+
+        public class MyResponse extends ChatResponse {
+            @Override
+            public boolean isFullMessage() {
+                return true;
+            }
+
+            // ...
+        }
+        ```
+    </TabItem>
+
+</Tabs>
