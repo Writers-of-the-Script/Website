@@ -1,4 +1,4 @@
-import { APIRoute } from "astro";
+import type { APIRoute } from "astro";
 import { XMLParser } from "fast-xml-parser";
 import ZipFile from "adm-zip";
 import { Buffer } from "node:buffer";
