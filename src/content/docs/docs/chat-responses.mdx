@@ -190,7 +190,7 @@ You can customize how many ticks it will take for your response to be triggered.
 
 ### Case Sensitivity
 
-You can customize whether the triggers should be case-sensetive or not.
+You can customize whether the triggers should be case-sensitive or not.
 If this is set to true, the player must type your trigger with the correct capitalization to trigger it.
 
 > Default: `false`
@@ -203,7 +203,7 @@ If this is set to true, the player must type your trigger with the correct capit
         // ...
 
         class MyResponse : ChatResponse() {
-            override val caseSensetive: Boolean = true
+            override val caseSensitive: Boolean = true
 
             // ...
         }
@@ -218,7 +218,7 @@ If this is set to true, the player must type your trigger with the correct capit
 
         public class MyResponse extends ChatResponse {
             @Override
-            public boolean getCaseSensetive() {
+            public boolean getCaseSensitive() {
                 return true;
             }
 
