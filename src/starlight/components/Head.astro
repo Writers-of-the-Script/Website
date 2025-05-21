@@ -1,0 +1,18 @@
+---
+import { ClientRouter } from "astro:transitions";
+
+const { head } = Astro.locals.starlightRoute;
+---
+
+<ClientRouter />
+
+{import.meta.env.DEV && (
+    <script is:inline src="https://cdn.jsdelivr.net/npm/eruda"></script>
+    <script is:inline>eruda.init();</script>
+)}
+
+{
+    head.map(({ tag: Tag, attrs, content }) => (
+        <Tag {...attrs} set:html={content} />
+    ))
+}

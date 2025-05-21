@@ -31,7 +31,7 @@ export const getStaticPaths = async () => {
 
     for (const entry of jar.getEntries()) {
         if (entry.isDirectory) continue;
-        
+
         paths.push({ params: { path: entry.entryName } });
     }
 

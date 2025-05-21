@@ -5,6 +5,11 @@
     "compilerOptions": {
         "types": ["@types/node"]
     },
+    "lint": {
+        "rules": {
+            "exclude": ["no-sloppy-imports", "require-await", "no-explicit-any", "no-prototype-builtins", "no-process-global"]
+        }
+    },
     "unstable": ["sloppy-imports", "bare-node-builtins", "detect-cjs"],
     "imports": {
         "@/": "./src/"
