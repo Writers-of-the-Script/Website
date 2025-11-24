@@ -13,9 +13,9 @@ In certain rooms, it is possible to find purple console blocks that can be
 interacted with via text prompts. It is currently unknown what purpose these
 consoles serve.
 
-As the only known way into this dimension is to teleport yourself with commands,
-it is currently unknown how to get there and how long it takes to be teleported
-back out.
+Day B can be accessed by falling through a void hole (you can use a destroyed chunk
+or void hole structure). You will be put into "Minecraft VoidExp 0.0.1" and enter the
+dimension. There are no known ways to exit (aside from getting Null to kill you).
 
 ## Small Console Room
 
